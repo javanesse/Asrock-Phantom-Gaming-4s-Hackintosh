@@ -1,10 +1,4 @@
 
-
-Sumber|
-------|
-[8700 gigabyte](https://www.tonymacx86.com/threads/success-8700k-gigabyte-z370-hd3p-uhd-graphics-630-macos-high-sierra-mojave.239402/)|
-[RehabMan - Tonymacx86 ](https://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/)|
-
 Nama              | Keterangan
 ------------------|--------------
 Prosesor          | Intel Core i7 8700 (Bukan K)
@@ -86,3 +80,9 @@ Search All DSDT and SSDT and replace : grep -l _DSM *.dsl
 * HDAS to HDEF
 * GFX0 to IGPU
 ```
+
+
+Sumber|
+------|
+[8700 gigabyte](https://www.tonymacx86.com/threads/success-8700k-gigabyte-z370-hd3p-uhd-graphics-630-macos-high-sierra-mojave.239402/)|
+[RehabMan - Tonymacx86 ](https://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/)|

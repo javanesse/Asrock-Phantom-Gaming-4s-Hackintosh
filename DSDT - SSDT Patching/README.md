@@ -96,6 +96,12 @@ Wajib cari di semua DSDT dan SSDT kemudian replace
 
 Apabila pada MacIASL tidak ada patch, maka kita hanya butuh mereplace secara manual. misal `HDAS to HDEF`, kita hanya butuh mencari kata `HDAS` kemudian merubahnya menjadi `HDEF`
 
+## 5. Mengexport file
+### Menyimpan dan mengeksport file menjadi AML
+
+Setelah melakukan patching, tentunya kita harus menyimpannya, kemudian save as `ACPI MACHINE LANGUAGE BINARY` atau `AML`.
+Setelah semua file tersimpan dan menjadi file `AML`, kemudian letakkan seluruh file yang berformat `AML` di dalam partisi `EFI > Clover > Patched`.
+
 
 Sumber|
 ------|

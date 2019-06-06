@@ -1,7 +1,7 @@
 # Patching ACPI/DSDT Asrock Phantom Gaming 4s
 
 
-![Jv Screenshot](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/blob/master/Images/System%20ScreenShoot/Screen%20Shot%202019-06-06%20at%2023.05.13.png)
+![Jv Screenshot](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/blob/master/Images/System%20ScreenShoot/About%20This%20Mac%20Intel%20UHD%20630.png)
 
 Nama              | Keterangan
 ------------------|--------------

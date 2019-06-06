@@ -67,21 +67,22 @@ hal paling pertama sekali yang wajib dilakukan dalam patching ACPI ini adalah me
 
 ```
 patch DSDT dari maciasl
-* RENAME _DSM to XDSM
-* Fix _WAK Arg0 v2
-* HPET Fix
-* SMBUS Fix
-* IRQ Fix
-* RTC Fix
-* OS Check Fix
-* Fix Mutex with non-zero SyncLevel
-* Add MCHC
+- RENAME _DSM to XDSM
+- Fix _WAK Arg0 v2
+- HPET Fix
+- SMBUS Fix
+- IRQ Fix
+- RTC Fix
+- OS Check Fix
+- Fix Mutex with non-zero SyncLevel
+- Add MCHC
 ```
 
+```
 Search All DSDT and SSDT and replace : grep -l _DSM *.dsl
-
 * RENAME _DSM to XDM
 * HECI to IMEI
 * SAT0 to SATA
 * HDAS to HDEF
 * GFX0 to IGPU
+```

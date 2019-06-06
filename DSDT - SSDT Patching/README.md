@@ -6,12 +6,10 @@ Sumber|
 [RehabMan - Tonymacx86 ](https://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/)|
 
 
-Motherboad        | Mojave 10.4.5
 ------------------|--------------
 Prosesor          | iMac 19.2
-------------------|--------------
+Motherboad        | Mojave 10.4.5
 Versi OS          | Mojave 10.4.5
-------------------|--------------
 SMBios            | iMac 19.2 
 
 

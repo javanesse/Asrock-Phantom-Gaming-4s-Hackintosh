@@ -23,13 +23,15 @@ At the main Clover bootloader screen, you can press F4 and Clover will dump the 
 ### MacIASL
 MacIASL dapat di download [di sini](https://bitbucket.org/RehabMan/os-x-maciasl-patchmatic/downloads/)
 Setelah di download, copy file iasl62 ke desktop
-* klik kanan
-  * show package content
-    * contents
-      * macOS
-        * iasl62
+```
+1. klik kanan
+2. show package content
+3. contents
+4. macOS
+5. iasl62
+```
         
-Ubah iasl62 menjadi iasl dan copy file iasl tersebut ke /usr/bin dengan menggunakan terminal dengan perintah: 
+Lalu Ubah iasl62 menjadi iasl dan copy file iasl tersebut ke /usr/bin dengan menggunakan terminal dengan perintah: 
 
 > sudo cp iasl /usr/bin
 

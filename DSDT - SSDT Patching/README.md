@@ -60,20 +60,25 @@ yang berarti untuk mengubah DSDT dan SSDT **AML** menjadi **DSL** di terminal ha
 iasl -dl DSDT.aml SSDT*.aml
 ```
 
+## 4. Patching ACPI
+### Membereskan error yang ada pada ACPI
+
 patches only DSDT from maciasl
-"RENAME _DSM to XDM"
-"Fix _WAK Arg0 v2"
-"HPET Fix"
-"SMBUS Fix"
-"IRQ Fix"
-"RTC Fix"
-"OS Check Fix"
-"Fix Mutex with non-zero SyncLevel"
-"Add MCHC"
+
+* RENAME _DSM to XDM
+* Fix _WAK Arg0 v2
+* HPET Fix
+* SMBUS Fix
+* IRQ Fix
+* RTC Fix
+* OS Check Fix
+* Fix Mutex with non-zero SyncLevel
+* Add MCHC
 
 Search All DSDT and SSDT and replace : grep -l _DSM *.dsl
-"RENAME _DSM to XDM"
-"HECI to IMEI"
-"SAT0 to SATA"
+
+*RENAME _DSM to XDM
+*HECI to IMEI
+*SAT0 to SATA
 "HDAS to HDEF"
 "GFX0 to IGPU"

@@ -5,9 +5,10 @@ Sumber|
 https://www.tonymacx86.com/threads/success-8700k-gigabyte-z370-hd3p-uhd-graphics-630-macos-high-sierra-mojave.239402/|
 https://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/|
 
--------------|--------------
-Versi OS     | Mojave 10.4.5
-smbios       | iMac 19.2
+Versi OS         | smbios
+-----------------|--------------
+Mojave 10.4.5    | iMac 19.2 
+
 
 extract dsdt f4
 ======

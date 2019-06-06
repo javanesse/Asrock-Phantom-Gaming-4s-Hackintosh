@@ -29,7 +29,10 @@ Setelah di download, copy file iasl62 ke desktop
     * contents
       * macOS
         * iasl62
-Ubah menjadi iasl
+        
+
+Ubah iasl62 menjadi iasl dan copy file iasl tersebut ke /usr/bin
+`<addr>` sudo cp iasl /usr/bin
 
 
 

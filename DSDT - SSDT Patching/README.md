@@ -11,9 +11,9 @@ Mojave 10.4.5    | iMac 19.2
 
 
 
-##Metode pengambilan ACPI
+## Metode pengambilan ACPI
 ===
-###menggunakan clover bootloader dengan cara memencet tombol F4
+### menggunakan clover bootloader dengan cara memencet tombol F4
 Extracting with Clover F4 (recommended):
 
 Extracting with Clover F4 is recommended, due to ease of extraction, and due to ease of comparison between ACPI/origin and ACPI/patched (for troubleshooting).

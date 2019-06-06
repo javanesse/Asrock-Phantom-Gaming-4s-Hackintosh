@@ -32,7 +32,7 @@ Setelah di download, copy file iasl62 ke desktop
         
 
 Ubah iasl62 menjadi iasl dan copy file iasl tersebut ke /usr/bin
-`<addr>` sudo cp iasl /usr/bin
+```sudo cp iasl /usr/bin``` 
 
 
 

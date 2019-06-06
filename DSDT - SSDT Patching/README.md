@@ -11,9 +11,16 @@ Mojave 10.4.5    | iMac 19.2
 
 
 
-#Metode pengambilan ACPI
-extract dsdt f4
-======
+##Metode pengambilan ACPI
+===
+###menggunakan clover bootloader dengan cara memencet tombol F4
+Extracting with Clover F4 (recommended):
+
+Extracting with Clover F4 is recommended, due to ease of extraction, and due to ease of comparison between ACPI/origin and ACPI/patched (for troubleshooting).
+
+At the main Clover bootloader screen, you can press F4 and Clover will dump the native ACPI files to EFI/Clover/ACPI/origin. You can then access them after you boot OS X to disassemble them and patch. Note that some BIOS implementations reverse the function of Fn+F4 with F4, so when in doubt, press both Fn+F4 and F4. There is no feedback during or after the dump, just a slight delay as the files are written. The delay is more noticeable if they are being written to USB, as would be the case when booting from a Clover USB.
+Sumber: https://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/
+
 
 https://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/
 Note: With newer ACPI sets (generally Skylake and later), the ACPI files have been compiled with a new enough version of iasl that embeds External opcodes in the resulting AML code. For these newer ACPI sets, no need for -da and especially not refs.txt as the refs.txt content here may conflict with the embedded External opcodes.

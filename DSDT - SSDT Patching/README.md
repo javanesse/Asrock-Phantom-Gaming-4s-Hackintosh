@@ -65,6 +65,7 @@ iasl -dl DSDT.aml SSDT*.aml
 
 hal paling pertama sekali yang wajib dilakukan dalam patching ACPI ini adalah mengubah metode `_DSM` menjadi `XDSM` di **SELURUH** ACPI yang ada.
 
+```
 patch DSDT dari maciasl
 * RENAME _DSM to XDSM
 * Fix _WAK Arg0 v2
@@ -75,6 +76,7 @@ patch DSDT dari maciasl
 * OS Check Fix
 * Fix Mutex with non-zero SyncLevel
 * Add MCHC
+```
 
 Search All DSDT and SSDT and replace : grep -l _DSM *.dsl
 

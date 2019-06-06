@@ -63,6 +63,13 @@ iasl -dl DSDT.aml SSDT*.aml
 
 hal paling pertama sekali yang wajib dilakukan dalam patching ACPI ini adalah mengubah metode `_DSM` menjadi `XDSM` di **SELURUH** ACPI yang ada.
 
+dan sebelum melakukan patching, ada sedikit trik untuk mencari metode/kata yang terdapat pada DSDT atau SSDT yang telah ada, yaitu dengan menggunakan terminal perintah `grep`. Contoh:
+`
+grep -l GFX0 *.dsl
+`
+maka terminal akan menunjukkan file mana saja yang terdapat metode `GFX0`. hal ini di karenakan kita wajib mengubah seluruh file secara sinkronisasi. artinya, apabila dalam beberapa file terdapat `GFX0` dan kita ingin mengubahnya menjadi `IGPU`, maka kita harus mengubah semuanya.
+
+
 ```
 patch DSDT dari maciasl
 - RENAME _DSM to XDSM
@@ -77,13 +84,15 @@ patch DSDT dari maciasl
 ```
 
 ```
-Search All DSDT and SSDT and replace : grep -l _DSM *.dsl
+Wajib cari di semua DSDT dan SSDT kemudian replace
 * RENAME _DSM to XDM
 * HECI to IMEI
 * SAT0 to SATA
 * HDAS to HDEF
 * GFX0 to IGPU
 ```
+
+Apabila pada MacIASL tidak ada patch, maka kita hanya butuh mereplace secara manual. misal `HDAS to HDEF`, kita hanya butuh mencari kata `HDAS` kemudian merubahnya menjadi `HDEF`
 
 
 Sumber|

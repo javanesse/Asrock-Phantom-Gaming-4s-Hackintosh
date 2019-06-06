@@ -99,6 +99,9 @@ Apabila pada MacIASL tidak ada patch, maka kita hanya butuh mereplace secara man
 ## 5. Mengexport file
 ### Menyimpan dan mengeksport file menjadi AML
 
+Pastikan terlebih dahulu bahwa tidak ada satupun Error pada file ACPI. warning tidak menjadi soal, tapi error adalah hal fatal.
+
+
 Setelah melakukan patching, tentunya kita harus menyimpannya, kemudian save as `ACPI MACHINE LANGUAGE BINARY` atau `AML`.
 Setelah semua file tersimpan dan menjadi file `AML`, kemudian letakkan seluruh file yang berformat `AML` di dalam partisi `EFI > Clover > Patched`.
 

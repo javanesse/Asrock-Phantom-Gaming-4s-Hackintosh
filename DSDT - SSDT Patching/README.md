@@ -22,6 +22,8 @@ Extracting with Clover F4 is recommended, due to ease of extraction, and due to 
 
 At the main Clover bootloader screen, you can press F4 and Clover will dump the native ACPI files to **EFI/Clover/ACPI/origin**. You can then access them after you boot OS X to disassemble them and patch. Note that some BIOS implementations reverse the function of Fn+F4 with F4, so when in doubt, press both Fn+F4 and F4. There is no feedback during or after the dump, just a slight delay as the files are written. The delay is more noticeable if they are being written to USB, as would be the case when booting from a Clover USB.
 
+Hapus semua file ACPI yang tidak berawalan dengan DSDT dan SSDT.
+
 ## 2. Menyiapkan Tool untuk membongkar ACPI
 ### MacIASL
 MacIASL dapat di download [di sini](https://bitbucket.org/RehabMan/os-x-maciasl-patchmatic/downloads/)
@@ -36,21 +38,27 @@ Setelah di download, copy file iasl62 ke desktop
         
 Lalu Ubah iasl62 menjadi iasl dan copy file iasl tersebut ke /usr/bin dengan menggunakan terminal dengan perintah: 
 
-> sudo cp iasl /usr/bin
-
+```
+sudo cp iasl /usr/bin
+```
 
 ## 3. Membongkar/disassembly ACPI/DSDT
-### Membongkar DSDT menggunakan Terminal
+### Mengubah DSDT format AML menjadi DSL menggunakan Terminal
 
 ```
 cd "to directory where you placed all SSDT/DSDT"
-iasl -dl DSDT.aml SSDT*.aml
-iasl -dl DSDT.aml SSDT*.aml
+iasl -da -dl -fe refs.txt DSDT.aml SSDT*.aml
 ```
+Namun untuk prosesor skylake keatas, ada perubahan
 
 > Note: With newer ACPI sets (generally Skylake and later), the ACPI files have been compiled with a new enough version of iasl that embeds External opcodes in the resulting AML code. For these newer ACPI sets, no need for -da and especially not refs.txt as the refs.txt content here may conflict with the embedded External opcodes.
 
 dari keterangan di atas menunjukkan bahwa mulai dari prosesor skylake, kita tidak perlu menggukanan `refs.txt` dan juga tanpa `-da`
+
+yang berarti untuk mengubah DSDT dan SSDT **AML** menjadi **DSL** di terminal hanya menggunakan perintah:
+```
+iasl -dl DSDT.aml SSDT*.aml
+```
 
 patches only DSDT from maciasl
 "RENAME _DSM to XDM"

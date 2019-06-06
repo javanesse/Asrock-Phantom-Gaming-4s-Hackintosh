@@ -6,8 +6,6 @@ https://www.tonymacx86.com/threads/success-8700k-gigabyte-z370-hd3p-uhd-graphics
 https://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/|
 
 
-First Header | Second Header
------------- | -------------
 Versi OS     | Mojave 10.4.5
 smbios       | iMac 19.2
 

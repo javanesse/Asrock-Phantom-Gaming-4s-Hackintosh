@@ -23,6 +23,13 @@ Sumber: https://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.1525
 ## 2. Menyiapkan Tool untuk membongkar ACPI
 ### MacIASL
 MacIASL dapat di download [di sini](https://bitbucket.org/RehabMan/os-x-maciasl-patchmatic/downloads/)
+Setelah di download, copy file iasl62 ke desktop
+*klik kanan
+  *show package content
+    *contents
+      *macOS
+        *iasl62
+Ubah menjadi iasl
 
 
 

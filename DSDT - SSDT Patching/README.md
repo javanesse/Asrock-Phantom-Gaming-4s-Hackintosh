@@ -29,7 +29,9 @@ Setelah di download, copy file iasl62 ke desktop
       * macOS
         * iasl62
         
-Ubah iasl62 menjadi iasl dan copy file iasl tersebut ke /usr/bin dengan menggunakan terminal dengan perintah: `sudo cp iasl /usr/bin`
+Ubah iasl62 menjadi iasl dan copy file iasl tersebut ke /usr/bin dengan menggunakan terminal dengan perintah: 
+
+> sudo cp iasl /usr/bin
 
 
 ## 3. Membongkar/disassembly ACPI/DSDT

@@ -12,7 +12,6 @@ Mojave 10.4.5    | iMac 19.2
 
 
 ## Metode pengambilan ACPI
-===
 ### menggunakan clover bootloader dengan cara memencet tombol F4
 Extracting with Clover F4 (recommended):
 

@@ -1,11 +1,9 @@
 
 
-Sumber
------
-
-https://www.tonymacx86.com/threads/success-8700k-gigabyte-z370-hd3p-uhd-graphics-630-macos-high-sierra-mojave.239402/
-
-https://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/
+Sumber|
+------|
+https://www.tonymacx86.com/threads/success-8700k-gigabyte-z370-hd3p-uhd-graphics-630-macos-high-sierra-mojave.239402/|
+https://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/|
 
 
 First Header | Second Header

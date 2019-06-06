@@ -45,7 +45,7 @@ iasl -dl DSDT.aml SSDT*.aml
 iasl -dl DSDT.aml SSDT*.aml
 ```
 
-Note: With newer ACPI sets (generally Skylake and later), the ACPI files have been compiled with a new enough version of iasl that embeds External opcodes in the resulting AML code. For these newer ACPI sets, no need for -da and especially not refs.txt as the refs.txt content here may conflict with the embedded External opcodes.
+> Note: With newer ACPI sets (generally Skylake and later), the ACPI files have been compiled with a new enough version of iasl that embeds External opcodes in the resulting AML code. For these newer ACPI sets, no need for -da and especially not refs.txt as the refs.txt content here may conflict with the embedded External opcodes.
 
 dari keterangan di atas menunjukkan bahwa mulai dari prosesor skylake, kita tidak perlu menggukanan `refs.txt` dan juga tanpa `-da`
 

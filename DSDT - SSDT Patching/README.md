@@ -64,9 +64,11 @@ iasl -dl DSDT.aml SSDT*.aml
 hal paling pertama sekali yang wajib dilakukan dalam patching ACPI ini adalah mengubah metode `_DSM` menjadi `XDSM` di **SELURUH** ACPI yang ada.
 
 dan sebelum melakukan patching, ada sedikit trik untuk mencari metode/kata yang terdapat pada DSDT atau SSDT yang telah ada, yaitu dengan menggunakan terminal perintah `grep`. Contoh:
+
 `
 grep -l GFX0 *.dsl
 `
+
 maka terminal akan menunjukkan file mana saja yang terdapat metode `GFX0`. hal ini di karenakan kita wajib mengubah seluruh file secara sinkronisasi. artinya, apabila dalam beberapa file terdapat `GFX0` dan kita ingin mengubahnya menjadi `IGPU`, maka kita harus mengubah semuanya.
 
 

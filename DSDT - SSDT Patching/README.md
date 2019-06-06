@@ -17,14 +17,14 @@ Extracting with Clover F4 (recommended):
 
 Extracting with Clover F4 is recommended, due to ease of extraction, and due to ease of comparison between ACPI/origin and ACPI/patched (for troubleshooting).
 
-At the main Clover bootloader screen, you can press F4 and Clover will dump the native ACPI files to ###### EFI/Clover/ACPI/origin ######. You can then access them after you boot OS X to disassemble them and patch. Note that some BIOS implementations reverse the function of Fn+F4 with F4, so when in doubt, press both Fn+F4 and F4. There is no feedback during or after the dump, just a slight delay as the files are written. The delay is more noticeable if they are being written to USB, as would be the case when booting from a Clover USB.
+At the main Clover bootloader screen, you can press F4 and Clover will dump the native ACPI files to **EFI/Clover/ACPI/origin**. You can then access them after you boot OS X to disassemble them and patch. Note that some BIOS implementations reverse the function of Fn+F4 with F4, so when in doubt, press both Fn+F4 and F4. There is no feedback during or after the dump, just a slight delay as the files are written. The delay is more noticeable if they are being written to USB, as would be the case when booting from a Clover USB.
 
 ## 2. Menyiapkan Tool untuk membongkar ACPI
 ### MacIASL
 MacIASL dapat di download [di sini](https://bitbucket.org/RehabMan/os-x-maciasl-patchmatic/downloads/)
 Setelah di download, copy file iasl62 ke desktop
 ```
-1. klik kanan
+1. klik kanan aplikasi MacIASL
 2. show package content
 3. contents
 4. macOS

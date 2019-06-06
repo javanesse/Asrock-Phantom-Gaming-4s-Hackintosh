@@ -63,11 +63,10 @@ iasl -dl DSDT.aml SSDT*.aml
 ## 4. Patching ACPI
 ### Membereskan error yang ada pada ACPI
 
-hal paling pertama sekali yang wajib dilakukan dalam patching ACPI ini adalah mengubah metode `_DSM` menjadi `XDSM` di **SELURUH** ACPI yang ada
+hal paling pertama sekali yang wajib dilakukan dalam patching ACPI ini adalah mengubah metode `_DSM` menjadi `XDSM` di **SELURUH** ACPI yang ada.
 
-patches only DSDT from maciasl
-
-* RENAME _DSM to XDM
+patch DSDT dari maciasl
+* RENAME _DSM to XDSM
 * Fix _WAK Arg0 v2
 * HPET Fix
 * SMBUS Fix
@@ -79,8 +78,8 @@ patches only DSDT from maciasl
 
 Search All DSDT and SSDT and replace : grep -l _DSM *.dsl
 
-*RENAME _DSM to XDM
-*HECI to IMEI
-*SAT0 to SATA
-*HDAS to HDEF
-*GFX0 to IGPU
+* RENAME _DSM to XDM
+* HECI to IMEI
+* SAT0 to SATA
+* HDAS to HDEF
+* GFX0 to IGPU

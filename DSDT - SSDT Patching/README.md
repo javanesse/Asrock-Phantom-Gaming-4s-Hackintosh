@@ -2,8 +2,8 @@
 
 Sumber|
 ------|
-https://www.tonymacx86.com/threads/success-8700k-gigabyte-z370-hd3p-uhd-graphics-630-macos-high-sierra-mojave.239402/|
-https://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/|
+[8700 gigabyte](https://www.tonymacx86.com/threads/success-8700k-gigabyte-z370-hd3p-uhd-graphics-630-macos-high-sierra-mojave.239402/)|
+[RehabMan - Tonymacx86 ] (https://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/)|
 
 Versi OS         | smbios
 -----------------|--------------
@@ -31,6 +31,8 @@ Setelah di download, copy file iasl62 ke desktop
         * iasl62
         
 Ubah iasl62 menjadi iasl dan copy file iasl tersebut ke /usr/bin dengan menggunakan terminal dengan perintah: `sudo cp iasl /usr/bin`
+
+
 Sumber: https://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/
 
 

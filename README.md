@@ -7,6 +7,8 @@ Hal yang di perlukan dalam instalasi Hackintosh pada dasarnya sama dengan instal
 
 Repo ini sendiri boleh di katakan ini adalah repo driver (kext) untuk mac osx khusus hardware-hardware yang ada pada spesifikasi. dengan kata lain, jika spesifikasi komputer Anda kebetulan sama dengan komputer ini, maka langkah instalasi hackintosh Anda akan semnakin mudah karena sudah tersedia driver (kext) untuk hardware jenis ini.
 
+## Hardware yang saya gunakan
+
 Nama                | Merk               | Seri
 --------------------|--------------------|--------------------
 Prosesor            | Intel              | core i7 8700
@@ -17,7 +19,7 @@ Heatsink            | Deepcool           | Gammax 300
 Power Supply        | Power Up           | 80+ Bronze 600 watt
 Casing              | Power Up           | Raptor 1707
 
-adapun yang perlu di perhati
+adapun yang perlu di perhatikan dari spesifikasi komputer saya di atas **HANYA** `Motherboard` dan `CPU`. selebihnya terserah pilihan Anda.
 
 
 1. Persiapan hardware

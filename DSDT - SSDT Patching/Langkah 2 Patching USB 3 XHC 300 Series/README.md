@@ -58,14 +58,14 @@ Scope (\_SB.PCI0.XHC.RHUB.HS05)
             }
 ```
 
-> di ganti dengan menambahkan syntax `Return (GUPC (Zero))`
+> di ganti dengan syntax `Return (GUPC (Zero))`
 
 ```
 Scope (\_SB.PCI0.XHC.RHUB.HS05)
         {
             Method (_UPC, 0, NotSerialized)  // _UPC: USB Port Capabilities
             {
-                //jv mendisable port HS05 Mulai: manambah syntax Return (GUPC (Zero)) dan memberi tanda komen pada syntax asli
+                //jv mendisable port HS05 Mulai
                 Return (GUPC (Zero))
                 /*
                 If (LEqual (H5TC, Zero))

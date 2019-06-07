@@ -4,6 +4,8 @@
 <dict>
 	<key>ACPI</key>
 	<dict>
+		<key>AutoMerge</key>
+		<true/>
 		<key>DSDT</key>
 		<dict>
 			<key>Fixes</key>
@@ -96,7 +98,7 @@
 			<string>SSDT-x1_6-HwpLvt.aml</string>
 			<string>SSDT-x1_7-Cpu0Psd.aml</string>
 			<string>SSDT-x1_8-ApPsd.aml</string>
-			<string>SSDT-UIAC-ALL.aml</string>
+			<string>SSDT-3.aml</string>
 		</array>
 	</dict>
 	<key>Boot</key>
@@ -361,27 +363,6 @@
 		<false/>
 		<key>KernelPm</key>
 		<false/>
-		<key>KextsToPatch</key>
-		<array>
-			<dict>
-				<key>Comment</key>
-				<string>https://www.tonymacx86.com/threads/usb-port-limit-patch-for-14-1-14-2-14-3-14-5.268893/</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				QYP/Dw+DlAQAAA==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCI</string>
-				<key>Replace</key>
-				<data>
-				QYP/D5CQkJCQkA==
-				</data>
-			</dict>
-		</array>
 	</dict>
 	<key>RtVariables</key>
 	<dict>
@@ -393,7 +374,7 @@
 		<string>C02726902CDH69F1M</string>
 		<key>ROM</key>
 		<data>
-		aWvkgV76
+		cfG7ksVg
 		</data>
 	</dict>
 	<key>SMBIOS</key>
@@ -409,7 +390,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02911401J9KGQGJC</string>
+		<string>C02953207CDKGQGJC</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -439,16 +420,16 @@
 		<key>ProductName</key>
 		<string>iMac19,2</string>
 		<key>SerialNumber</key>
-		<string>C02YF0TRJWDW</string>
+		<string>C02ZXFYUJWDW</string>
 		<key>SmUUID</key>
-		<string>7F178580-7A16-44AA-9B00-2267B5815EFA</string>
+		<string>919DECFD-8E6F-4A25-8A50-98E9A492C560</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
 		<key>CustomUUID</key>
-		<string>1FC62B76-E337-4A8E-9227-52FCE49495A9</string>
+		<string>19241FC1-02D1-414F-9F11-A0C2F1ABEF9D</string>
 		<key>InjectKexts</key>
 		<string>Yes</string>
 		<key>InjectSystemID</key>

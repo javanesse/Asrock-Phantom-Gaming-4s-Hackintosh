@@ -29,16 +29,19 @@ berguna untuk merging SSDT-3.aml dan SSDT-3-xh_cfsd4.aml
 - DSDT-3.aml adalah copy an dari SSDT-3-xh_cfsd4.aml
 - dengan kata lain, kita patching USB 3 pada SSDT-3.aml tanpa merubah code pada SSDT-3-xh_cfsd4.aml
 
-# 6. Timeout 3
+# 6. Boot Arguments -v
+perintah -v adalah untuk menampilkan booting secara verbose, berguna untuk mendiagnosis error secara visual saat booting. hapus ini bila ingin menampilkan hanya logo Apple.
+
+# 7. Timeout 3
 Fitur ini berguna agar komputer otomatis melanjutkan booting setelah hitungan 3 detik.
 
-# 7. NoEarlyProgress
+# 8. NoEarlyProgress
 kosmetik berguna untuk menyembunyikan tulisan-tulisan yang tidak penting saat melakukan booting pertama kali
 
-# 8. NeverHibernate
+# 9. NeverHibernate
 Seperti kita tahu bahwa Hackintosh tidak support fitur hibernasi, maka dari itu kita nonaktifkan fitur hibernasi dengan mencentang NeverHibernate
 
-# 9.NeverDoRecovery
+# 10.NeverDoRecovery
 fitur ini saya non aktifkan dengan cara mencentang karena tidak berpengaruh secara signifikan. fitur recovery hanya untuk melakukan recovery layaknya di windows yang notabene tidak pernah saya lakukan.
 
 

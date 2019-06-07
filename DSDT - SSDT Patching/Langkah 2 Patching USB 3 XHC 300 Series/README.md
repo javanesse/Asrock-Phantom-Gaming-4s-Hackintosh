@@ -37,6 +37,8 @@ SS08 		| atas depan 			| port usb 3
 - Semua port yang ada di atas yang wajib di buka
 - Semua port **SELAIN* yang ada di atas yang wajib di non aktifkan dengan memberikan syntax `Return (GUPC (Zero))` kemudian hapus/beri tanda komen pada syntax di bawahnya
 
+
+
 contoh, port `HS05` tidak ada di list di atas, sehingga kita wajib menonaktifkan agar port yang lain bisa di baca:
 
 > Kode asli

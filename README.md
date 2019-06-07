@@ -40,7 +40,7 @@ Seperti yang saya utarakan di atas, bahwasannya persiapan hardware sebelum melak
 
 > **KHUSUS** bagi yang pertama kali ingin melakukan instalasi hackintosh, karena pembuatan `Bootable USB` hanya bisa di lakukan melalui MAC OSX, maka dengan sangat menyesal saya katakan saya tidak akan membuat tutorialnya.
 
-Alternatifnya adalah menginstall hackintosh distro, menginstall hackintosh di VMware atau virtualBox, atau paling mudah, buat bootable USB dengan macbook kepunyaan teman
+Alternatifnya adalah menginstall hackintosh distro, menginstall hackintosh di VMware atau virtualBox, atau paling mudah, buat bootable USB dengan macbook kepunyaan teman. atau bisa search di google / youtube
 
 
 Lanjut ke topik,

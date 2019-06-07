@@ -1,4 +1,4 @@
-DSDT ini adalah hasil transpose `config.plist` device properties yang berisi GPU UHD 630 menjadi sebuah DSDT.
+DSDT ini adalah hasil transpose/pemindahan `config.plist` device properties yang berisi GPU UHD 630 menjadi sebuah DSDT.
 
 Untuk menggunakan DSDT ini, di wajibkan menghapus `PciRoot(0x0)/Pci(0x2,0x0)` yang berada pada `config.plist`. gunakan clover configurator untuk mengubah, `clover > device > properties` yang terdapat pada folder EFI
 

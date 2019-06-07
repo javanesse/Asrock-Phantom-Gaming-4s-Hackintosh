@@ -50,6 +50,34 @@ adapun cara membuat `patch` untuk hardware lain, silahkan langsung ke langkah **
 ### 2. Download OS
 ### 3. Membuat bootable USB
 ### 4. Mengatur settingan BIOS
+Seperti kita tahu bahwa settingan BIOS akan berpengaruh pada sukses dan tidaknya sebuah instalasi.
+
+Untuk masuk ke menu BIOS pada **Asrock Phantom Gaming 4s** dapat di lakukan dengan cara memencet tombol DELETE atau F2 pada keyboard.
+
+Settingan:
+Setelah masuk bios pencet tombol F6 untuk dapart masuk ke `Advanced Mode` pada BIOS **Asrock Phantom Gaming 4s**
+
+Kemudian ikuti langkah seperti yang tertera pada gambar di bawah ini.
+
+![Menu Utama](/Images/Asrock%20Bios%20Settings/1.jpg)
+
+![Chipset Configuration](/Images/Asrock%20Bios%20Settings/2.jpg)
+
+![VT-d](/Images/Asrock%20Bios%20Settings/3.jpg)
+
+![Share Memory](/Images/Asrock%20Bios%20Settings/4.jpg)
+
+![USB Configuration](/Images/Asrock%20Bios%20Settings/5.jpg)
+
+![XHCI Hand-Off](/Images/Asrock%20Bios%20Settings/6.jpg)
+
+![CSM](/Images/Asrock%20Bios%20Settings/7.jpg)
+
+![CSM Disabled](/Images/Asrock%20Bios%20Settings/8.jpg)
+
+Setelah ini selesai, maka kita dapat melanjutkan ke proses instalasi.
+
+
 ### 5. Instalasi
 ### 6. Konfigurasi
 ### 7. Target Operasi

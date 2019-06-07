@@ -40,7 +40,8 @@ SS08 		| atas depan 			| port usb 3
 contoh, port `HS06` tidak ada di list di atas, sehingga kita wajib menonaktifkan agar port yang lain bisa di baca:
 
 > Kode asli
-`Scope (\_SB.PCI0.XHC.RHUB.HS05)
+```
+Scope (\_SB.PCI0.XHC.RHUB.HS05)
         {
             Method (_UPC, 0, NotSerialized)  // _UPC: USB Port Capabilities
             {
@@ -53,11 +54,12 @@ contoh, port `HS06` tidak ada di list di atas, sehingga kita wajib menonaktifkan
                     Return (\_SB.UBTC.RUCC (H5CR, One))
                 }
             }
-`
+```
 
 > di ganti dengan menambahkan syntax `Return (GUPC (Zero))`
 
-`Scope (\_SB.PCI0.XHC.RHUB.HS05)
+```
+Scope (\_SB.PCI0.XHC.RHUB.HS05)
         {
             Method (_UPC, 0, NotSerialized)  // _UPC: USB Port Capabilities
             {
@@ -74,4 +76,4 @@ contoh, port `HS06` tidak ada di list di atas, sehingga kita wajib menonaktifkan
                 }
                 */
             }
-`
+```

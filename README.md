@@ -59,28 +59,28 @@ Setelah masuk bios pencet tombol F6 untuk dapart masuk ke `Advanced Mode` pada B
 
 Kemudian ikuti langkah seperti yang tertera pada gambar di bawah ini.
 
-Menu Utama
+#### Menu Utama
 ![Menu Utama](/Images/Asrock%20Bios%20Settings/1.jpg)
 
-Chipset Configuration
+#### Chipset Configuration
 ![Chipset Configuration](/Images/Asrock%20Bios%20Settings/2.jpg)
 
-VT-d
+#### VT-d
 ![VT-d](/Images/Asrock%20Bios%20Settings/3.jpg)
 
-Share Memory
+#### Share Memory
 ![Share Memory](/Images/Asrock%20Bios%20Settings/4.jpg)
 
-USB Configuration
+#### USB Configuration
 ![USB Configuration](/Images/Asrock%20Bios%20Settings/5.jpg)
 
-XHCI Hand-Off
+#### XHCI Hand-Off
 ![XHCI Hand-Off](/Images/Asrock%20Bios%20Settings/6.jpg)
 
-Compability Support Module (CSM)
+#### Compability Support Module (CSM)
 ![CSM](/Images/Asrock%20Bios%20Settings/7.jpg)
 
-CSM Disabled
+#### CSM Disabled
 ![CSM Disabled](/Images/Asrock%20Bios%20Settings/8.jpg)
 
 Setelah settingan ini selesai, lanjutkan save, maka kita dapat melanjutkan ke proses instalasi Mac OSX.

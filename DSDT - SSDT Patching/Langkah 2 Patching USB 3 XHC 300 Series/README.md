@@ -33,6 +33,7 @@ SS03 		| belakang tengah dalam 	| port usb 3
 SS04 		| belakang tengah luar 		| port usb 3
 SS08 		| atas depan 			| port usb 3
 
+> Catatan
 - Semua port yang ada di atas yang wajib di buka
 - Semua port **SELAIN* yang ada di atas yang wajib di non aktifkan dengan memberikan syntax `Return (GUPC (Zero))` kemudian hapus/beri tanda komen pada syntax di bawahnya
 
@@ -51,7 +52,8 @@ contoh, port `HS06` tidak ada di list di atas, sehingga kita wajib menonaktifkan
                 {
                     Return (\_SB.UBTC.RUCC (H5CR, One))
                 }
-            }'
+            }
+`
 
 > di ganti dengan menambahkan syntax `Return (GUPC (Zero))`
 
@@ -71,5 +73,5 @@ contoh, port `HS06` tidak ada di list di atas, sehingga kita wajib menonaktifkan
                     Return (\_SB.UBTC.RUCC (H5CR, One))
                 }
                 */
-            }`
-
+            }
+`

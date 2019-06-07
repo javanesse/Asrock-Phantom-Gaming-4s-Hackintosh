@@ -59,7 +59,7 @@ Setelah masuk bios pencet tombol F6 untuk dapart masuk ke `Advanced Mode` pada B
 
 Kemudian ikuti langkah seperti yang tertera pada gambar di bawah ini.
 
-#### Menu Utama
+#### Versi BIOS P1.2
 ![Menu Utama](/Images/Asrock%20Bios%20Settings/1.jpg)
 
 #### Chipset Configuration

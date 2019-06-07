@@ -22,6 +22,7 @@ Wireless            | TPLINK             | [TL WN781nd v.2](https://www.tp-link.
 Heatsink            | Deepcool           | [Gammax 300](http://www.deepcool.com/product/cpucooler/2013-12/7_481.shtml)
 Power Supply        | Power Up           | [Vector 600](http://power-up.co.id/?view=detail_produk&id=142)
 Casing              | Power Up           | [Raptor 1707](https://www.bukalapak.com/p/komputer/aksesoris-226/aksesoris-lainnya-241/mt3i5k-jual-power-up-silver-strike-1707-black-no-psu)
+Monitor             | Coocaa             | [43 Inch Android TV 1920x1080](https://shopee.co.id/COOCAA-43-Inch-DIGITAL-SMART-ANDROID-LED-FULL-HD-TV-i.62318.1560684187)
 
 adapun yang perlu di perhatikan dari spesifikasi komputer saya di atas **HANYA** `Motherboard` dan `CPU`. selebihnya terserah pilihan Anda.
 

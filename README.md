@@ -12,13 +12,13 @@ Repo ini sendiri boleh di katakan ini adalah repo driver (kext) untuk mac osx kh
 
 Nama                | Merk               | Seri
 --------------------|--------------------|--------------------
-Prosesor            | Intel              | core i7 8700
-Motherboard         | Asrock             | Phantom Gaming 4s
-Ram                 | Team               | T-force Delta 16GB
-Storage             | Sandisk            | SSD Plus 250GB
-Heatsink            | Deepcool           | Gammax 300
+Prosesor            | Intel              | [core i7 8700](https://ark.intel.com/content/www/us/en/ark/products/126686/intel-core-i7-8700-processor-12m-cache-up-to-4-60-ghz.html)
+Motherboard         | Asrock             | [Phantom Gaming 4s](https://www.asrock.com/MB/Intel/Z390%20Phantom%20Gaming%204S/index.asp)
+Ram                 | Team               | [T-force Delta 16GB](https://www.teamgroupinc.com/en/product/delta-rgb-ddr4)
+Storage             | Sandisk            | [SSD Plus 250GB](https://www.sandisk.id/home/ssd/ssd-plus)
+Heatsink            | Deepcool           | [Gammax 300](http://www.deepcool.com/product/cpucooler/2013-12/7_481.shtml)
 Power Supply        | Power Up           | 80+ Bronze 600 watt
-Casing              | Power Up           | Raptor 1707
+Casing              | Power Up           | [Raptor 1707](https://www.bukalapak.com/p/komputer/aksesoris-226/aksesoris-lainnya-241/mt3i5k-jual-power-up-silver-strike-1707-black-no-psu)
 
 adapun yang perlu di perhatikan dari spesifikasi komputer saya di atas **HANYA** `Motherboard` dan `CPU`. selebihnya terserah pilihan Anda.
 

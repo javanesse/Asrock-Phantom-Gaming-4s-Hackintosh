@@ -594,9 +594,7 @@ DefinitionBlock ("SSDT-3", "SSDT", 2, "INTEL", "xh_cfsd4", 0x00000000)
         {
             Method (_UPC, 0, NotSerialized)  // _UPC: USB Port Capabilities
             {
-                Return (GUPC (Zero))
-                //jv disabled: Mengganti kode dalam komen di bawah menjadi Return (GUPC (Zero))
-                /*
+                //jv add usb 2 di port usb 3 Belakang tengah luar
                 If (LEqual (H3TC, Zero))
                 {
                     Return (GUPC (H3CN))
@@ -605,7 +603,6 @@ DefinitionBlock ("SSDT-3", "SSDT", 2, "INTEL", "xh_cfsd4", 0x00000000)
                 {
                     Return (\_SB.UBTC.RUCC (H3CR, One))
                 }
-                */
             }
 
             Method (_PLD, 0, NotSerialized)  // _PLD: Physical Location of Device
@@ -713,9 +710,7 @@ DefinitionBlock ("SSDT-3", "SSDT", 2, "INTEL", "xh_cfsd4", 0x00000000)
         {
             Method (_UPC, 0, NotSerialized)  // _UPC: USB Port Capabilities
             {
-                Return (GUPC (Zero))
-                //jv disabled: Mengganti kode dalam komen di bawah menjadi Return (GUPC (Zero))
-                /*
+                //jv add usb 2 di port usb 3 belakang tengah dalam
                 If (LEqual (H4TC, Zero))
                 {
                     Return (GUPC (H4CN))
@@ -724,7 +719,6 @@ DefinitionBlock ("SSDT-3", "SSDT", 2, "INTEL", "xh_cfsd4", 0x00000000)
                 {
                     Return (\_SB.UBTC.RUCC (H4CR, One))
                 }
-                */
             }
 
             Method (_PLD, 0, NotSerialized)  // _PLD: Physical Location of Device
@@ -1070,9 +1064,7 @@ DefinitionBlock ("SSDT-3", "SSDT", 2, "INTEL", "xh_cfsd4", 0x00000000)
         {
             Method (_UPC, 0, NotSerialized)  // _UPC: USB Port Capabilities
             {
-                Return (GUPC (Zero))
-                //jv disabled: Mengganti kode dalam komen di bawah menjadi Return (GUPC (Zero))
-                /*
+                //jv add usb 2 di port usb 3 belakang atas dalam
                 If (LEqual (H7TC, Zero))
                 {
                     Return (GUPC (H7CN))
@@ -1081,7 +1073,6 @@ DefinitionBlock ("SSDT-3", "SSDT", 2, "INTEL", "xh_cfsd4", 0x00000000)
                 {
                     Return (\_SB.UBTC.RUCC (H7CR, One))
                 }
-                */
             }
 
             Method (_PLD, 0, NotSerialized)  // _PLD: Physical Location of Device
@@ -1189,9 +1180,7 @@ DefinitionBlock ("SSDT-3", "SSDT", 2, "INTEL", "xh_cfsd4", 0x00000000)
         {
             Method (_UPC, 0, NotSerialized)  // _UPC: USB Port Capabilities
             {
-                Return (GUPC (Zero))
-                //jv disabled: Mengganti kode dalam komen di bawah menjadi Return (GUPC (Zero))
-                /*
+                //jv add usb 2 di port usb 3 belakang atas luar
                 If (LEqual (H8TC, Zero))
                 {
                     Return (GUPC (H8CN))
@@ -1200,7 +1189,6 @@ DefinitionBlock ("SSDT-3", "SSDT", 2, "INTEL", "xh_cfsd4", 0x00000000)
                 {
                     Return (\_SB.UBTC.RUCC (H8CR, One))
                 }
-                */
             }
 
             Method (_PLD, 0, NotSerialized)  // _PLD: Physical Location of Device
@@ -1778,9 +1766,7 @@ DefinitionBlock ("SSDT-3", "SSDT", 2, "INTEL", "xh_cfsd4", 0x00000000)
         {
             Method (_UPC, 0, NotSerialized)  // _UPC: USB Port Capabilities
             {
-                Return (GUPC (Zero))
-                //jv disabled: Mengganti kode dalam komen di bawah menjadi Return (GUPC (Zero))
-                /*
+                //jv add usb 2 di port usb 3 atas depan
                 If (LEqual (HDTC, Zero))
                 {
                     Return (GUPC (HDCN))
@@ -1789,7 +1775,6 @@ DefinitionBlock ("SSDT-3", "SSDT", 2, "INTEL", "xh_cfsd4", 0x00000000)
                 {
                     Return (\_SB.UBTC.RUCC (HDCR, One))
                 }
-                */
             }
 
             Method (_PLD, 0, NotSerialized)  // _PLD: Physical Location of Device

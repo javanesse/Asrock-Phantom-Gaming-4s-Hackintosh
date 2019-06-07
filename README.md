@@ -33,7 +33,7 @@ adapun yang perlu di perhatikan dari spesifikasi komputer saya di atas **HANYA**
 5. Instalasi
 6. Konfigurasi
 7. Target Operasi dan Checklist
-8. Troubleshoot dan patching
+8. Troubleshoot dan Patching
 
 ### 1. Persiapan hardware
 Seperti yang saya utarakan di atas, bahwasannya persiapan hardware sebelum melakukan instalasi ini, kita fokus pada `Motherboard` dan `CPU`. Selebihnya terserah pilihan Anda.
@@ -88,7 +88,7 @@ Setelah settingan ini selesai, lanjutkan save, maka kita dapat melanjutkan ke pr
 
 ### 5. Instalasi
 ### 6. Konfigurasi
-### 7. Target Operasi
+### 7. Target Operasi dan Checklist
 Hackintosh boleh di katakan berhasil apabila sistem operasi Mac OSX yang kita install stabil, tanpa kendala software maupun hardware. untuk itu tidak ada salahnya kita membuat sebuah checklist untuk menentukan apa saja yang perlu di lakukan agar dapat menghasilkan sistem operasi yang stabil.
 
 Daftar Checklist:
@@ -130,5 +130,5 @@ Daftar Checklist:
       - Screen brightness control. (Khusus Laptop)
       - iMessage/FaceTime.
 
-### 8. Troubleshoot dan patching
+### 8. Troubleshoot dan Patching
 

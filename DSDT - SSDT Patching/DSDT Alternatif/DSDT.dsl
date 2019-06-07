@@ -4713,6 +4713,18 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
             Device (LPCB)
             {
                 Name (_ADR, 0x001F0000)  // _ADR: Address
+                //jv add LPCB property begin
+                Method (_DSM, 4, NotSerialized)
+                {
+		            If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }
+		            Return (Package ()
+		            {
+			            "model", Buffer () { "Z390 Chipset LPC/eSPI Controller" },
+			            "device_type", Buffer () { "ISA bridge" },
+			            "AAPL,slot-name", Buffer () { "Internal" },
+		            })
+	            }
+                //jv add LPCB property end
                 Method (SPTS, 1, NotSerialized)
                 {
                     Store (One, SLPX)
@@ -10729,6 +10741,18 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
             Device (RP19)
             {
                 Name (_ADR, 0x001B0000)  // _ADR: Address
+                //jv add RP19 property begin
+                Method (_DSM, 4, NotSerialized)
+	            {
+		            If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }
+		            Return (Package ()
+		            {
+			            "model", Buffer () { "Cannon Lake PCH PCI Express Root Port #19" },
+			            "device_type", Buffer () { "PCI bridge" },
+			            "AAPL,slot-name", Buffer () { "Internal" },
+		            })
+	            }
+                //jv add RP19 property end
                 OperationRegion (PXCS, PCI_Config, Zero, 0x0480)
                 Field (PXCS, AnyAcc, NoLock, Preserve)
                 {
@@ -12402,6 +12426,18 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
             Device (MCHC)
             {
                 Name (_ADR, Zero)
+                //jv add mchc buffer from hackintool begin
+                Method (_DSM, 4, NotSerialized)
+	            {
+		            If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }
+		            Return (Package ()
+		            {
+			            "model", Buffer () { "8th Gen Core Processor Host Bridge/DRAM Registers" },
+			            "device_type", Buffer () { "Host bridge" },
+			            "AAPL,slot-name", Buffer () { "Internal" },
+		            })
+	            }
+                //jv add mchc buffer from hackintool end
             }
         }
     }
@@ -16801,6 +16837,18 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
         Device (SBUS)
         {
             Name (_ADR, 0x001F0004)  // _ADR: Address
+            //jv add sbus property end
+            Method (_DSM, 4, NotSerialized)
+	        {
+		        If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }
+		        Return (Package ()
+		        {
+			        "model", Buffer () { "Cannon Lake PCH SMBus Controller" },
+			        "device_type", Buffer () { "SMBus" },
+			        "AAPL,slot-name", Buffer () { "Internal" },
+		        })
+	        }
+            //jv add sbus property end
             Method (XDSM, 4, Serialized)  // _DSM: Device-Specific Method
             {
                 If (PCIC (Arg0))
@@ -17071,6 +17119,18 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
             Device (GLAN)
             {
                 Name (_ADR, 0x001F0006)  // _ADR: Address
+                //jv add GLAN Property begin
+                Method (_DSM, 4, NotSerialized)
+	            {
+		            If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }
+		            Return (Package ()
+		            {
+			            "model", Buffer () { "Ethernet Connection (7) I219-V" },
+			            "device_type", Buffer () { "Ethernet controller" },
+			            "AAPL,slot-name", Buffer () { "Internal" },
+		            })
+	            }
+                //jv add GLAN Property end
                 Name (_S0W, 0x03)  // _S0W: S0 Device Wake State
                 Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
                 {
@@ -17089,6 +17149,18 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
         Device (XHC)
         {
             Name (_ADR, 0x00140000)  // _ADR: Address
+            //jv add XHC property begin
+            Method (_DSM, 4, NotSerialized)
+	        {
+		        If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }
+		        Return (Package ()
+		        {
+			        "model", Buffer () { "Cannon Lake PCH USB 3.1 xHCI Host Controller" },
+			        "device_type", Buffer () { "USB controller" },
+			        "AAPL,slot-name", Buffer () { "Internal" },
+		        })
+	        }
+            //jv add XHC property end
             OperationRegion (XPRT, PCI_Config, Zero, 0x0100)
             Field (XPRT, AnyAcc, NoLock, Preserve)
             {
@@ -17728,6 +17800,19 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
         Device (HDEF)
         {
             Name (_ADR, 0x001F0003)  // _ADR: Address
+            //jv add layout id begin
+            Method (_DSM, 4, NotSerialized)
+            	{
+		        If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }
+		        Return (Package ()
+		        {
+                    "model", Buffer () { "Cannon Lake PCH cAVS" },
+                    "device_type", Buffer () { "Audio device" },
+                    "AAPL,slot-name", Buffer () { "Internal" },
+                    "layout-id", Buffer () { 0x01, 0x00, 0x00, 0x00  },
+		        })
+	        }
+            //jv add layout id end
             OperationRegion (HDAR, PCI_Config, Zero, 0x0100)
             Field (HDAR, WordAcc, NoLock, Preserve)
             {
@@ -18275,6 +18360,18 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
         Device (SATA)
         {
             Name (_ADR, 0x00170000)  // _ADR: Address
+            //jv add SATA property begin
+            Method (_DSM, 4, NotSerialized)
+	        {
+		        If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }
+		        Return (Package ()
+		        {
+			        "model", Buffer () { "Cannon Lake PCH SATA AHCI Controller" },
+			        "device_type", Buffer () { "SATA controller" },
+			        "AAPL,slot-name", Buffer () { "Internal" },
+		        })
+	        }
+            //jv add SATA property end
             Method (XDSM, 4, Serialized)  // _DSM: Device-Specific Method
             {
                 If (PCIC (Arg0))
@@ -21489,6 +21586,18 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
         Device (IMEI)
         {
             Name (_ADR, 0x00160000)  // _ADR: Address
+            //jv add IMEI property begin
+            Method (_DSM, 4, NotSerialized)
+	        {
+		        If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }
+		        Return (Package ()
+		        {
+			        "model", Buffer () { "Cannon Lake PCH HECI/IMEI Controller" },
+			        "device_type", Buffer () { "Communication controller" },
+			        "AAPL,slot-name", Buffer () { "Internal" },
+		        })
+	        }
+            //jv add IMEI property end
             Method (XDSM, 4, NotSerialized)  // _DSM: Device-Specific Method
             {
                 If (PCIC (Arg0))

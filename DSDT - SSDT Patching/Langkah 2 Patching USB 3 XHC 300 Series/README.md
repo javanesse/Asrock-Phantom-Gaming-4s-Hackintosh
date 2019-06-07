@@ -5,9 +5,9 @@ Membuat Patching USB 3 jenis XHC 300 Series yang ada pada **Asrock Phantom Gamin
 [Source Tutorial](https://www.tonymacx86.com/threads/asus-100-series-and-later-custom-ssdt-for-xhci-usb-port-control.253981/)
 
 
-Discovered ports
+## Discovered ports in Asrock Phantom Gaming 4s
 
-# Discover Menggunakan flashdisk USB 2
+### Discover Menggunakan flashdisk USB 2
 
 Nama Port	| Posisi port			| Jenis port secara Visual
 ----------------|-------------------------------|-------------------------
@@ -23,7 +23,7 @@ hs13 		| atas depan 			| port usb 3
 
 ----
 
-# Discover Menggunakan HDD USB 3
+### Discover Menggunakan HDD USB 3
 
 Nama Port	| Posisi port			| Jenis port secara Visual
 ----------------|-------------------------------|-------------------------
@@ -33,7 +33,7 @@ SS03 		| belakang tengah dalam 	| port usb 3
 SS04 		| belakang tengah luar 		| port usb 3
 SS08 		| atas depan 			| port usb 3
 
-> Catatan
+#### Catatan
 - Semua port yang ada di atas yang wajib di buka
 - Semua port **SELAIN* yang ada di atas yang wajib di non aktifkan dengan memberikan syntax `Return (GUPC (Zero))` kemudian hapus/beri tanda komen pada syntax di bawahnya
 

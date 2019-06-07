@@ -61,8 +61,10 @@ Daftar Checklist:
 #### 2. CPU & Power management ####
       - Cek apakah baik CPU atau GPU Power management berjalan dengan baik.
             Cara Cek:
-                  - CPU: Buka IOReg, cari X86PluginPlatform, jika ada, CPU PM sukses, jika tidak ada CPU PM gagal
-                  - GPU: Buka IOReg, cari AGP, atau AGPM, jika ada, GPU PM sukses, jika tidak ada GPU PM gagal
+                  - CPU: Buka IOReg, cari X86PluginPlatform
+                        jika ada, CPU PM sukses, jika tidak ada CPU PM gagal
+                  - GPU: Buka IOReg, cari AGP, atau AGPM
+                        jika ada, GPU PM sukses, jika tidak ada GPU PM gagal
       - Sleep/Wake/Shutdown/Restart works.
 #### 3. VGA Grafis ####
       - QE/CI graphic.
@@ -77,7 +79,7 @@ Daftar Checklist:
       - Wifi.
       - Webcam.
       - Keyboard dan function keys.
-      - Keyboard, keyboard backlight (Lampu keyboard),trackpad dan function keys. (Khusus Laptop)
+      - Keyboard, keyboard backlight,trackpad dan Fn keys. (Khusus Laptop)
       - Sata devices.
       - NVMe devices.
       - Optional Builtin cardreader and Webcam.
@@ -86,7 +88,7 @@ Daftar Checklist:
       - Audio after sleep.
 #### 6. Miscellaneous ####
       - Battery status. (Khusus Laptop)
-      - Screen brightness control in Display Configuratin and through keyboard function keys. (Khusus Laptop)
+      - Screen brightness control. (Khusus Laptop)
       - iMessage/FaceTime.
 
 ### 8. Troubleshoot dan patching

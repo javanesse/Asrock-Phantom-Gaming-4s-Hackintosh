@@ -5,6 +5,8 @@ Langkah membuat hackintosh pada komputer yang menggunakan Asrock Phantom Gaming 
 
 Hal yang di perlukan dalam instalasi Hackintosh pada dasarnya sama dengan instalasi microsoft windows pada umumnya, hanya saja produsen hardware tidak meyediakan driver (kexts) untuk sistem operasi Mac OSX.
 
+Repo ini sendiri boleh di katakan ini adalah repo driver (kext) untuk mac osx khusus hardware-hardware yang ada pada spesifikasi. dengan kata lain, jika spesifikasi komputer Anda kebetulan sama dengan komputer ini, maka langkah instalasi hackintosh Anda akan semnakin mudah karena sudah tersedia driver (kext) untuk hardware jenis ini.
+
 
 1. Persiapan hardware
 2. Download OS

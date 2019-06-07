@@ -18,6 +18,7 @@ Prosesor            | Intel              | [core i7 8700](https://ark.intel.com/
 Motherboard         | Asrock             | [Phantom Gaming 4s](https://www.asrock.com/MB/Intel/Z390%20Phantom%20Gaming%204S/index.asp)
 Ram                 | Team               | [T-force Delta 16GB](https://www.teamgroupinc.com/en/product/delta-rgb-ddr4)
 Storage             | Sandisk            | [SSD Plus 250GB](https://www.sandisk.id/home/ssd/ssd-plus)
+Wireless            | TPLINK             | [TL WN781nd v.2.2](https://www.tp-link.com/id/home-networking/adapter/tl-wn781nd/)
 Heatsink            | Deepcool           | [Gammax 300](http://www.deepcool.com/product/cpucooler/2013-12/7_481.shtml)
 Power Supply        | Power Up           | 80+ Bronze 600 watt
 Casing              | Power Up           | [Raptor 1707](https://www.bukalapak.com/p/komputer/aksesoris-226/aksesoris-lainnya-241/mt3i5k-jual-power-up-silver-strike-1707-black-no-psu)

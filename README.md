@@ -22,7 +22,7 @@ Casing              | Power Up           | [Raptor 1707](https://www.bukalapak.c
 
 adapun yang perlu di perhatikan dari spesifikasi komputer saya di atas **HANYA** `Motherboard` dan `CPU`. selebihnya terserah pilihan Anda.
 
-## Persiapan
+## Langkah Instalasi
 1. Persiapan hardware
 2. Download OS
 3. Membuat bootable USB
@@ -31,8 +31,17 @@ adapun yang perlu di perhatikan dari spesifikasi komputer saya di atas **HANYA**
 6. Konfigurasi
 7. Troubleshoot dan patching
 
-## Cara Install
-### Cara menggunakan tanpa harus membuat patch dari awal
-1. download semua file
-2. Timpa folder EFI pada folder `EFI` di komputer kalian
-3. Baca Masing-masing README.md
+### 1. Persiapan hardware
+Seperti yang saya utarakan di atas, bahwasannya persiapan hardware sebelum melakukan instalasi ini, kita fokus pada `Motherboard` dan `CPU`. Selebihnya terserah pilihan Anda.
+
+> **KHUSUS** bagi yang pertama kali ingin melakukan instalasi hackintosh, karena pembuatan `Bootable USB` hanya bisa di lakukan melalui MAC OSX, maka dengan sangat menyesal saya katakan saya tidak akan membuat tutorialnya.
+
+Alternatifnya adalah menginstall hackintosh distro, menginstall hackintosh di VMware atau virtualBox, atau paling mudah, buat bootable USB dengan macbook kepunyaan teman
+
+
+Lanjut ke topik,
+Untuk patching hardware lain selain **Asrock Phantom Gaming 4s**, metode yang di gunakan adalah sama persis, hanya saja kita butuh `patch` yang berbeda.
+adapun cara membuat `patch` untuk hardware lain, silahkan langsung ke langkah **#7. Troubleshoot dan patching.**
+
+### 2. Download OS
+

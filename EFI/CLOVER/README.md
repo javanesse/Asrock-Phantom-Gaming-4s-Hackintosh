@@ -1,3 +1,5 @@
+# Hal Apa saja yang terdapat pada config.plist
+
 ## 1. Fix AsRock Z390 BIOS DSDT Device(RTC) bug. If BIOS > 1.2
 Fix AsRock Z390 BIOS DSDT Device(RTC) bug. If BIOS > 1.2 pada clover berguna untuk memperbaiki Real Time Clock yang merupakan bug pada mortherboard Asrock z390 mulai bios 1.2
 
@@ -20,8 +22,27 @@ Cara Mengetahui Power Management GPU bisa di cek melalui aplikasi `IoReg`
 Untuk me-load SSDT yang telah kita buat, maka kita perlu memasukkannya ke dalam list ini.
 Sort order berisi seluruh `SSDT` yang ada pada partisi `EFI`
 
-# 5. com.apple.driver.usb.AppleUSBXHCI
-patch ini untuk mendeteksi USB 3
+# 5. Automerge
+berguna untuk merging SSDT-3.aml dan SSDT-3-xh_cfsd4.aml
+
+- faktanya adalah,SSDT-3.aml merupakan SSDT-3-xh_cfsd4.aml yang telah di pilah untuk mengetahui USB 3 mana yang berjalan.
+- DSDT-3.aml adalah copy an dari SSDT-3-xh_cfsd4.aml
+- dengan kata lain, kita patching USB 3 pada SSDT-3.aml tanpa merubah code pada SSDT-3-xh_cfsd4.aml
+
+# 6. Boot Arguments -v
+perintah -v adalah untuk menampilkan booting secara verbose, berguna untuk mendiagnosis error secara visual saat booting. hapus ini bila ingin menampilkan hanya logo Apple.
+
+# 7. Timeout 3
+Fitur ini berguna agar komputer otomatis melanjutkan booting setelah hitungan 3 detik.
+
+# 8. NoEarlyProgress
+kosmetik berguna untuk menyembunyikan tulisan-tulisan yang tidak penting saat melakukan booting pertama kali
+
+# 9. NeverHibernate
+Seperti kita tahu bahwa Hackintosh tidak support fitur hibernasi, maka dari itu kita nonaktifkan fitur hibernasi dengan mencentang NeverHibernate
+
+# 10.NeverDoRecovery
+fitur ini saya non aktifkan dengan cara mencentang karena tidak berpengaruh secara signifikan. fitur recovery hanya untuk melakukan recovery layaknya di windows yang notabene tidak pernah saya lakukan.
 
 
 Selebihnya hanyalah kosmetik

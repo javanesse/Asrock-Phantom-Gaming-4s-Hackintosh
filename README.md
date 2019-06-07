@@ -56,12 +56,15 @@ Daftar Checklist:
 
 #### 1. Instalasi ####
       - Install clover EFI boot loader.
-      - Install UEFI Drivers (like HFSPlus.EFI).
-      - Install kexts (FakeSMC, optionally NullCPUPM).
+      - Install UEFI Drivers (seperti AptioFix).
+      - Install kexts (FakeSMC, LILU).
 #### 2. CPU & Power management ####
-      - Power management work? For both CPU & iGPU. Use ssdtGen or xcpm.
+      - Cek apakah baik CPU atau GPU Power management berjalan dengan baik.
+            Cara Cek:
+                  - CPU: Buka IOReg, cari X86PluginPlatform, jika ada, CPU PM sukses, jika tidak ada CPU PM gagal
+                  - GPU: Buka IOReg, cari AGP, atau AGPM, jika ada, GPU PM sukses, jika tidak ada GPU PM gagal
       - Sleep/Wake/Shutdown/Restart works.
-#### 3. Graphics ####
+#### 3. VGA Grafis ####
       - QE/CI graphic.
       - Switchable graphics.
       - Graphic External ports (HDMI, DP, VGA).
@@ -70,20 +73,20 @@ Daftar Checklist:
 #### 4. IO devices ####
       - USB ports.
       - Bluetooth.
-      - Ethernet.
+      - Ethernet/LAN.
       - Wifi.
-      - Webcam device.
-      - Keyboard and trackpad & function keys. Use VoodooPS2 or ElanTouchPad. May need custom key binding.
+      - Webcam.
+      - Keyboard dan function keys.
+      - Keyboard, keyboard backlight (Lampu keyboard),trackpad dan function keys. (Khusus Laptop)
       - Sata devices.
       - NVMe devices.
       - Optional Builtin cardreader and Webcam.
 #### 5. Audio ####
-      - Audio work: builtin Speaker, mic & external lines.
+      - Audio work: builtin Speaker, mic, Audio HDMI & external lines.
       - Audio after sleep.
 #### 6. Miscellaneous ####
-      - Battery status.
-      - Screen brightness control in Display Configuratin and through keyboard function keys.
-      - Keyboard backlight.
+      - Battery status. (Khusus Laptop)
+      - Screen brightness control in Display Configuratin and through keyboard function keys. (Khusus Laptop)
       - iMessage/FaceTime.
 
 ### 8. Troubleshoot dan patching

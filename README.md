@@ -55,17 +55,17 @@ Hackintosh boleh di katakan berhasil apabila sistem operasi Mac OSX yang kita in
 Daftar Checklist:
 Instalasi
 1. Install clover EFI boot loader.
-  * Install UEFI Drivers (like HFSPlus.EFI).
-  * Install kexts (FakeSMC, optionally NullCPUPM).
+  1. Install UEFI Drivers (like HFSPlus.EFI).
+  1. Install kexts (FakeSMC, optionally NullCPUPM).
 2. CPU & Power management
-  * Power management work? For both CPU & iGPU. Use ssdtGen or xcpm.
-  * Sleep/Wake/Shutdown/Restart works.
+  2. Power management work? For both CPU & iGPU. Use ssdtGen or xcpm.
+  2. Sleep/Wake/Shutdown/Restart works.
 3. Graphics
-  * QE/CI graphic.
-  * Switchable graphics.
-  * Graphic External ports (HDMI, DP, VGA).
-  * Fix boot glitches.
-  * Retina / HiDPI scaled resolutions.
+  3. QE/CI graphic.
+  3. Switchable graphics.
+  3. Graphic External ports (HDMI, DP, VGA).
+  3. Fix boot glitches.
+  3. Retina / HiDPI scaled resolutions.
 4. IO devices
   * USB ports.
   * Bluetooth.

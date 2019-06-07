@@ -53,37 +53,38 @@ adapun cara membuat `patch` untuk hardware lain, silahkan langsung ke langkah **
 Hackintosh boleh di katakan berhasil apabila sistem operasi Mac OSX yang kita install stabil, tanpa kendala software maupun hardware. untuk itu tidak ada salahnya kita membuat sebuah checklist untuk menentukan apa saja yang perlu di lakukan agar dapat menghasilkan sistem operasi yang stabil.
 
 Daftar Checklist:
-Instalasi
-1. Install clover EFI boot loader.
-  - Install UEFI Drivers (like HFSPlus.EFI).
-  - Install kexts (FakeSMC, optionally NullCPUPM).
-2. CPU & Power management
-  - Power management work? For both CPU & iGPU. Use ssdtGen or xcpm.
-  - Sleep/Wake/Shutdown/Restart works.
-3. Graphics
-  - QE/CI graphic.
-  - Switchable graphics.
-  - Graphic External ports (HDMI, DP, VGA).
-  - Fix boot glitches.
-  - Retina / HiDPI scaled resolutions.
-4. IO devices
-  * USB ports.
-  * Bluetooth.
-  * Ethernet.
-  * Wifi.
-  * Webcam device.
-  * Keyboard and trackpad & function keys. Use VoodooPS2 or ElanTouchPad. May need custom key binding.
-  * Sata devices.
-  * NVMe devices.
-  * Optional Builtin cardreader and Webcam.
-5. Audio
-  * Audio work: builtin Speaker, mic & external lines.
-  * Audio after sleep.
-6. Miscellaneous
-  * Battery status.
-  * Screen brightness control in Display Configuratin and through keyboard function keys.
-  * Keyboard backlight.
-  * iMessage/FaceTime.
+
+#### 1. Instalasi ####
+      - Install clover EFI boot loader.
+      - Install UEFI Drivers (like HFSPlus.EFI).
+      - Install kexts (FakeSMC, optionally NullCPUPM).
+#### 2. CPU & Power management ####
+      - Power management work? For both CPU & iGPU. Use ssdtGen or xcpm.
+      - Sleep/Wake/Shutdown/Restart works.
+#### 3. Graphics ####
+      - QE/CI graphic.
+      - Switchable graphics.
+      - Graphic External ports (HDMI, DP, VGA).
+      - Fix boot glitches.
+      - Retina / HiDPI scaled resolutions.
+#### 4. IO devices ####
+      - USB ports.
+      - Bluetooth.
+      - Ethernet.
+      - Wifi.
+      - Webcam device.
+      - Keyboard and trackpad & function keys. Use VoodooPS2 or ElanTouchPad. May need custom key binding.
+      - Sata devices.
+      - NVMe devices.
+      - Optional Builtin cardreader and Webcam.
+#### 5. Audio ####
+      - Audio work: builtin Speaker, mic & external lines.
+      - Audio after sleep.
+#### 6. Miscellaneous ####
+      - Battery status.
+      - Screen brightness control in Display Configuratin and through keyboard function keys.
+      - Keyboard backlight.
+      - iMessage/FaceTime.
 
 ### 8. Troubleshoot dan patching
 

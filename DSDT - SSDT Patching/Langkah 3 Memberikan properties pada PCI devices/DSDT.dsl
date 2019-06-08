@@ -4557,21 +4557,23 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                         Return (Package()
                         {
                             "AAPL,slot-name", Buffer () { "Internal" },
-                            "enable-hdmi20", Buffer () { 0x01, 0x00, 0x00, 0x00 },
+                            "enable-hdmi20", Buffer () { 0x01, 0x00, 0x00, 0x00 }, //Enable pixel clock patch for 4K support
                             "AAPL,GfxYTile", Buffer () { 0x01, 0x00, 0x00, 0x00 },
-                            "framebuffer-patch-enable", Buffer () { 0x01, 0x00, 0x00, 0x00 },
                             "AAPL,ig-platform-id", Buffer () { 0x07, 0x00, 0x9B, 0x3E },
-                            "model", Buffer () { "UHD Graphics 630" },
-                            "disable-external-gpu", Buffer () { 0x01, 0x00, 0x00, 0x00 },
-                            "framebuffer-unifiedmem", Buffer () { 0x00, 0x00, 0x00, 0x80 },
+                            "model", Buffer () { "UHD Graphics 630" }, // GPU Name
+                            "disable-external-gpu", Buffer () { 0x01, 0x00, 0x00, 0x00 }, //Disabling eGPU
                             "hda-gfx", Buffer () { "onboard-1" },
                             "device_type", Buffer () { "VGA compatible controller" },
                             "device-id", Buffer () { 0x9B, 0x3E, 0x00, 0x00, 0x00 },
+                            "framebuffer-patch-enable", Buffer () { 0x01, 0x00, 0x00, 0x00 },
                             "framebuffer-con0-enable", Buffer () { 0x01, 0x00, 0x00, 0x00 },
+                            "framebuffer-con0-type", Buffer () { 0x00, 0x08, 0x00, 0x00 }, // Fix HDMI port was listed as a DisplayPort
                             "framebuffer-con0-alldata", Buffer () { 0x02, 0x02, 0x0A, 0x00, 0x00, 0x08, 0x00, 0x00, 0xC7, 0x03, 0x00, 0x00, 0x03, 0x04, 0x08, 0x00, 0x00, 0x08, 0x00, 0x00, 0xC7, 0x03, 0x00, 0x00, 0xFF, 0x01, 0x09, 0x00, 0x00, 0x04, 0x00, 0x00, 0xC7, 0x03, 0x00, 0x00  },
-                            "framebuffer-fbmem", Buffer () { 0x00, 0x00, 0x00, 0x90, 0x00 },
+                            "framebuffer-unifiedmem", Buffer () { 0x00, 0x00, 0x00, 0x80 }, //Setting higher VRAM for 4K users who experience graphical glitches
+                            "framebuffer-stolenmem", Buffer () { 0x00, 0x00, 0x30, 0x01 }, //Setting DVMT for those who can't set it above 32 MB in BIOS (framebuffer-stolenmem / framebuffer-fbmem)
+                            "framebuffer-fbmem", Buffer () { 0x00, 0x00, 0x00, 0x90, 0x00 }, //Setting DVMT for those who can't set it above 32 MB in BIOS (framebuffer-stolenmem / framebuffer-fbmem)
                             "framebuffer-portcount", Buffer () { 0x01, 0x00, 0x00, 0x00 },
-                            "framebuffer-stolenmem", Buffer () { 0x00, 0x00, 0x30, 0x01 },
+                            "framebuffer-pipecount", Buffer () { 0x01, 0x00, 0x00, 0x00 },
                         })
                     }
                 }

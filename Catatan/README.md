@@ -65,4 +65,4 @@ To display the values, including the SmUUID and other IDs stored there:
 
 ---
 
-[Kembali ke menu utama](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh)
+[Kembali ke menu utama](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh#8-troubleshoot-dan-patching)

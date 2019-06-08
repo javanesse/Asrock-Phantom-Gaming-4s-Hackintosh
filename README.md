@@ -58,11 +58,11 @@ File Mac OSX Mojave 10.14.5 yang saya download adalah menggunakan [torrent](http
 ### 3. Membuat bootable USB
 Membuat bootable USB hackintosh ini terdiri dari beberapa tahap meliputi
 
-  #### A. Membuat Bootable USB itu sendiri
+##### 3a. Membuat Bootable USB itu sendiri
       
-  #### B. Install Bootloader
+##### 3b. Install Bootloader
       
-  #### C. Copy patch kedalam bootloader
+##### 3c. Copy patch kedalam bootloader
       
 ### 4. Mengatur settingan BIOS
 Seperti kita tahu bahwa settingan BIOS akan berpengaruh pada sukses dan tidaknya sebuah instalasi.

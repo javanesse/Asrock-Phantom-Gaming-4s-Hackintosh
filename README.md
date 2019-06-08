@@ -29,14 +29,14 @@ Monitor             | Coocaa             | [43 Inch Android TV 1920x1080](https:
 adapun yang perlu di perhatikan dari spesifikasi komputer saya di atas **HANYA** `Motherboard` dan `CPU`. selebihnya terserah pilihan Anda.
 
 ## Langkah Instalasi
-1. Persiapan hardware
-2. Download OS
-3. Membuat bootable USB
-4. Mengatur settingan BIOS
-5. Instalasi
-6. Konfigurasi
-7. Target Operasi dan Checklist
-8. Troubleshoot dan Patching
+1. [Persiapan hardware](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh#1-persiapan-hardware)
+2. [Download OS](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh#2-download-os)
+3. [Membuat bootable USB](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh#3-membuat-bootable-usb)
+4. [Mengatur settingan BIOS](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh#4-mengatur-settingan-bios)
+5. [Instalasi](#5-instalasi)
+6. [Konfigurasi](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh#6-konfigurasi)
+7. [Target Operasi dan Checklist](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh#7-target-operasi-dan-checklist)
+8. [Troubleshoot dan Patching](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh#8-troubleshoot-dan-patching)
 
 ### 1. Persiapan hardware
 Seperti yang saya utarakan di atas, bahwasannya persiapan hardware sebelum melakukan instalasi ini, kita fokus pada `Motherboard` dan `CPU`. Selebihnya terserah pilihan Anda.

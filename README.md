@@ -134,4 +134,5 @@ Daftar Checklist:
       - iMessage/FaceTime.
 
 ### 8. Troubleshoot dan Patching
+- [Patch Lainnya](/Catatan/README.md)
 

@@ -1,3 +1,8 @@
+Run Apps from Anywhere is now missing from SysPrefs -> Security & Privacy -> General:
+sudo spctl --master-disable
+
+---
+
 Modifier keys keyboard:
 control = command
 option =option
@@ -22,5 +27,24 @@ sudo pmset -a standby 0
 sudo pmset -a autopoweroff 0
 
 https://www.tonymacx86.com/threads/guide-native-power-management-for-laptops.175801/
+
+---
+
+Rebuild kernel cache
+u must boot without cache using -f -F bootarg
+
+sudo kextcache -i /
+
+---
+
+reset NVRAM
+To clear the values:
+sudo nvram -c
+
+To display the values:
+sudo nvram -p
+
+To display the values, including the SmUUID and other IDs stored there:
+sudo nvram -x -p
 
 ---

@@ -41,6 +41,8 @@ adapun yang perlu di perhatikan dari spesifikasi komputer saya di atas **HANYA**
 ### 1. Persiapan hardware
 Seperti yang saya utarakan di atas, bahwasannya persiapan hardware sebelum melakukan instalasi ini, kita fokus pada `Motherboard` dan `CPU`. Selebihnya terserah pilihan Anda.
 
+Dan tentu saja sebuah USB Flashdisk minimal berukuran 8GB untuk membuat file instalasi.
+
 > **KHUSUS** bagi yang pertama kali ingin melakukan instalasi hackintosh, karena pembuatan `Bootable USB` hanya bisa di lakukan melalui MAC OSX, maka dengan sangat menyesal saya katakan saya tidak akan membuat tutorialnya.
 
 Alternatifnya adalah menginstall hackintosh distro, menginstall hackintosh di VMware atau virtualBox, atau paling mudah, buat bootable USB dengan macbook kepunyaan teman. atau bisa search di google / youtube
@@ -54,6 +56,10 @@ adapun cara membuat `patch` untuk hardware lain, silahkan langsung ke langkah **
 File Mac OSX Mojave 10.14.5 yang saya download adalah menggunakan [torrent](https://mac-torrent-download.net/macos-mojave-10-14-5-18f132/) dan sejauh ini berhasil, namun sangat di anjurkan untuk mendownload secara langsung dari AppStore 
 
 ### 3. Membuat bootable USB
+Membuat bootable USB hackintosh ini terdiri dari beberapa tahap meliputi
+      #### A. Membuat Bootable USB itu sendiri
+      #### B. Install Bootloader
+      #### C. Copy patch kedalam bootloader
 ### 4. Mengatur settingan BIOS
 Seperti kita tahu bahwa settingan BIOS akan berpengaruh pada sukses dan tidaknya sebuah instalasi.
 

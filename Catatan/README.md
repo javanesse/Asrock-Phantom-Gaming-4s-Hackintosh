@@ -1,9 +1,12 @@
+# Run Apps from Anywhere 
+
 Run Apps from Anywhere is now missing from SysPrefs -> Security & Privacy -> General:
-> sudo spctl --master-disable
+`sudo spctl --master-disable`
 
 ---
 
-Modifier keys keyboard:
+# Modifier keys keyboard
+
 ```
 control = command
 option =option
@@ -12,7 +15,7 @@ command = control
 
 ---
 
-Disable Hibernation
+# Disable Hibernation
 
 Be aware that hibernation (suspend to disk or S4 sleep) is not supported on hackintosh.
 
@@ -35,14 +38,15 @@ sudo pmset -a autopoweroff 0
 
 ---
 
-Rebuild kernel cache
-you must boot without cache using -f -F bootarg
+# Rebuild kernel cache
 
-> sudo kextcache -i /
+you must boot without cache using -f -F bootarg
+`sudo kextcache -i /`
 
 ---
 
-reset NVRAM
+# reset NVRAM
+
 To clear the values:
 `sudo nvram -c`
 

@@ -1,4 +1,4 @@
-# Run Apps from Anywhere 
+# 1. Run Apps from Anywhere 
 
 Run Apps from Anywhere is now missing from SysPrefs -> Security & Privacy -> General:
 
@@ -6,7 +6,7 @@ Run Apps from Anywhere is now missing from SysPrefs -> Security & Privacy -> Gen
 
 ---
 
-# Modifier keys keyboard
+# 2. Modifier keys keyboard
 
 ```
 control = command
@@ -16,7 +16,7 @@ command = control
 
 ---
 
-# Disable Hibernation
+# 3. Disable Hibernation
 
 Be aware that hibernation (suspend to disk or S4 sleep) is not supported on hackintosh.
 
@@ -41,7 +41,7 @@ sudo pmset -a autopoweroff 0
 
 ---
 
-# Rebuild kernel cache
+# 4. Rebuild kernel cache
 
 you must boot without cache using -f -F bootarg
 
@@ -49,7 +49,7 @@ you must boot without cache using -f -F bootarg
 
 ---
 
-# reset NVRAM
+# 5. Reset NVRAM
 
 To clear the values:
 

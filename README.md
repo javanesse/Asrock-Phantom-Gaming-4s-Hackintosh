@@ -51,6 +51,8 @@ Untuk patching hardware lain selain **Asrock Phantom Gaming 4s**, metode yang di
 adapun cara membuat `patch` untuk hardware lain, silahkan langsung ke langkah **#8. Troubleshoot dan patching.**
 
 ### 2. Download OS
+File Mac OSX Mojave 10.14.5 yang saya download adalah menggunakan [torrent](https://mac-torrent-download.net/macos-mojave-10-14-5-18f132/) dan sejauh ini berhasil, namun sangat di anjurkan untuk mendownload secara langsung dari AppStore 
+
 ### 3. Membuat bootable USB
 ### 4. Mengatur settingan BIOS
 Seperti kita tahu bahwa settingan BIOS akan berpengaruh pada sukses dan tidaknya sebuah instalasi.

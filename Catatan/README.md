@@ -64,3 +64,5 @@ To display the values, including the SmUUID and other IDs stored there:
 `sudo nvram -x -p`
 
 ---
+
+[Kembali ke menu utama](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh)

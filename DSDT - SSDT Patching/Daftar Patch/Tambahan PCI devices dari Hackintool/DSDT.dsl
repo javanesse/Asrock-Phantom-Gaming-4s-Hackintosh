@@ -1,48 +1,17 @@
 /*
- * Patch Langkah 1
- * Jv Applied Patches
- * RENAME _DSM to XDSM
- * Fix _WAK Arg0 v2
- * HPET Fix
- * SMBUS Fix
- * IRQ Fix
- * RTC Fix
- * OS Check Fix (Windows 10)
- * Fix Mutex with non-zero SyncLevel
- * Add MCHC
- * HECI to IMEI manually
- * SAT0 to SATA manually
- * HDAS to HDEF Manually
- * GLAN to GIGE Manually
- * GFX0 to IGPU
- * Insert DTGP
- */
-
-/*
- * Patch Langkah 3
- * Add PCI Devices System Information
- * Jv Applied Patches (Additional)
- * Add HDEF PCI Device - List muncul - ALC1220 Audio Poperties 
- * Add HECI PCI Device - List muncul - Cannon Lake PCH IMEI Controller
- * Add SATA PCI Device - List muncul - Cannon Lake PCH SATA Controller
- * Add XHC  PCI Device - List muncul - Cannon Lake PCH USB 3.1 xHCI Host Controller
- * Add IGPU PCI Device - List muncul - Intel UHD 630 Properties 
- */
-
-/*
  * Intel ACPI Component Architecture
  * AML/ASL+ Disassembler version 20180427 (64-bit version)(RM)
  * Copyright (c) 2000 - 2018 Intel Corporation
  * 
  * Disassembling to non-symbolic legacy ASL operators
  *
- * Disassembly of DSDT.aml, Thu Jun  6 20:59:04 2019
+ * Disassembly of DSDT.aml, Wed Jun 12 21:45:30 2019
  *
  * Original Table Header:
  *     Signature        "DSDT"
  *     Length           0x00041948 (268616)
  *     Revision         0x02
- *     Checksum         0x5A
+ *     Checksum         0x9A
  *     OEM ID           "ALASKA"
  *     OEM Table ID     "A M I "
  *     OEM Revision     0x01072009 (17244169)
@@ -59,37 +28,37 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
     External (_GPE.P2L6, MethodObj)    // 0 Arguments (from opcode)
     External (_SB_.AWAC, DeviceObj)    // (from opcode)
     External (_SB_.AWAC.WAST, IntObj)    // (from opcode)
-    External (_SB_.BGIA, UnknownObj)    // (from opcode)
-    External (_SB_.BGMA, UnknownObj)    // (from opcode)
-    External (_SB_.BGMS, UnknownObj)    // (from opcode)
-    External (_SB_.CFGD, UnknownObj)    // (from opcode)
+    External (_SB_.BGIA)    // (from opcode)
+    External (_SB_.BGMA)    // (from opcode)
+    External (_SB_.BGMS)    // (from opcode)
+    External (_SB_.CFGD)    // (from opcode)
     External (_SB_.CPPC, IntObj)    // (from opcode)
-    External (_SB_.DSAE, UnknownObj)    // (from opcode)
-    External (_SB_.DTS1, UnknownObj)    // (from opcode)
-    External (_SB_.DTS2, UnknownObj)    // (from opcode)
-    External (_SB_.DTS3, UnknownObj)    // (from opcode)
-    External (_SB_.DTS4, UnknownObj)    // (from opcode)
-    External (_SB_.DTSE, UnknownObj)    // (from opcode)
-    External (_SB_.DTSF, UnknownObj)    // (from opcode)
+    External (_SB_.DSAE)    // (from opcode)
+    External (_SB_.DTS1)    // (from opcode)
+    External (_SB_.DTS2)    // (from opcode)
+    External (_SB_.DTS3)    // (from opcode)
+    External (_SB_.DTS4)    // (from opcode)
+    External (_SB_.DTSE)    // (from opcode)
+    External (_SB_.DTSF)    // (from opcode)
     External (_SB_.DTSI, IntObj)    // (from opcode)
-    External (_SB_.ELNG, UnknownObj)    // (from opcode)
-    External (_SB_.EMNA, UnknownObj)    // (from opcode)
-    External (_SB_.EPCS, UnknownObj)    // (from opcode)
+    External (_SB_.ELNG)    // (from opcode)
+    External (_SB_.EMNA)    // (from opcode)
+    External (_SB_.EPCS)    // (from opcode)
     External (_SB_.GGOV, MethodObj)    // 1 Arguments (from opcode)
     External (_SB_.HWPI, IntObj)    // (from opcode)
     External (_SB_.IETM, DeviceObj)    // (from opcode)
     External (_SB_.ITBI, IntObj)    // (from opcode)
     External (_SB_.PCI0.IGPU, DeviceObj)    // (from opcode)
-    External (_SB_.PCI0.IGPU.ALSI, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.IGPU.CBLV, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.IGPU.CDCK, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.IGPU.CLID, UnknownObj)    // (from opcode)
+    External (_SB_.PCI0.IGPU.ALSI)    // (from opcode)
+    External (_SB_.PCI0.IGPU.CBLV)    // (from opcode)
+    External (_SB_.PCI0.IGPU.CDCK)    // (from opcode)
+    External (_SB_.PCI0.IGPU.CLID)    // (from opcode)
     External (_SB_.PCI0.IGPU.DD1F, DeviceObj)    // (from opcode)
     External (_SB_.PCI0.IGPU.GSCI, MethodObj)    // 0 Arguments (from opcode)
-    External (_SB_.PCI0.IGPU.GSSE, UnknownObj)    // (from opcode)
+    External (_SB_.PCI0.IGPU.GSSE)    // (from opcode)
     External (_SB_.PCI0.IGPU.IUEH, MethodObj)    // 1 Arguments (from opcode)
-    External (_SB_.PCI0.IGPU.STAT, UnknownObj)    // (from opcode)
-    External (_SB_.PCI0.IGPU.TCHE, UnknownObj)    // (from opcode)
+    External (_SB_.PCI0.IGPU.STAT)    // (from opcode)
+    External (_SB_.PCI0.IGPU.TCHE)    // (from opcode)
     External (_SB_.PCI0.HDEF.PPMS, MethodObj)    // 1 Arguments (from opcode)
     External (_SB_.PCI0.HDEF.PS0X, MethodObj)    // 0 Arguments (from opcode)
     External (_SB_.PCI0.HDEF.PS3X, MethodObj)    // 0 Arguments (from opcode)
@@ -244,70 +213,70 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
     External (_SB_.PCI0.XHC_.RHUB.PS0X, MethodObj)    // 0 Arguments (from opcode)
     External (_SB_.PCI0.XHC_.RHUB.PS2X, MethodObj)    // 0 Arguments (from opcode)
     External (_SB_.PCI0.XHC_.RHUB.PS3X, MethodObj)    // 0 Arguments (from opcode)
-    External (_SB_.PDTS, UnknownObj)    // (from opcode)
-    External (_SB_.PKGA, UnknownObj)    // (from opcode)
-    External (_SB_.POWS, UnknownObj)    // (from opcode)
+    External (_SB_.PDTS)    // (from opcode)
+    External (_SB_.PKGA)    // (from opcode)
+    External (_SB_.POWS)    // (from opcode)
     External (_SB_.PR00, DeviceObj)    // (from opcode)
     External (_SB_.PR00.LPSS, PkgObj)    // (from opcode)
     External (_SB_.PR00.TPSS, PkgObj)    // (from opcode)
     External (_SB_.SGOV, MethodObj)    // 2 Arguments (from opcode)
     External (_SB_.TPM_.PTS_, MethodObj)    // 1 Arguments (from opcode)
-    External (_SB_.TRPD, UnknownObj)    // (from opcode)
-    External (_SB_.TRPF, UnknownObj)    // (from opcode)
+    External (_SB_.TRPD)    // (from opcode)
+    External (_SB_.TRPF)    // (from opcode)
     External (_SB_.VMOF, MethodObj)    // 0 Arguments (from opcode)
     External (_SB_.VMON, MethodObj)    // 0 Arguments (from opcode)
     External (_TZ_.ETMD, IntObj)    // (from opcode)
     External (_TZ_.TZ00, DeviceObj)    // (from opcode)
     External (_TZ_.TZ01, DeviceObj)    // (from opcode)
-    External (ALSE, UnknownObj)    // (from opcode)
+    External (ALSE)    // (from opcode)
     External (BGIA, IntObj)    // Warning: Unknown object
     External (BGMA, IntObj)    // Warning: Unknown object
     External (BGMS, IntObj)    // Warning: Unknown object
-    External (BRTL, UnknownObj)    // (from opcode)
-    External (CRBI, UnknownObj)    // (from opcode)
-    External (DIDX, UnknownObj)    // (from opcode)
+    External (BRTL)    // (from opcode)
+    External (CRBI)    // (from opcode)
+    External (DIDX)    // (from opcode)
     External (ELNG, IntObj)    // Warning: Unknown object
     External (EMNA, IntObj)    // Warning: Unknown object
-    External (ESPC, UnknownObj)    // (from opcode)    // Conflicts with a later declaration
-    External (GSMI, UnknownObj)    // (from opcode)
-    External (IGDS, UnknownObj)    // (from opcode)
-    External (LHIH, UnknownObj)    // (from opcode)
-    External (LIDS, UnknownObj)    // (from opcode)
-    External (LLOW, UnknownObj)    // (from opcode)
-    External (M32B, UnknownObj)    // (from opcode)
-    External (M32L, UnknownObj)    // (from opcode)
-    External (M64B, UnknownObj)    // (from opcode)
-    External (M64L, UnknownObj)    // (from opcode)
+    External (ESPC)    // (from opcode)    // Conflicts with a later declaration
+    External (GSMI)    // (from opcode)
+    External (IGDS)    // (from opcode)
+    External (LHIH)    // (from opcode)
+    External (LIDS)    // (from opcode)
+    External (LLOW)    // (from opcode)
+    External (M32B)    // (from opcode)
+    External (M32L)    // (from opcode)
+    External (M64B)    // (from opcode)
+    External (M64L)    // (from opcode)
     External (MDBG, MethodObj)    // 1 Arguments (from opcode)
     External (MMRP, MethodObj)    // 2 Arguments (from opcode)
     External (MMTB, MethodObj)    // 2 Arguments (from opcode)
-    External (P0WK, UnknownObj)    // (from opcode)
-    External (P1GP, UnknownObj)    // (from opcode)
-    External (P1WK, UnknownObj)    // (from opcode)
-    External (P2GP, UnknownObj)    // (from opcode)
-    External (P2WK, UnknownObj)    // (from opcode)
+    External (P0WK)    // (from opcode)
+    External (P1GP)    // (from opcode)
+    External (P1WK)    // (from opcode)
+    External (P2GP)    // (from opcode)
+    External (P2WK)    // (from opcode)
     External (PC00, IntObj)    // (from opcode)
-    External (PC01, UnknownObj)    // (from opcode)
-    External (PC02, UnknownObj)    // (from opcode)
-    External (PC03, UnknownObj)    // (from opcode)
-    External (PC04, UnknownObj)    // (from opcode)
-    External (PC05, UnknownObj)    // (from opcode)
-    External (PC06, UnknownObj)    // (from opcode)
-    External (PC07, UnknownObj)    // (from opcode)
-    External (PC08, UnknownObj)    // (from opcode)
-    External (PC09, UnknownObj)    // (from opcode)
-    External (PC10, UnknownObj)    // (from opcode)
-    External (PC11, UnknownObj)    // (from opcode)
-    External (PC12, UnknownObj)    // (from opcode)
-    External (PC13, UnknownObj)    // (from opcode)
-    External (PC14, UnknownObj)    // (from opcode)
-    External (PC15, UnknownObj)    // (from opcode)
+    External (PC01)    // (from opcode)
+    External (PC02)    // (from opcode)
+    External (PC03)    // (from opcode)
+    External (PC04)    // (from opcode)
+    External (PC05)    // (from opcode)
+    External (PC06)    // (from opcode)
+    External (PC07)    // (from opcode)
+    External (PC08)    // (from opcode)
+    External (PC09)    // (from opcode)
+    External (PC10)    // (from opcode)
+    External (PC11)    // (from opcode)
+    External (PC12)    // (from opcode)
+    External (PC13)    // (from opcode)
+    External (PC14)    // (from opcode)
+    External (PC15)    // (from opcode)
     External (PCRR, MethodObj)    // 2 Arguments (from opcode)
     External (PCRW, MethodObj)    // 3 Arguments (from opcode)
     External (PMST.PMC4, FieldUnitObj)    // (from opcode)
-    External (PSON, UnknownObj)    // (from opcode)    // Conflicts with a later declaration
-    External (SGGP, UnknownObj)    // (from opcode)
-    External (SGMD, UnknownObj)    // (from opcode)
+    External (PSON)    // (from opcode)    // Conflicts with a later declaration
+    External (SGGP)    // (from opcode)
+    External (SGMD)    // (from opcode)
     External (TBTD, MethodObj)    // 2 Arguments (from opcode)
     External (TBTF, MethodObj)    // 2 Arguments (from opcode)
 
@@ -396,7 +365,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
     Name (TOPM, 0x00000000)
     Name (ROMS, 0xFFE00000)
     Name (VGAF, One)
-    OperationRegion (GNVS, SystemMemory, 0x863B9000, 0x0866)
+    OperationRegion (GNVS, SystemMemory, 0x863B8000, 0x0866)
     Field (GNVS, AnyAcc, Lock, Preserve)
     {
         OSYS,   16, 
@@ -4582,18 +4551,17 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                 Device (IGPU)
                 {
                     Name (_ADR, 0x00020000)  // _ADR: Address
-                    //jv add IGPU Properties begin
                     Method (_DSM, 4, NotSerialized)
                     {
                         If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }
                         Return (Package()
                         {
                             "AAPL,slot-name", Buffer () { "Internal" },
-                            "enable-hdmi20", Buffer () { 0x01, 0x00, 0x00, 0x00 }, //Enable pixel clock patch for 4K support
+                            "enable-hdmi20", Buffer () { 0x01, 0x00, 0x00, 0x00 }, // Enable pixel clock patch for 4K support
                             "AAPL,GfxYTile", Buffer () { 0x01, 0x00, 0x00, 0x00 },
                             "AAPL,ig-platform-id", Buffer () { 0x07, 0x00, 0x9B, 0x3E },
                             "model", Buffer () { "UHD Graphics 630" }, // GPU Name
-                            "disable-external-gpu", Buffer () { 0x01, 0x00, 0x00, 0x00 }, //Disabling eGPU
+                            // "disable-external-gpu", Buffer () { 0x01, 0x00, 0x00, 0x00 }, // uncomment if want to Disabling eGPU
                             "hda-gfx", Buffer () { "onboard-1" },
                             "device_type", Buffer () { "VGA compatible controller" },
                             "device-id", Buffer () { 0x9B, 0x3E, 0x00, 0x00, 0x00 },
@@ -4601,14 +4569,13 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                             "framebuffer-con0-enable", Buffer () { 0x01, 0x00, 0x00, 0x00 },
                             "framebuffer-con0-type", Buffer () { 0x00, 0x08, 0x00, 0x00 }, // Fix HDMI port was listed as a DisplayPort
                             "framebuffer-con0-alldata", Buffer () { 0x02, 0x02, 0x0A, 0x00, 0x00, 0x08, 0x00, 0x00, 0xC7, 0x03, 0x00, 0x00, 0x03, 0x04, 0x08, 0x00, 0x00, 0x08, 0x00, 0x00, 0xC7, 0x03, 0x00, 0x00, 0xFF, 0x01, 0x09, 0x00, 0x00, 0x04, 0x00, 0x00, 0xC7, 0x03, 0x00, 0x00  },
-                            "framebuffer-unifiedmem", Buffer () { 0x00, 0x00, 0x00, 0x80 }, //Setting higher VRAM for 4K users who experience graphical glitches
-                            "framebuffer-stolenmem", Buffer () { 0x00, 0x00, 0x30, 0x01 }, //Setting DVMT for those who can't set it above 32 MB in BIOS (framebuffer-stolenmem / framebuffer-fbmem)
-                            "framebuffer-fbmem", Buffer () { 0x00, 0x00, 0x00, 0x90, 0x00 }, //Setting DVMT for those who can't set it above 32 MB in BIOS (framebuffer-stolenmem / framebuffer-fbmem)
+                            "framebuffer-unifiedmem", Buffer () { 0x00, 0x00, 0x00, 0x80 }, // Setting higher VRAM for 4K users who experience graphical glitches
+                            "framebuffer-stolenmem", Buffer () { 0x00, 0x00, 0x30, 0x01 }, // Setting DVMT for those who can't set it above 32 MB in BIOS (framebuffer-stolenmem / framebuffer-fbmem)
+                            "framebuffer-fbmem", Buffer () { 0x00, 0x00, 0x00, 0x90, 0x00 }, // Setting DVMT for those who can't set it above 32 MB in BIOS (framebuffer-stolenmem / framebuffer-fbmem)
                             "framebuffer-portcount", Buffer () { 0x01, 0x00, 0x00, 0x00 },
                             "framebuffer-pipecount", Buffer () { 0x01, 0x00, 0x00, 0x00 },
                         })
                     }
-                //jv add IGPU Properties end
                 }
 
                 Device (B0D4)
@@ -5736,6 +5703,14 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     {
                         Return (GPRW (0x17, 0x04))
                     }
+                }
+                Method (_DSM, 4, NotSerialized)
+                {
+                    If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }
+                    Return (Package()
+                    {
+                        "compatible", "pci8086,9cc1",
+                    })
                 }
             }
 
@@ -14532,7 +14507,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
         }
     }
 
-    Name (SNVB, 0x86422000)
+    Name (SNVB, 0x86421000)
     Name (SNVL, 0x0008)
     OperationRegion (SBNV, SystemMemory, SNVB, SNVL)
     Field (SBNV, AnyAcc, Lock, Preserve)
@@ -14934,7 +14909,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
         }
     }
 
-    Name (PNVB, 0x86489B98)
+    Name (PNVB, 0x86488B98)
     Name (PNVL, 0x028B)
     OperationRegion (PNVA, SystemMemory, PNVB, PNVL)
     Field (PNVA, AnyAcc, Lock, Preserve)
@@ -16848,6 +16823,23 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                      0x00                                           
                 })
             }
+            Device (BUS0)
+            {
+                Name (_CID, "smbus")
+                Name (_ADR, Zero)
+                Device (DVL0)
+                {
+                    Name (_ADR, 0x57)
+                    Name (_CID, "diagsvault")
+                    Method (_DSM, 4, NotSerialized)
+                    {
+                        Store (Package (0x02) {
+                            "address", 0x57			}, Local0)
+                        DTGP (Arg0, Arg1, Arg2, Arg3, RefOf (Local0))
+                        Return (Local0)
+                    }
+                }
+            }
         }
     }
 
@@ -17107,16 +17099,10 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
             {
                 Name (_ADR, 0x001F0006)  // _ADR: Address
                 Name (_S0W, 0x03)  // _S0W: S0 Device Wake State
-                Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
-                {
-                    Return (GPRW (0x6D, 0x04))
-                }
-
-                Method (_DSW, 3, NotSerialized)  // _DSW: Device Sleep Wake
-                {
-                }
-            }
+                
         }
+    }
+    Method(_PRW) { Return(Package() { 0x6D, 0 }) }
     }
 
     Scope (_SB.PCI0)
@@ -17135,18 +17121,6 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     ,   2, 
                 D3HE,   1
             }
-            //jv Add XHC PCI Device begin
-            Method (_DSM, 4, NotSerialized)
-	        {
-		        If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }
-		        Return (Package ()
-		        {
-			        "model", Buffer () { "Cannon Lake PCH USB 3.1 xHCI Host Controller" },
-			        "device_type", Buffer () { "USB controller" },
-			        "AAPL,slot-name", Buffer () { "Internal" },
-		        })
-	        }
-            //jv Add XHC PCI Device end
 
             Method (XDSM, 4, Serialized)  // _DSM: Device-Specific Method
             {
@@ -17187,10 +17161,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                 Return (0x03)
             }
 
-            Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
-            {
-                Return (GPRW (0x6D, 0x04))
-            }
+            
 
             Method (_DSW, 3, NotSerialized)  // _DSW: Device Sleep Wake
             {
@@ -17423,6 +17394,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }
             }
+            Method(_PRW) { Return(Package() { 0x6D, 0 }) }
         }
     }
 
@@ -17678,10 +17650,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                 Return (0x03)
             }
 
-            Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
-            {
-                Return (GPRW (0x6D, 0x04))
-            }
+            
 
             Method (_DSW, 3, NotSerialized)  // _DSW: Device Sleep Wake
             {
@@ -17767,6 +17736,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     USBC
                 })
             }
+            Method(_PRW) { Return(Package() { 0x6D, 0 }) }
         }
     }
 
@@ -17786,10 +17756,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
             {
             }
 
-            Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
-            {
-                Return (GPRW (0x6D, 0x04))
-            }
+            
 
             Method (_PS0, 0, Serialized)  // _PS0: Power State 0
             {
@@ -17844,7 +17811,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
             })
             Method (_INI, 0, NotSerialized)  // _INI: Initialize
             {
-                ADBG ("HDEF _INI")
+                ADBG ("HDAS _INI")
                 CreateQWordField (NBUF, \_SB.PCI0.HDEF._Y32._MIN, NBAS)  // _MIN: Minimum Base Address
                 CreateQWordField (NBUF, \_SB.PCI0.HDEF._Y32._MAX, NMAS)  // _MAX: Maximum Base Address
                 CreateQWordField (NBUF, \_SB.PCI0.HDEF._Y32._LEN, NLEN)  // _LEN: Length
@@ -17869,7 +17836,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
             })
             Method (XDSM, 4, Serialized)  // _DSM: Device-Specific Method
             {
-                ADBG ("HDEF XDSM")
+                ADBG ("HDAS XDSM")
                 If (PCIC (Arg0))
                 {
                     Return (PCID (Arg0, Arg1, Arg2, Arg3))
@@ -17948,34 +17915,18 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                      0x00                                           
                 })
             }
-            Device (BUS0)
-            {
-                Name (_CID, "smbus")
-                Name (_ADR, Zero)
-                Device (DVL0)
-                {
-                    Name (_ADR, 0x57)
-                    Name (_CID, "diagsvault")
-                    Method (_DSM, 4, NotSerialized)
-                    {
-                        If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }
-                        Return (Package() { "address", 0x57 })
-                    }
-                }
-            }
-            //jv add layout id begin
             Method (_DSM, 4, NotSerialized)
-            	{
-		        If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }
-		        Return (Package ()
-		        {
+            {
+                If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }
+                Return (Package ()
+                {
                     "model", Buffer () { "Cannon Lake PCH cAVS" },
                     "device_type", Buffer () { "Audio device" },
                     "AAPL,slot-name", Buffer () { "Internal" },
                     "layout-id", Buffer () { 0x01, 0x00, 0x00, 0x00  },
-		        })
-	        }
-            //jv add layout id end
+                })
+            }
+            Method(_PRW) { Return(Package() { 0x6D, 0 }) }
         }
 
         Scope (HDEF)
@@ -18335,18 +18286,6 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
         Device (SATA)
         {
             Name (_ADR, 0x00170000)  // _ADR: Address
-            //jv Add SATA PCI Device begin
-            Method (_DSM, 4, NotSerialized)
-	        {
-		        If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }
-		        Return (Package ()
-		        {
-			        "model", Buffer () { "Cannon Lake PCH SATA AHCI Controller" },
-			        "device_type", Buffer () { "SATA controller" },
-			        "AAPL,slot-name", Buffer () { "Internal" },
-		        })
-	        }
-            //jv Add SATA PCI Device end
             Method (XDSM, 4, Serialized)  // _DSM: Device-Specific Method
             {
                 If (PCIC (Arg0))
@@ -18804,6 +18743,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
 
                     ADBG (Concatenate ("CNRSe ", ToDecimalString (Timer)))
+                    Return (Zero)
                 }
             }
 
@@ -19492,6 +19432,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
                 }
 
+                Return (Zero)
                 Return (Zero)
             }
 
@@ -21561,18 +21502,6 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
         Device (IMEI)
         {
             Name (_ADR, 0x00160000)  // _ADR: Address
-            //jv Add IMEI PCI Device begin
-            Method (_DSM, 4, NotSerialized)
-	        {
-		        If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }
-		        Return (Package ()
-		        {
-			        "model", Buffer () { "Cannon Lake PCH IMEI Controller" },
-			        "device_type", Buffer () { "Communication controller" },
-			        "AAPL,slot-name", Buffer () { "Internal" },
-		        })
-	        }
-            ////jv Add IMEI PCI Device end
             Method (XDSM, 4, NotSerialized)  // _DSM: Device-Specific Method
             {
                 If (PCIC (Arg0))
@@ -21628,10 +21557,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                 Return (0x03)
             }
 
-            Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
-            {
-                Return (GPRW (0x6D, 0x04))
-            }
+            
 
             Method (_DSW, 3, NotSerialized)  // _DSW: Device Sleep Wake
             {
@@ -21669,6 +21595,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
             {
                 WRST
             })
+            Method(_PRW) { Return(Package() { 0x6D, 0 }) }
         }
 
         Method (CNIP, 0, NotSerialized)
@@ -21745,22 +21672,31 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
         {
             Name (_HID, EisaId ("PNP0103"))  // _HID: Hardware ID
             Name (_UID, Zero)  // _UID: Unique ID
-            Name (BUF0, ResourceTemplate()
-{
-    IRQNoFlags() { 0, 8, 11, 15 }
-
+            Name (BUF0, ResourceTemplate ()
+            {
                 Memory32Fixed (ReadWrite,
                     0xFED00000,         // Address Base
                     0x00000400,         // Address Length
                     _Y3C)
             })
-
-            
-
-            
-            Name (_STA, 0x0F)
-            Method (_CRS, 0, NotSerialized)
+            Method (_STA, 0, NotSerialized)  // _STA: Status
             {
+                If (HPTE)
+                {
+                    Return (0x0F)
+                }
+
+                Return (Zero)
+            }
+
+            Method (_CRS, 0, Serialized)  // _CRS: Current Resource Settings
+            {
+                If (HPTE)
+                {
+                    CreateDWordField (BUF0, \_SB.PCI0.LPCB.HPET._Y3C._BAS, HPT0)  // _BAS: Base Address
+                    Store (HPTB, HPT0)
+                }
+
                 Return (BUF0)
             }
         }
@@ -21872,7 +21808,8 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     0x01,               // Alignment
                     0x02,               // Length
                     )
-                
+                IRQNoFlags ()
+                    {2}
             })
         }
 
@@ -21995,7 +21932,8 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     0x01,               // Alignment
                     0x02,               // Length
                     )
-                
+                IRQNoFlags ()
+                    {8}
             })
             Method (_STA, 0, NotSerialized)  // _STA: Status
             {
@@ -22027,7 +21965,8 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     0x10,               // Alignment
                     0x04,               // Length
                     )
-                
+                IRQNoFlags ()
+                    {0}
             })
         }
 
@@ -22242,7 +22181,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
     Name (LDLY, 0x012C)
     Name (TNVB, 0xFFFF0000)
     Name (TNVL, 0xAA55)
-    OperationRegion (BNVS, SystemMemory, 0x86421000, 0x0043)
+    OperationRegion (BNVS, SystemMemory, 0x86420000, 0x0043)
     Field (BNVS, AnyAcc, Lock, Preserve)
     {
         TBSF,   8, 
@@ -24415,6 +24354,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
         Store (Local1, PPL1)
         Store (One, PL1E)
         Store (One, CLP1)
+        Return (Zero)
     }
 
     Method (RPL1, 0, Serialized)
@@ -60160,6 +60100,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
             {
                 Return ("MSFT0101")
             }
+            Return (Zero)
         }
 
         Method (_STR, 0, NotSerialized)  // _STR: Description String
@@ -60619,10 +60560,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
             {
                 If (LEqual (Arg2, Zero))
                 {
-                    Store (Buffer (One)
-                    {
-                        0x03
-                    }, Arg4)
+                    Store (Buffer (One) { 0x03 }, Arg4)
                     Return (One)
                 }
                 If (LEqual (Arg2, One))
@@ -60631,10 +60569,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                 }
             }
         }
-        Store (Buffer (One)
-        {
-            0x00
-        }, Arg4)
+        Store (Buffer (One) { 0x00 }, Arg4)
         Return (Zero)
     }
 }

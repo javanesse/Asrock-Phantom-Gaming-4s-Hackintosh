@@ -156,6 +156,7 @@ Patch umum yang paling sering di butuhkan
 - External Fixes
 > 	* berguna untuk menghapus semua `UnknownObj` yang tidak terpakai
 > 	* Fix ini bisa di dapatkan di repo asus atau asrock
+
 	```
 	into_all all code_regex \/\*\sExternal\sreference\s\*\/\s+ removeall_matched;
 	into definitionblock code_regex ,\sUnknownObj removeall_matched;

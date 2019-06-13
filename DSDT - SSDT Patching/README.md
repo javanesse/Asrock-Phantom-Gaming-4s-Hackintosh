@@ -200,4 +200,9 @@ Ganti Nama IMEI		| - Rename HECI to IMEI | - Manual
 
 > - Abaikan jika tidak ada
 > - Apabila pada MacIASL tidak ada patch, maka kita hanya butuh mereplace secara manual. misal `HDAS to HDEF`, kita hanya butuh mencari kata `HDAS` kemudian merubahnya menjadi `HDEF`
+
+Daftar Patch:
+- [Patch USB 3.1 untuk chipset 300 series](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/blob/master/DSDT%20-%20SSDT%20Patching/Daftar%20Patch/Patch%20USB%203%20XHC%20300%20Series/README.md)
+- [Patch GPU Intel UHD 630]
+- [Patch Audio Realtek ALC 1220]
 ## 6. Kemas ulang ACPI (re-compile)

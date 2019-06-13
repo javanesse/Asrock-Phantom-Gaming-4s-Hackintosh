@@ -149,6 +149,7 @@ Patch umum yang paling sering di butuhkan
 ```
 
 #### Penjelasan Patch Umum
+
 ** - RENAME _DSM to XDSM **
 > 	* Berguna agar metode _DSM dari ACPI bawaan BIOS, terabaikan oleh Mac OS X, tanpa harus menghapusnya
 

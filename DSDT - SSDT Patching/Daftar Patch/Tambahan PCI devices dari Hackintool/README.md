@@ -12,7 +12,6 @@ Adapun cara mengimplementasikan sebuah device properties dari clover config adal
 1. dari sekian banyak device properties (PCI), di dapat dari aplikasi `hacktool > PCI > Export`
 2. Masukkan dan sesuaikan file `DSL` dari hasil generate ke dalam DSDT
 
-adapun tanda perubahan dalam syntax dsdt saya tandai dengan komen `//jv add xxx begin` dan di akhiri dengan `//jv add xxx end`
 
 # ERROR
 
@@ -24,3 +23,5 @@ Adapun permasalahan yang terjadi ketika mengimplementasikan seluruh `PCI Devices
 
 ## Alternatif Aman
 penyematan PCI devices ini berguna sebagai kosmetik saja, maka cara paling aman untuk memberikan kosmetik ini adalah menggunakan CloverBootloader
+
+Namun perlu menghapus device yang sudah di sematkan kedalam DSDT, dalam kasus ini `IGPU` dan `HDEF`.

@@ -32,3 +32,5 @@ maka perlu penggantian syntax `_PR.CPU0` menjadi `_SB.PR00` agar plugin ini berj
 ---
 
 > Note: Plugin ini telah di adaptasikan yang sebelumnya `_PR.CPU0` menjadi `_SB.PR00`
+
+[Sumber](https://www.tonymacx86.com/threads/macos-native-cpu-igpu-power-management.222982/)

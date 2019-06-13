@@ -20,3 +20,7 @@ Untuk sementara file `DSDT.dsl` di atas hanya menyematkan kode untuk `IGPU` untu
 Hal ini di karenakan permasalahan sleep yang terjadi saat mengimplementasikan seluruh `PCI Devices` kedalam DSDT.
 
 Adapun permasalahan yang terjadi ketika mengimplementasikan seluruh `PCI Devices` kedalam DSDT adalah komputer menolak untuk melakukan sleep secara benar (Monitor mati namun CPU tetap berputar).
+
+
+## Alternatif Aman
+penyematan PCI devices ini berguna sebagai kosmetik saja, maka cara paling aman untuk memberikan kosmetik ini adalah menggunakan CloverBootloader

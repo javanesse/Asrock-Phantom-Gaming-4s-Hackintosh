@@ -1,0 +1,30 @@
+# Jv UHD 630 IGPU patch
+into method label _DSM parent_adr 0x00020000 remove_entry;
+into device name_adr 0x00020000 insert
+begin
+	Method (_DSM, 4, NotSerialized)\n
+	{\n
+		If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }\n
+		Return (Package()\n
+		{\n
+			"AAPL,slot-name", Buffer () { "Internal" },\n
+			"enable-hdmi20", Buffer () { 0x01, 0x00, 0x00, 0x00 }, // Enable pixel clock patch for 4K support\n
+			"AAPL,GfxYTile", Buffer () { 0x01, 0x00, 0x00, 0x00 },\n
+			"AAPL,ig-platform-id", Buffer () { 0x07, 0x00, 0x9B, 0x3E },\n
+			"model", Buffer () { "UHD Graphics 630" }, // GPU Name\n
+			// "disable-external-gpu", Buffer () { 0x01, 0x00, 0x00, 0x00 }, // uncomment if want to Disabling eGPU\n
+			"hda-gfx", Buffer () { "onboard-1" },\n
+			"device_type", Buffer () { "VGA compatible controller" },\n
+			"device-id", Buffer () { 0x9B, 0x3E, 0x00, 0x00, 0x00 },\n
+			"framebuffer-patch-enable", Buffer () { 0x01, 0x00, 0x00, 0x00 },\n
+			"framebuffer-con0-enable", Buffer () { 0x01, 0x00, 0x00, 0x00 },\n
+			"framebuffer-con0-type", Buffer () { 0x00, 0x08, 0x00, 0x00 }, // Fix HDMI port was listed as a DisplayPort\n
+			"framebuffer-con0-alldata", Buffer () { 0x02, 0x02, 0x0A, 0x00, 0x00, 0x08, 0x00, 0x00, 0xC7, 0x03, 0x00, 0x00, 0x03, 0x04, 0x08, 0x00, 0x00, 0x08, 0x00, 0x00, 0xC7, 0x03, 0x00, 0x00, 0xFF, 0x01, 0x09, 0x00, 0x00, 0x04, 0x00, 0x00, 0xC7, 0x03, 0x00, 0x00  },\n
+			"framebuffer-unifiedmem", Buffer () { 0x00, 0x00, 0x00, 0x80 }, // Setting higher VRAM for 4K users who experience graphical glitches\n
+			"framebuffer-stolenmem", Buffer () { 0x00, 0x00, 0x30, 0x01 }, // Setting DVMT for those who can't set it above 32 MB in BIOS (framebuffer-stolenmem / framebuffer-fbmem)\n
+			"framebuffer-fbmem", Buffer () { 0x00, 0x00, 0x00, 0x90, 0x00 }, // Setting DVMT for those who can't set it above 32 MB in BIOS (framebuffer-stolenmem / framebuffer-fbmem)\n
+			"framebuffer-portcount", Buffer () { 0x01, 0x00, 0x00, 0x00 },\n
+			"framebuffer-pipecount", Buffer () { 0x01, 0x00, 0x00, 0x00 },\n
+		})\n
+	}
+end;

@@ -1,0 +1,16 @@
+VID  DID  SVID SDID Vendor Name                    Device Name                                        Class Name           SubClass Name        IOReg Name      IOReg IOName    Device Path
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+8086 3EC2 1849 3EC2 Intel Corporation              8th Gen Core Processor Host Bridge/DRAM Registers  Bridge               Host bridge          MCHC            pci8086,3ec2    PciRoot(0x0)/Pci(0x0,0x0) 
+8086 0000 1849 3E92 Intel Corporation              ???                                                Display controller   VGA compatible contr IGPU            display         PciRoot(0x0)/Pci(0x2,0x0) 
+8086 A379 1849 A379 Intel Corporation              Cannon Lake PCH Thermal Controller                 Signal processing co Signal processing co pci8086,a379    pci8086,a379    PciRoot(0x0)/Pci(0x12,0x0) 
+8086 A36D 1849 A36D Intel Corporation              Cannon Lake PCH USB 3.1 xHCI Host Controller       Serial bus controlle USB controller       XHC             pci8086,a36d    PciRoot(0x0)/Pci(0x14,0x0) 
+8086 A36F 1849 A36F Intel Corporation              Cannon Lake PCH Shared SRAM                        Memory controller    RAM memory           pci8086,a36f    pci8086,a36f    PciRoot(0x0)/Pci(0x14,0x2) 
+8086 A360 1849 A360 Intel Corporation              Cannon Lake PCH HECI Controller                    Communication contro Communication contro IMEI            pci8086,a360    PciRoot(0x0)/Pci(0x16,0x0) 
+8086 A352 1849 A352 Intel Corporation              Cannon Lake PCH SATA AHCI Controller               Mass storage control SATA controller      SATA            pci8086,a352    PciRoot(0x0)/Pci(0x17,0x0) 
+8086 A342 0000 0000 Intel Corporation              Cannon Lake PCH PCI Express Root Port #19          Bridge               PCI bridge           RP19            pci-bridge      PciRoot(0x0)/Pci(0x1b,0x0) 
+8086 A305 1849 A305 Intel Corporation              Z390 Chipset LPC/eSPI Controller                   Bridge               ISA bridge           LPCB            pci8086,a305    PciRoot(0x0)/Pci(0x1f,0x0) 
+8086 A348 1849 1202 Intel Corporation              Cannon Lake PCH cAVS                               Multimedia controlle Audio device         HDEF            pci8086,a348    PciRoot(0x0)/Pci(0x1f,0x3) 
+8086 A323 1849 A323 Intel Corporation              Cannon Lake PCH SMBus Controller                   Serial bus controlle SMBus                SBUS            pci8086,a323    PciRoot(0x0)/Pci(0x1f,0x4) 
+8086 A324 1849 A324 Intel Corporation              Cannon Lake PCH SPI Controller                     Serial bus controlle ???                  pci8086,a324    pci8086,a324    PciRoot(0x0)/Pci(0x1f,0x5) 
+8086 15BC 1849 15BC Intel Corporation              Ethernet Connection (7) I219-V                     Network controller   Ethernet controller  GLAN            ethernet        PciRoot(0x0)/Pci(0x1f,0x6) 
+168C 0032 168C 3118 Qualcomm Atheros               AR9485 Wireless Network Adapter                    Network controller   Network controller   RP19.PXSX       pci168c,32      PciRoot(0x0)/Pci(0x1b,0x0)/Pci(0x0,0x0) 

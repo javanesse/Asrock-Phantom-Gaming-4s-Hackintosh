@@ -1,0 +1,257 @@
+# Daftar Patch yang di gunakan untuk
+# Asrock Phantom Gaming 4s
+
+
+# RENAME _DSM to XDSM
+# External Fixes
+# Fix _WAK Arg0 v2
+# SMBUS Fix
+# RTC Fix
+# OS Check Fix
+# Add MCHC
+# Add DTGP
+# Add Skylake LPC
+
+# Patch Spesifik
+# Rename HDAS to HDEF
+# Add Realtek ALC1220 fix	
+# Rename GFX0 to IGPU
+# Rename SAT0 to SATA
+# Rename GLAN to GIGE
+# Rename HECI to IMEI
+
+
+# RENAME _DSM to XDSM
+into_all method label _DSM set_label begin XDSM end;
+into_all method code_regex _DSM replaceall_matched begin XDSM end;
+
+
+#External Fixes
+into_all all code_regex \/\*\sExternal\sreference\s\*\/\s+ removeall_matched;
+into definitionblock code_regex ,\sUnknownObj removeall_matched;
+into method label RDCA parent_label SHUB code_regex (Return\s\(Zero\)) remove_matched;
+into method label RDCA insert begin Return (Zero) end;
+into method label CNRS parent_label SHUB code_regex (Return\s\(Zero\)) remove_matched;
+into method label CNRS insert begin Return (Zero) end;
+into method label SPL1 parent_label SHUB code_regex (Return\s\(Zero\)) remove_matched;
+into method label SPL1 insert begin Return (Zero) end;
+into method label _HID parent_label _SB.TPM code_regex (Return\s\(Zero\))\s+ remove_matched;
+into method label _HID parent_label _SB.TPM insert begin Return (Zero) end;
+
+# Fix _WAK Arg0 v2
+into method label _WAK code_regex ([\s\S]*) replace_matched
+begin
+If (LOr(LLess(Arg0,1),LGreater(Arg0,5))) { Store(3,Arg0) }\n
+%1
+end;
+
+into method label \_WAK code_regex ([\s\S]*) replace_matched
+begin
+If (LOr(LLess(Arg0,1),LGreater(Arg0,5))) { Store(3,Arg0) }\n
+%1
+end;
+
+# SMBUS Fix
+# Fix the SMBUS to allow for loading of the AppleSMBusController.kext
+into device label BUS0 parent_label SBUS remove_entry;
+into device label SBUS insert begin
+Device (BUS0)\n
+{\n
+	Name (_CID, "smbus")\n
+	Name (_ADR, Zero)\n
+	Device (DVL0)\n
+	{\n
+		Name (_ADR, 0x57)\n
+		Name (_CID, "diagsvault")\n
+		Method (_DSM, 4, NotSerialized)\n
+		{\n
+			Store (Package (0x02) {\n
+				"address", 0x57
+			}, Local0)\n
+			DTGP (Arg0, Arg1, Arg2, Arg3, RefOf (Local0))\n
+			Return (Local0)\n
+		}\n
+	}\n
+}
+end;
+
+
+# RTC Fix
+into device name_hid PNP0B00 code_regex (IO\s\((?:\s*[^,]+,\s*(?:\/\/\s.*)?\s*\n)+\s*)(\dx\d+)(,\s*(?:\/\/\s.*)?\s*\n\s*\)) replace_matched begin %10x02%3 end;
+
+
+# OS Check Fix
+into_all method code_regex If\s+\([\\]?_OSI\s+\(\"Windows\s2015\"\)\) replace_matched begin If(LOr(_OSI("Darwin"),_OSI("Windows 2015"))) end;
+
+
+# Add MCHC
+into device label MCHC parent_label PCI0 remove_entry;
+into device label PCI0 insert begin
+Device (MCHC)\n
+{\n
+	Name (_ADR, Zero)\n
+}
+end;
+
+
+
+# Add the DTGP method
+into method label DTGP remove_entry;
+into definitionblock code_regex . insert begin
+Method (DTGP, 5, NotSerialized)\n
+{\n
+    If (LEqual (Arg0, Buffer (0x10)\n
+            {\n
+                /* 0000 */    0xC6, 0xB7, 0xB5, 0xA0, 0x18, 0x13, 0x1C, 0x44,\n
+                /* 0008 */    0xB0, 0xC9, 0xFE, 0x69, 0x5E, 0xAF, 0x94, 0x9B\n
+            }))\n
+    {\n
+        If (LEqual (Arg1, One))\n
+        {\n
+            If (LEqual (Arg2, Zero))\n
+            {\n
+                Store (Buffer (One) { 0x03 }, Arg4)\n
+                Return (One)\n
+            }\n
+            If (LEqual (Arg2, One))\n
+            {\n
+                Return (One)\n
+            }\n
+        }\n
+    }\n
+	Store (Buffer (One) { 0x00 }, Arg4)\n
+    Return (Zero)\n
+}
+end;
+
+
+# Skylake LPC
+#Maintained by: RehabMan for: Laptop Patches
+#misc_Skylake-LPC.txt
+
+# inject "compatible" with recognized series-100 LPC device-id
+into method label _DSM parent_adr 0x001F0000 remove_entry;
+into device name_adr 0x001F0000 insert
+begin
+Method (_DSM, 4, NotSerialized)\n
+{\n
+    If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }\n
+    Return (Package()\n
+    {\n
+        "compatible", "pci8086,9cc1",\n
+    })\n
+}\n
+end;
+
+
+# Patch Spesifik
+
+# RENAME HDAS to HDEF
+# rename HDAS -> HDEF for better power management
+into_all all code_regex HDAS\. replaceall_matched begin HDEF. end;
+into_all all code_regex \.HDAS replaceall_matched begin .HDEF end;
+into_all all code_regex \sHDAS, replaceall_matched begin HDEF, end;
+into_all all code_regex \(HDAS replaceall_matched begin (HDEF end;
+into_all all label HDAS set_label begin HDEF end;
+into_all all label _SB.PCI0.HDAS set_label begin _SB.PCI0.HDEF end;
+into_all all label \_SB.PCI0.HDAS set_label begin \_SB.PCI0.HDEF end;
+into_all all label _SB.PCI0.HDAS.DD02 set_label begin _SB.PCI0.HDEF.DD02 end;
+into_all all label \_SB.PCI0.HDAS.DD02 set_label begin \_SB.PCI0.HDEF.DD02 end;
+into_all all label \_SB.PCI0.HDAS.SNDW set_label begin \_SB.PCI0.HDEF.SNDW end;
+into_all all label _SB.PCI0.HDAS.SNDW set_label begin _SB.PCI0.HDEF.SNDW end;
+into_all all label ^^^HDAS set_label begin ^^^HDEF end;
+into_all all label ^^HDAS set_label begin ^^HDEF end;
+into_all all label ^HDAS set_label begin ^HDEF end;
+
+# JV Realtek ALC1220
+
+into method label _DSM parent_adr 0x001F0003 remove_entry;
+into device name_adr 0x001F0003 insert
+begin
+	Method (_DSM, 4, NotSerialized)\n
+	{\n
+		If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }\n
+		Return (Package ()\n
+		{\n
+			"model", Buffer () { "Cannon Lake PCH cAVS" },\n
+			"device_type", Buffer () { "Audio device" },\n
+			"AAPL,slot-name", Buffer () { "Internal" },\n
+			"layout-id", Buffer () { 0x01, 0x00, 0x00, 0x00  },\n
+		})\n
+	}
+end;
+
+
+
+# RENAME GFX0 to IGPU
+#Maintained by: RehabMan for: Laptop Patches
+#graphics_Rename-GFX0.txt
+
+# Note: Most DSDT/SSDTs use GFX0 for the integrated graphics device,
+#  but there are few renegades that use VID or AGP1.
+#  If your DSDT uses VID or AGP1 instead of GFX0, see the 
+#  alternate patch "Rename VID/AGP1 to IGPU"
+
+# sometimes there is already IGPU used for other things
+into_all all code_regex IGPU, replaceall_matched begin IGFX, end;
+
+# rename GFX0 -> IGPU for better power management
+into_all all code_regex GFX0\. replaceall_matched begin IGPU. end;
+into_all all code_regex \.GFX0 replaceall_matched begin .IGPU end;
+into_all all code_regex \sGFX0, replaceall_matched begin IGPU, end;
+into_all all code_regex \(GFX0 replaceall_matched begin (IGPU end;
+into_all all label GFX0 set_label begin IGPU end;
+into_all all label _SB.PCI0.GFX0 set_label begin _SB.PCI0.IGPU end;
+into_all all label \_SB.PCI0.GFX0 set_label begin \_SB.PCI0.IGPU end;
+into_all all label _SB.PCI0.GFX0.DD02 set_label begin _SB.PCI0.IGPU.DD02 end;
+into_all all label \_SB.PCI0.GFX0.DD02 set_label begin \_SB.PCI0.IGPU.DD02 end;
+into_all all label ^^^GFX0 set_label begin ^^^IGPU end;
+into_all all label ^^GFX0 set_label begin ^^IGPU end;
+into_all all label ^GFX0 set_label begin ^IGPU end;
+
+
+# Rename SAT0 to SATA
+# rename SAT0 -> SATA for better power management
+into_all all code_regex SAT0\. replaceall_matched begin SATA. end;
+into_all all code_regex \.SAT0 replaceall_matched begin .SATA end;
+into_all all code_regex \sSAT0, replaceall_matched begin SATA, end;
+into_all all code_regex \(SAT0 replaceall_matched begin (SATA end;
+into_all all label SAT0 set_label begin SATA end;
+into_all all label _SB.PCI0.SAT0 set_label begin _SB.PCI0.SATA end;
+into_all all label \_SB.PCI0.SAT0 set_label begin \_SB.PCI0.SATA end;
+into_all all label _SB.PCI0.SAT0.DD02 set_label begin _SB.PCI0.SATA.DD02 end;
+into_all all label \_SB.PCI0.SAT0.DD02 set_label begin \_SB.PCI0.SATA.DD02 end;
+into_all all label ^^^SAT0 set_label begin ^^^SATA end;
+into_all all label ^^SAT0 set_label begin ^^SATA end;
+into_all all label ^SAT0 set_label begin ^SATA end;
+
+# Rename GLAN to GIGE
+# rename GLAN -> GIGE for better power management
+into_all all code_regex GLAN\. replaceall_matched begin GIGE. end;
+into_all all code_regex \.GLAN replaceall_matched begin .GIGE end;
+into_all all code_regex \sGLAN, replaceall_matched begin GIGE, end;
+into_all all code_regex \(GLAN replaceall_matched begin (GIGE end;
+into_all all label GLAN set_label begin GIGE end;
+into_all all label _SB.PCI0.GLAN set_label begin _SB.PCI0.GIGE end;
+into_all all label \_SB.PCI0.GLAN set_label begin \_SB.PCI0.GIGE end;
+into_all all label _SB.PCI0.GLAN.DD02 set_label begin _SB.PCI0.GIGE.DD02 end;
+into_all all label \_SB.PCI0.GLAN.DD02 set_label begin \_SB.PCI0.GIGE.DD02 end;
+into_all all label ^^^GLAN set_label begin ^^^GIGE end;
+into_all all label ^^GLAN set_label begin ^^GIGE end;
+into_all all label ^GLAN set_label begin ^GIGE end;
+
+
+# Rename HECI to IMEI
+# rename HECI -> IMEI for better power management
+into_all all code_regex HECI\. replaceall_matched begin IMEI. end;
+into_all all code_regex \.HECI replaceall_matched begin .IMEI end;
+into_all all code_regex \sHECI, replaceall_matched begin IMEI, end;
+into_all all code_regex \(HECI replaceall_matched begin (IMEI end;
+into_all all label HECI set_label begin IMEI end;
+into_all all label _SB.PCI0.HECI set_label begin _SB.PCI0.IMEI end;
+into_all all label \_SB.PCI0.HECI set_label begin \_SB.PCI0.IMEI end;
+into_all all label _SB.PCI0.HECI.DD02 set_label begin _SB.PCI0.IMEI.DD02 end;
+into_all all label \_SB.PCI0.HECI.DD02 set_label begin \_SB.PCI0.IMEI.DD02 end;
+into_all all label ^^^HECI set_label begin ^^^IMEI end;
+into_all all label ^^HECI set_label begin ^^IMEI end;
+into_all all label ^HECI set_label begin ^IMEI end;

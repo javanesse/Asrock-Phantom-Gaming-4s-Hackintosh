@@ -19,11 +19,16 @@
 # Rename SAT0 to SATA
 # Rename GLAN to GIGE
 # Rename HECI to IMEI
+# USB PWR 0x6D XHC skl skylake
+
 
 
 # RENAME _DSM to XDSM
 into_all method label _DSM set_label begin XDSM end;
 into_all method code_regex _DSM replaceall_matched begin XDSM end;
+
+
+
 
 
 #External Fixes
@@ -38,6 +43,15 @@ into method label SPL1 insert begin Return (Zero) end;
 into method label _HID parent_label _SB.TPM code_regex (Return\s\(Zero\))\s+ remove_matched;
 into method label _HID parent_label _SB.TPM insert begin Return (Zero) end;
 
+
+
+
+
+
+
+
+
+
 # Fix _WAK Arg0 v2
 into method label _WAK code_regex ([\s\S]*) replace_matched
 begin
@@ -50,6 +64,13 @@ begin
 If (LOr(LLess(Arg0,1),LGreater(Arg0,5))) { Store(3,Arg0) }\n
 %1
 end;
+
+
+
+
+
+
+
 
 # SMBUS Fix
 # Fix the SMBUS to allow for loading of the AppleSMBusController.kext
@@ -76,12 +97,33 @@ Device (BUS0)\n
 end;
 
 
+
+
+
+
+
+
 # RTC Fix
 into device name_hid PNP0B00 code_regex (IO\s\((?:\s*[^,]+,\s*(?:\/\/\s.*)?\s*\n)+\s*)(\dx\d+)(,\s*(?:\/\/\s.*)?\s*\n\s*\)) replace_matched begin %10x02%3 end;
 
 
+
+
+
+
+
+
+
 # OS Check Fix
 into_all method code_regex If\s+\([\\]?_OSI\s+\(\"Windows\s2015\"\)\) replace_matched begin If(LOr(_OSI("Darwin"),_OSI("Windows 2015"))) end;
+
+
+
+
+
+
+
+
 
 
 # Add MCHC
@@ -92,6 +134,13 @@ Device (MCHC)\n
 	Name (_ADR, Zero)\n
 }
 end;
+
+
+
+
+
+
+
 
 
 
@@ -125,6 +174,13 @@ Method (DTGP, 5, NotSerialized)\n
 end;
 
 
+
+
+
+
+
+
+
 # Skylake LPC
 #Maintained by: RehabMan for: Laptop Patches
 #misc_Skylake-LPC.txt
@@ -142,6 +198,13 @@ Method (_DSM, 4, NotSerialized)\n
     })\n
 }\n
 end;
+
+
+
+
+
+
+
 
 
 # Patch Spesifik
@@ -163,6 +226,15 @@ into_all all label ^^^HDAS set_label begin ^^^HDEF end;
 into_all all label ^^HDAS set_label begin ^^HDEF end;
 into_all all label ^HDAS set_label begin ^HDEF end;
 
+
+
+
+
+
+
+
+
+
 # JV Realtek ALC1220
 
 into method label _DSM parent_adr 0x001F0003 remove_entry;
@@ -180,6 +252,13 @@ begin
 		})\n
 	}
 end;
+
+
+
+
+
+
+
 
 
 
@@ -210,6 +289,12 @@ into_all all label ^^GFX0 set_label begin ^^IGPU end;
 into_all all label ^GFX0 set_label begin ^IGPU end;
 
 
+
+
+
+
+
+
 # Rename SAT0 to SATA
 # rename SAT0 -> SATA for better power management
 into_all all code_regex SAT0\. replaceall_matched begin SATA. end;
@@ -224,6 +309,13 @@ into_all all label \_SB.PCI0.SAT0.DD02 set_label begin \_SB.PCI0.SATA.DD02 end;
 into_all all label ^^^SAT0 set_label begin ^^^SATA end;
 into_all all label ^^SAT0 set_label begin ^^SATA end;
 into_all all label ^SAT0 set_label begin ^SATA end;
+
+
+
+
+
+
+
 
 # Rename GLAN to GIGE
 # rename GLAN -> GIGE for better power management
@@ -241,6 +333,14 @@ into_all all label ^^GLAN set_label begin ^^GIGE end;
 into_all all label ^GLAN set_label begin ^GIGE end;
 
 
+
+
+
+
+
+
+
+
 # Rename HECI to IMEI
 # rename HECI -> IMEI for better power management
 into_all all code_regex HECI\. replaceall_matched begin IMEI. end;
@@ -255,3 +355,47 @@ into_all all label \_SB.PCI0.HECI.DD02 set_label begin \_SB.PCI0.IMEI.DD02 end;
 into_all all label ^^^HECI set_label begin ^^^IMEI end;
 into_all all label ^^HECI set_label begin ^^IMEI end;
 into_all all label ^HECI set_label begin ^IMEI end;
+
+
+
+
+
+
+
+
+#Maintained by: RehabMan for: Laptop Patches
+#usb_prw_0x6d_xhc_skl.txt
+
+# remove _PRW methods to prevent instant wake, XHC, XDCI, CNVW, GIGE
+
+# if _PRW objects are methods
+# XHC
+into method label _PRW parent_adr 0x00140000 remove_entry;
+# XDCI
+into method label _PRW parent_adr 0x00140001 remove_entry;
+# HDEF
+into method label _PRW parent_adr 0x001F0003 remove_entry;
+# CNVW
+into method label _PRW parent_adr 0x00140003 remove_entry;
+# LAN cards GIGE/GLAN
+into method label _PRW parent_adr 0x001F0006 remove_entry;
+
+
+
+
+
+
+# seems to work better if _PRW is present, but returns 0 (original was 3) for sleep state
+# Note: These are methods because some Skylake DSDT call _PRW as a method for no reason
+# XHC
+into device name_adr 0x00140000 insert begin Method(_PRW) { Return(Package() { 0x6D, 0 }) } end;
+# XDCI
+into device name_adr 0x00140001 insert begin Method(_PRW) { Return(Package() { 0x6D, 0 }) } end;
+# HDEF
+into device name_adr 0x001F0003 insert begin Method(_PRW) { Return(Package() { 0x6D, 0 }) } end;
+# CNVW
+into device name_adr 0x00140003 insert begin Method(_PRW) { Return(Package() { 0x6D, 0 }) } end;
+# LAN GIGE/GLAN
+into device name_adr 0x001F0006 insert begin
+}\n
+Method(_PRW) { Return(Package() { 0x6D, 0 }) } end;

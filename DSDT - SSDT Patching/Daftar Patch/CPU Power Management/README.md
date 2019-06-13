@@ -1,6 +1,6 @@
 # SSDT tambahan untuk CPU Power Management
 
-
+* Native macOS power management membuat kombinasi prosesor dan GPU guna memberikan performance dan efisiensi terbaik.
 * `SSDT-PluginType1` ini merupakan pengganti dari `PluginType` yang ada di clover
 * Dengan `SSDT-PluginType1` ini, maka tidak perlu lagi untuk memberikan tanda centang pada `PluginType` pada Clover sehingga clover lebih bersih
 
@@ -32,3 +32,5 @@ maka perlu penggantian syntax `_PR.CPU0` menjadi `_SB.PR00` agar plugin ini berj
 ---
 
 > Note: Plugin ini telah di adaptasikan yang sebelumnya `_PR.CPU0` menjadi `_SB.PR00`
+
+[Sumber](https://www.tonymacx86.com/threads/macos-native-cpu-igpu-power-management.222982/)

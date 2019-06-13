@@ -1,0 +1,60 @@
+# Tambahan PCI Device Properti
+
+# XHC
+# imei
+# SATA
+
+
+
+
+
+# Tambah Properti XHC
+into method label _DSM parent_adr 0x00140000 remove_entry;
+into device name_adr 0x00140000 insert
+begin
+	Method (_DSM, 4, NotSerialized)\n
+	{\n
+		If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }\n
+		Return (Package ()\n
+		{\n
+			"model", Buffer () { "Cannon Lake PCH USB 3.1 xHCI Host Controller" },\n
+			"device_type", Buffer () { "USB controller" },\n
+			"AAPL,slot-name", Buffer () { "Internal" },\n
+		})\n
+	}
+end;
+
+
+
+# Tambah properti imei
+into method label _DSM parent_adr 0x00160000 remove_entry;
+into device name_adr 0x00160000 insert
+begin
+Method (_DSM, 4, NotSerialized)\n
+{\n
+	If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }\n
+	Return (Package ()\n
+	{\n
+		"model", Buffer () { "Cannon Lake PCH HECI Controller" },\n
+		"device_type", Buffer () { "Communication controller" },\n
+		"AAPL,slot-name", Buffer () { "Internal" },\n
+	})\n
+	}
+end;
+
+
+# Tambah properti SATA
+into method label _DSM parent_adr 0x00170000 remove_entry;
+into device name_adr 0x00170000 insert
+begin
+	Method (_DSM, 4, NotSerialized)\n
+	{\n
+		If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }\n
+		Return (Package ()\n
+		{\n
+			"model", Buffer () { "Cannon Lake PCH SATA AHCI Controller" },\n
+			"device_type", Buffer () { "SATA controller" },\n
+			"AAPL,slot-name", Buffer () { "Internal" },\n
+		})\n
+	}
+end;

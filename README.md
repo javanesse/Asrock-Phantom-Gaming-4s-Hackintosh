@@ -187,5 +187,6 @@ Daftar Checklist:
 
 ### 8. Troubleshoot dan Patching
 - [Tutorial Patching DSDT/SSDT](/DSDT%20-%20SSDT%20Patching/README.md)
+- [CPU Power Management](/DSDT%20-%20SSDT%20Patching/Daftar%20Patch/CPU%20Power%20Management)
 - [Patch Lainnya](/Catatan/README.md)
 

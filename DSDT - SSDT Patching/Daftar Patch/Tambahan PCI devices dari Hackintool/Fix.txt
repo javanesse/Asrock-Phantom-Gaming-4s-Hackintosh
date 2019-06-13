@@ -62,9 +62,9 @@ end;
 
 
 # Tambah Thermal
-into device label pci8086,a379 remove_entry;
+into device label THR remove_entry;
 into device label PCI0 insert begin
-Device (JVTL)\n
+Device (THR)\n
 {\n
 	Name (_ADR, 0x00120000)\n
 	Method (_DSM, 4, NotSerialized)\n

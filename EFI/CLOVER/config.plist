@@ -5,20 +5,26 @@
 	<key>ACPI</key>
 	<dict>
 		<key>AutoMerge</key>
-		<true/>
+		<false/>
 		<key>DSDT</key>
 		<dict>
 			<key>Fixes</key>
 			<dict>
+				<key>AddPNLF</key>
+				<false/>
 				<key>FixHPET</key>
 				<false/>
 				<key>FixIPIC</key>
 				<false/>
 				<key>FixRTC</key>
 				<false/>
+				<key>FixS3D</key>
+				<false/>
 				<key>FixShutdown</key>
 				<false/>
 				<key>FixTMR</key>
+				<false/>
+				<key>FixUSB</key>
 				<false/>
 			</dict>
 			<key>Name</key>
@@ -140,8 +146,50 @@
 	</dict>
 	<key>GUI</key>
 	<dict>
+		<key>Custom</key>
+		<dict>
+			<key>Entries</key>
+			<array>
+				<dict>
+					<key>Disabled</key>
+					<false/>
+					<key>FullTitle</key>
+					<string>Windows 10</string>
+					<key>Ignore</key>
+					<false/>
+					<key>Type</key>
+					<string>Windows</string>
+					<key>Volume</key>
+					<string>78C7965A-90D8-4B72-AD44-011D9E1F3630</string>
+					<key>VolumeType</key>
+					<string>Internal</string>
+				</dict>
+				<dict>
+					<key>Disabled</key>
+					<false/>
+					<key>FullTitle</key>
+					<string>Mac OS X</string>
+					<key>Ignore</key>
+					<false/>
+					<key>NoCaches</key>
+					<false/>
+					<key>Type</key>
+					<string>OSX</string>
+					<key>Volume</key>
+					<string>58B0852C-46EE-33BE-A116-A2FDCB3E32C8</string>
+					<key>VolumeType</key>
+					<string>Internal</string>
+				</dict>
+			</array>
+		</dict>
 		<key>EmbeddedThemeType</key>
 		<string>Light</string>
+		<key>Hide</key>
+		<array>
+			<string>PREBOOT</string>
+			<string>RECOVERY</string>
+			<string>WindowsHDD</string>
+		</array>
 		<key>Language</key>
 		<string>en:0</string>
 		<key>Scan</key>
@@ -151,7 +199,7 @@
 			<key>Legacy</key>
 			<false/>
 			<key>Tool</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
@@ -169,6 +217,8 @@
 			<key>NVidia</key>
 			<false/>
 		</dict>
+		<key>LoadVBios</key>
+		<false/>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -189,7 +239,7 @@
 		<string>C02726902CDH69F1M</string>
 		<key>ROM</key>
 		<data>
-		/iA45YiL
+		aWvkgV76
 		</data>
 	</dict>
 	<key>SMBIOS</key>
@@ -205,7 +255,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02925609GUKGQGUE</string>
+		<string>C02911401J9KGQGJC</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -235,16 +285,16 @@
 		<key>ProductName</key>
 		<string>iMac19,2</string>
 		<key>SerialNumber</key>
-		<string>C02YW0VJJWDW</string>
+		<string>C02YF0TRJWDW</string>
 		<key>SmUUID</key>
-		<string>BC292DDE-AEB9-4706-8C7A-23BB7AE5888B</string>
+		<string>7F178580-7A16-44AA-9B00-2267B5815EFA</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
 		<key>CustomUUID</key>
-		<string>2FA6CC04-C133-40B8-B286-8A85AADBF170</string>
+		<string>1FC62B76-E337-4A8E-9227-52FCE49495A9</string>
 		<key>InjectKexts</key>
 		<string>Yes</string>
 		<key>InjectSystemID</key>

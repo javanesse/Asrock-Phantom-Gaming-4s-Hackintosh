@@ -121,7 +121,11 @@ maka terminal akan menunjukkan file mana saja yang terdapat metode `_DSM`. hal i
 
 ---
 
-Alangkah lebih baik apabila kita membuat checklist apa saja yang ingin kita lakukan patching ke dalam file-file ACPI kita
+> Alangkah lebih baik apabila kita membuat checklist apa saja yang ingin kita lakukan patching ke dalam file-file ACPI kita
+
+> Alangkah lebih baik apabila mendokumentasikan setiap melakukan patching agar tidak tercampur aduk.
+
+> Alangkah lebih baik pula jika setiap mengimplentasikan **SATU** buah patch, kemudian di lakukan pengetesan
 
 ---
 
@@ -145,45 +149,61 @@ Patch umum yang paling sering di butuhkan
 ```
 
 #### Penjelasan Patch Umum
+
 - RENAME _DSM to XDSM
-	* Berguna agar metode _DSM dari ACPI bawaan BIOS, terabaikan oleh Mac OS X, tanpa harus menghapusnya
+> 	* Berguna agar metode _DSM dari ACPI bawaan BIOS, terabaikan oleh Mac OS X, tanpa harus menghapusnya
+
 - External Fixes
-	* berguna untuk menghapus semua `UnknownObj` yang tidak terpakai
-	* Fix ini bisa di dapatkan di repo asus atau asrock
-	```
-	into_all all code_regex \/\*\sExternal\sreference\s\*\/\s+ removeall_matched;
-	into definitionblock code_regex ,\sUnknownObj removeall_matched;
-	```
+> 	* berguna untuk menghapus semua `UnknownObj` yang tidak terpakai
+> 	* Fix ini bisa di dapatkan di repo asus atau asrock
+
+
+```
+into_all all code_regex \/\*\sExternal\sreference\s\*\/\s+ removeall_matched;
+into definitionblock code_regex ,\sUnknownObj removeall_matched;
+```
+	
 - Fix _WAK Arg0 v2
-	* Berguna agak mengenali panggilan untuk `WAKE` setelah komputer melakukan `SLEEP`
+> 	* Berguna agak mengenali panggilan untuk `WAKE` setelah komputer melakukan `SLEEP`
+
 - HPET Fix
-	* Jika mengalami `Kernel Panic` dengan pemberitahuan `No HPETs available...` atau tiba-tiba restart setelah `WAKE`, bisa jadi karena butuh patch ini.
-	* Patch ini berguna untuk memastikan bahwa perangkat `HPET` selalu ada.
-	* HPET fix untuk menghindari `Kernel Panic` dari `AppleIntelCPUPowerManagement`.
+> 	* Jika mengalami `Kernel Panic` dengan pemberitahuan `No HPETs available...` atau tiba-tiba restart setelah `WAKE`, bisa jadi karena butuh patch ini.
+> 	* Patch ini berguna untuk memastikan bahwa perangkat `HPET` selalu ada.
+> 	* HPET fix untuk menghindari `Kernel Panic` dari `AppleIntelCPUPowerManagement`.
+
 - SMBUS Fix
-	* Memperbaiki `SMBUS` agar `AppleSMBusController.kext` dapat terload
-	* Alternatif patch ini dapat menggunakan [SSDT-SMBUS.dsl](https://github.com/RehabMan/OS-X-Clover-Laptop-Config/blob/master/hotpatch/SSDT-SMBUS.dsl)
+> 	* Memperbaiki `SMBUS` agar `AppleSMBusController.kext` dapat terload
+> 	* Alternatif patch ini dapat menggunakan [SSDT-SMBUS.dsl](https://github.com/RehabMan/OS-X-Clover-Laptop-Config/blob/master/hotpatch/SSDT-SMBUS.dsl)
+
 - IRQ Fix
-	* Patch ini dapat memperbaiki audio yang tidak berfungsi dan juga berpengaruh pada `HPET`.
-	* Gunakan patch ini jika memiliki masalah dengan `AppleHDA` yang sudah di patch (Di perlukan hampir di semua Laptop)
-	* Atau ketika memiliki masalah dengan `HPET` (restart setelah wake)
+> 	* Patch ini dapat memperbaiki audio yang tidak berfungsi dan juga berpengaruh pada `HPET`.
+> 	* Gunakan patch ini jika memiliki masalah dengan `AppleHDA` yang sudah di patch (Di perlukan hampir di semua Laptop)
+> 	* Atau ketika memiliki masalah dengan `HPET` (restart setelah wake)
+
 - RTC Fix
-	* RealTimeClock fix Berguna untuk memastikan agar `BIOS` tidak ter-reset setelah restart 
+> 	* RealTimeClock fix Berguna untuk memastikan agar `BIOS` tidak ter-reset setelah restart 
+
 - OS Check Fix
-	* Mensimulasikan versi windows untuk Darwin
-	* Alternatif patch ini dapat menggunakan [SSDT-XOSI.dsl](https://github.com/RehabMan/OS-X-USB-Inject-All/blob/master/SSDT-XOSI.dsl)
+> 	* Mensimulasikan versi windows untuk Darwin
+> 	* Alternatif patch ini dapat menggunakan [SSDT-XOSI.dsl](https://github.com/RehabMan/OS-X-USB-Inject-All/blob/master/SSDT-XOSI.dsl)
+
 - Fix Mutex with non-zero SyncLevel
-	* Patch ini berguna untuk memperbaiki semua `Mutex objects` yang bernilai selain Zero atau 0(Nol)
+> 	* Patch ini berguna untuk memperbaiki semua `Mutex objects` yang bernilai selain Zero atau 0(Nol)
+
 - Add MCHC
-	* Menambah perangkat MCHC yang Hilang
+> 	* Menambah perangkat MCHC yang Hilang
+
 - Add DTGP
-	* Menambah metode DTGP
+> 	* Menambah metode DTGP
+
 - Haswell/Skylake LPC
-	* Berguna agar `AppleLPC.kext` dapat terload. [Berikut patch untuk Skylake](https://github.com/RehabMan/Laptop-DSDT-Patch/blob/master/misc/misc_Skylake-LPC.txt)
+> 	* Berguna agar `AppleLPC.kext` dapat terload. [Berikut patch untuk Skylake](https://github.com/RehabMan/Laptop-DSDT-Patch/blob/master/misc/misc_Skylake-LPC.txt)
+
 - Add Imei
-	* Jika dalam DSDT sudah terdapat IMEI/HECI/MEI, artinya tidak perlu megunakan patch ini
+> 	* Jika dalam DSDT sudah terdapat IMEI/HECI/MEI, artinya tidak perlu megunakan patch ini
+
 ---
-### 5a. Patch Spesifik
+### 5b. Patch Spesifik
 Pada Dasarnya perbaikan ini bertujuan untuk membuat perangkat/hardware kita bekerja dengan normal
 
 sebelum menjurus ke masalah spesifik, ada baiknya kita mengubah nama perangkat dalam ACPI menjadi nama `native` untuk Mac OS x agar dapat di kenali dengan baik
@@ -200,4 +220,15 @@ Ganti Nama IMEI		| - Rename HECI to IMEI | - Manual
 
 > - Abaikan jika tidak ada
 > - Apabila pada MacIASL tidak ada patch, maka kita hanya butuh mereplace secara manual. misal `HDAS to HDEF`, kita hanya butuh mencari kata `HDAS` kemudian merubahnya menjadi `HDEF`
+
+Daftar Patch:
+- [Patch USB 3.1 untuk chipset 300 series](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/blob/master/DSDT%20-%20SSDT%20Patching/Daftar%20Patch/Patch%20USB%203%20XHC%20300%20Series/README.md)
+- [Patch GPU Intel UHD 630 Coffelake](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/tree/master/DSDT%20-%20SSDT%20Patching/Daftar%20Patch/Patch%20GPU%20UHD%20630%20Coffelake)
+- [Patch Audio Realtek ALC 1220](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/tree/master/DSDT%20-%20SSDT%20Patching/Daftar%20Patch/Patch%20Motherboard%20Asrock%20Phantom%20Gaming%204s)
+- [Patch PCI Device lists](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/tree/master/DSDT%20-%20SSDT%20Patching/Daftar%20Patch/Tambahan%20PCI%20devices%20dari%20Hackintool)
+
 ## 6. Kemas ulang ACPI (re-compile)
+Proses re-compile ini sangatlah mudah, yaitu menyimpan file `dsl` yang telah kita lakukan patching menjadi `aml` kembali.
+
+- Di aplikasi MacIASL `File > Save as > Acpi Machine Language Binary`
+- Test dan jalankan file ACPI baru yang telah di lakukan patch, dengan cara menyimpannya di folder `EFI > CLOVER > ACPI > Patched` restart

@@ -83,7 +83,7 @@
 				<key>PStates</key>
 				<false/>
 				<key>PluginType</key>
-				<true/>
+				<false/>
 			</dict>
 		</dict>
 		<key>SortedOrder</key>
@@ -104,6 +104,7 @@
 			<string>SSDT-x1_6-HwpLvt.aml</string>
 			<string>SSDT-x1_7-Cpu0Psd.aml</string>
 			<string>SSDT-x1_8-ApPsd.aml</string>
+			<string>SSDT-PluginType1.aml</string>
 		</array>
 	</dict>
 	<key>Boot</key>

@@ -153,13 +153,14 @@ terdapat 4 file baru di desktop
 terdapat 2 pilihan untuk menginstall patch baru ini
 
 1. Install kext di clover
-install kext `USBPorts.kext` kedalam `/Library/Extensions/`, rebuild kextcache dapat menggunakan `Hacktool` dan hapus `DSDT-3.aml` di dalam folder `ACPI` bila ada.
+install kext `USBPorts.kext` kedalam `EFI/CLOVER/Kexts/Others`, dan kemudian hapus `DSDT-3.aml` di dalam folder `ACPI` bila ada.
 
 2. Hapus DSDT-3.aml dari `clover` (sudah tidak di pakai lagi)
 tempatkan ke-3 file AML ke folder patched menggantikan USB-3.aml sebelumnya. tambahkan `Sort Order` pada clover config sehingga ketiga AML/ACPI tersebut ter-load saat booting.
 
 silahkan pilih salah satu.
-patch dalam folder EFI disini menggunakan metode pertama yaitu install `USBPorts.kext` edalam `/Library/Extensions/`, rebuild kextcache dengan alasan kepraktisan dan kompabilitas.
+patch dalam folder EFI disini menggunakan metode pertama yaitu install `USBPorts.kext` kedalam `EFI/CLOVER/Kexts/Others` dengan alasan kepraktisan.
+Namun kekurangannya adalah, kext ini tidak akan berjalan apaila kita melakukan perubahan `SMBios`, maka jika melakukan perubahan `SMbios`, perlu di lakukan patch ulang menggunakan `SSDT-3.aml` dan `Hackintool`.
 
 lanjutkan Reboot, dan test. apabila perangkat USB 2 ataupun USB 3 muncul di desktop setelah di colokkan, artinya patching sukses.
 

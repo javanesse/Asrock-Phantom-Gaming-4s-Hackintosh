@@ -146,6 +146,7 @@ Patch umum yang paling sering di butuhkan
 - Add DTGP
 - Skylake LPC
 - Add Imei
+- GPIO Patch
 ```
 
 #### Penjelasan Patch Umum
@@ -201,6 +202,9 @@ into definitionblock code_regex ,\sUnknownObj removeall_matched;
 
 - Add Imei
 > 	* Jika dalam DSDT sudah terdapat IMEI/HECI/MEI, artinya tidak perlu megunakan patch ini
+
+- GPIO Patch
+>	* Patch ini dapat di gunakan untuk menghitung IO controller
 
 ---
 ### 5b. Patch Spesifik

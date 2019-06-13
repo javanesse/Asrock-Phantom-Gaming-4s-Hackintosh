@@ -4,6 +4,8 @@
 # imei
 # SATA
 # Thermal
+# SRAM
+# SPI Controller
 
 
 
@@ -74,6 +76,47 @@ Device (THR)\n
 		{\n
 			"model", Buffer () { "Cannon Lake PCH Thermal Controller" },\n
 			"device_type", Buffer () { "Signal processing controller" },\n
+			"AAPL,slot-name", Buffer () { "Internal" },\n
+		})\n
+	}\n
+}\n
+end;
+
+
+# Tambah Properti SRAM
+into device label SRAM remove_entry;
+into device label PCI0 insert begin
+Device (SRAM)\n
+{\n
+	Name (_ADR, 0x00140002)\n
+	Method (_DSM, 4, NotSerialized)\n
+	{\n
+		If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }\n
+		Return (Package ()\n
+		{\n
+			"model", Buffer () { "Cannon Lake PCH Shared SRAM" },\n
+			"device_type", Buffer () { "RAM memory" },\n
+			"AAPL,slot-name", Buffer () { "Internal" },\n
+		})\n
+	}\n
+}\n
+end;
+
+
+
+# Tambah Properti SPI Controller
+into device label SPIC remove_entry;
+into device label PCI0 insert begin
+Device (SPIC)\n
+{\n
+	Name (_ADR, 0x001f0005)\n
+	Method (_DSM, 4, NotSerialized)\n
+	{\n
+		If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }\n
+		Return (Package ()\n
+		{\n
+			"model", Buffer () { "Cannon Lake PCH SPI Controller" },\n
+			"device_type", Buffer () { "Serial bus controller" },\n
 			"AAPL,slot-name", Buffer () { "Internal" },\n
 		})\n
 	}\n

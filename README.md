@@ -34,7 +34,8 @@ Casing              | Power Up           | [Raptor 1707](https://www.bukalapak.c
 Monitor             | Coocaa             | [43 Inch Android TV 1920x1080](https://www.tokopedia.com/kencana222/coocaa-43e6-led-smart-android-8-0-tv-wifi-digital-tv-dv-43inch)
 Perkiraan Biaya     | --                 | 13 Juta tanpa monitor
 
-
+Nama        | Keterangan
+------------|------------
 OS          | Mac OS X
 Versi       | 10.14.5
 CodeName    | Mojave

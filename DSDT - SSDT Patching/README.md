@@ -149,45 +149,58 @@ Patch umum yang paling sering di butuhkan
 ```
 
 #### Penjelasan Patch Umum
-- RENAME _DSM to XDSM
-	* Berguna agar metode _DSM dari ACPI bawaan BIOS, terabaikan oleh Mac OS X, tanpa harus menghapusnya
-- External Fixes
-	* berguna untuk menghapus semua `UnknownObj` yang tidak terpakai
-	* Fix ini bisa di dapatkan di repo asus atau asrock
+** - RENAME _DSM to XDSM **
+> 	* Berguna agar metode _DSM dari ACPI bawaan BIOS, terabaikan oleh Mac OS X, tanpa harus menghapusnya
+
+** - External Fixes **
+> 	* berguna untuk menghapus semua `UnknownObj` yang tidak terpakai
+> 	* Fix ini bisa di dapatkan di repo asus atau asrock
 	```
 	into_all all code_regex \/\*\sExternal\sreference\s\*\/\s+ removeall_matched;
 	into definitionblock code_regex ,\sUnknownObj removeall_matched;
 	```
-- Fix _WAK Arg0 v2
-	* Berguna agak mengenali panggilan untuk `WAKE` setelah komputer melakukan `SLEEP`
-- HPET Fix
-	* Jika mengalami `Kernel Panic` dengan pemberitahuan `No HPETs available...` atau tiba-tiba restart setelah `WAKE`, bisa jadi karena butuh patch ini.
-	* Patch ini berguna untuk memastikan bahwa perangkat `HPET` selalu ada.
-	* HPET fix untuk menghindari `Kernel Panic` dari `AppleIntelCPUPowerManagement`.
-- SMBUS Fix
-	* Memperbaiki `SMBUS` agar `AppleSMBusController.kext` dapat terload
-	* Alternatif patch ini dapat menggunakan [SSDT-SMBUS.dsl](https://github.com/RehabMan/OS-X-Clover-Laptop-Config/blob/master/hotpatch/SSDT-SMBUS.dsl)
-- IRQ Fix
-	* Patch ini dapat memperbaiki audio yang tidak berfungsi dan juga berpengaruh pada `HPET`.
-	* Gunakan patch ini jika memiliki masalah dengan `AppleHDA` yang sudah di patch (Di perlukan hampir di semua Laptop)
-	* Atau ketika memiliki masalah dengan `HPET` (restart setelah wake)
-- RTC Fix
-	* RealTimeClock fix Berguna untuk memastikan agar `BIOS` tidak ter-reset setelah restart 
-- OS Check Fix
-	* Mensimulasikan versi windows untuk Darwin
-	* Alternatif patch ini dapat menggunakan [SSDT-XOSI.dsl](https://github.com/RehabMan/OS-X-USB-Inject-All/blob/master/SSDT-XOSI.dsl)
-- Fix Mutex with non-zero SyncLevel
-	* Patch ini berguna untuk memperbaiki semua `Mutex objects` yang bernilai selain Zero atau 0(Nol)
-- Add MCHC
-	* Menambah perangkat MCHC yang Hilang
-- Add DTGP
-	* Menambah metode DTGP
-- Haswell/Skylake LPC
-	* Berguna agar `AppleLPC.kext` dapat terload. [Berikut patch untuk Skylake](https://github.com/RehabMan/Laptop-DSDT-Patch/blob/master/misc/misc_Skylake-LPC.txt)
-- Add Imei
-	* Jika dalam DSDT sudah terdapat IMEI/HECI/MEI, artinya tidak perlu megunakan patch ini
+	
+** - Fix _WAK Arg0 v2 **
+> 	* Berguna agak mengenali panggilan untuk `WAKE` setelah komputer melakukan `SLEEP`
+
+** - HPET Fix **
+> 	* Jika mengalami `Kernel Panic` dengan pemberitahuan `No HPETs available...` atau tiba-tiba restart setelah `WAKE`, bisa jadi karena butuh patch ini.
+> 	* Patch ini berguna untuk memastikan bahwa perangkat `HPET` selalu ada.
+> 	* HPET fix untuk menghindari `Kernel Panic` dari `AppleIntelCPUPowerManagement`.
+
+** - SMBUS Fix **
+> 	* Memperbaiki `SMBUS` agar `AppleSMBusController.kext` dapat terload
+> 	* Alternatif patch ini dapat menggunakan [SSDT-SMBUS.dsl](https://github.com/RehabMan/OS-X-Clover-Laptop-Config/blob/master/hotpatch/SSDT-SMBUS.dsl)
+
+** - IRQ Fix **
+> 	* Patch ini dapat memperbaiki audio yang tidak berfungsi dan juga berpengaruh pada `HPET`.
+> 	* Gunakan patch ini jika memiliki masalah dengan `AppleHDA` yang sudah di patch (Di perlukan hampir di semua Laptop)
+> 	* Atau ketika memiliki masalah dengan `HPET` (restart setelah wake)
+
+** - RTC Fix **
+> 	* RealTimeClock fix Berguna untuk memastikan agar `BIOS` tidak ter-reset setelah restart 
+
+** - OS Check Fix **
+> 	* Mensimulasikan versi windows untuk Darwin
+> 	* Alternatif patch ini dapat menggunakan [SSDT-XOSI.dsl](https://github.com/RehabMan/OS-X-USB-Inject-All/blob/master/SSDT-XOSI.dsl)
+
+** - Fix Mutex with non-zero SyncLevel **
+> 	* Patch ini berguna untuk memperbaiki semua `Mutex objects` yang bernilai selain Zero atau 0(Nol)
+
+** - Add MCHC **
+> 	* Menambah perangkat MCHC yang Hilang
+
+** - Add DTGP **
+> 	* Menambah metode DTGP
+
+** - Haswell/Skylake LPC **
+> 	* Berguna agar `AppleLPC.kext` dapat terload. [Berikut patch untuk Skylake](https://github.com/RehabMan/Laptop-DSDT-Patch/blob/master/misc/misc_Skylake-LPC.txt)
+
+** - Add Imei **
+> 	* Jika dalam DSDT sudah terdapat IMEI/HECI/MEI, artinya tidak perlu megunakan patch ini
+
 ---
-### 5a. Patch Spesifik
+### 5b. Patch Spesifik
 Pada Dasarnya perbaikan ini bertujuan untuk membuat perangkat/hardware kita bekerja dengan normal
 
 sebelum menjurus ke masalah spesifik, ada baiknya kita mengubah nama perangkat dalam ACPI menjadi nama `native` untuk Mac OS x agar dapat di kenali dengan baik

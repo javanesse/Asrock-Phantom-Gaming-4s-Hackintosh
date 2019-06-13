@@ -3,6 +3,7 @@
 # XHC
 # imei
 # SATA
+# Thermal
 
 
 
@@ -57,4 +58,24 @@ begin
 			"AAPL,slot-name", Buffer () { "Internal" },\n
 		})\n
 	}
+end;
+
+
+# Tambah Thermal
+into device label pci8086,a379 remove_entry;
+into device label PCI0 insert begin
+Device (JVTL)\n
+{\n
+	Name (_ADR, 0x00120000)\n
+	Method (_DSM, 4, NotSerialized)\n
+	{\n
+		If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }\n
+		Return (Package ()\n
+		{\n
+			"model", Buffer () { "Cannon Lake PCH Thermal Controller" },\n
+			"device_type", Buffer () { "Signal processing controller" },\n
+			"AAPL,slot-name", Buffer () { "Internal" },\n
+		})\n
+	}\n
+}\n
 end;

@@ -12,11 +12,26 @@ Ini Langkah membuat hackintosh Terkhusus pada komputer yang menggunakan Asrock P
 
 ## Untuk hardware lain pun dapat mengikuti tutorial ini.
 
-Hal yang di perlukan dalam instalasi Hackintosh pada dasarnya sama dengan instalasi microsoft windows pada umumnya, hanya saja produsen hardware tidak meyediakan driver (kexts) untuk sistem operasi Mac OSX.
+Hal yang di perlukan dalam instalasi Hackintosh pada dasarnya sama dengan instalasi microsoft windows pada umumnya, hanya saja di tambah dengan 1 *"software"*  bootloader.
 
-> Apa akibatnya apabila hackintosh tidak di lakukan patching? Fungsi harware kurang maksimal. sama halnya ketika WINDOWS tidak di install driver
+Analogi proses booting Windows:
+- Komputer meyala
+- BIOS muncul
+- Masuk Windows
+
+Analogi booting Hackintosh:
+- Komputer menyala
+- Bios muncul
+- Bootloader(Emulasi Bios Mac)
+- Masuk Mac OS X
+
+Produsen hardware tidak meyediakan driver (kexts) untuk sistem operasi Mac OSX, maka dari itu kita perlu melakukan patching agar driver mac dapat mengenali jenis hardware kita.
+
+> Apa akibatnya apabila hackintosh tidak di lakukan patching? Fungsi harware kurang maksimal. sama halnya ketika WINDOWS apabila tidak di install driver, seperti VGA, Audio, USB 3, Cardreader, Lan, Wifi.
 
 Repo ini sendiri boleh di katakan ini adalah repo driver (kext) untuk mac osx khusus hardware-hardware yang ada pada spesifikasi. dengan kata lain, jika spesifikasi komputer Anda kebetulan sama dengan komputer ini, maka langkah instalasi hackintosh Anda akan semakin mudah karena sudah tersedia driver (kext) untuk hardware jenis ini.
+
+Namun disini ada beberapa referensi tutorial untuk melakukan patching hardware-hardware lain.
 
 
 ## Hardware yang saya gunakan
@@ -42,7 +57,7 @@ CodeName    | Mojave
 Smbios      | iMac 19,2
 
 
-adapun yang perlu di perhatikan dari spesifikasi komputer saya di atas **HANYA** `Motherboard` dan `CPU`. selebihnya terserah pilihan Anda.
+Adapun yang perlu di perhatikan untuk driver(kext) disini **HANYA** untuk `Motherboard` dan `CPU` yang sama. selebihnya terserah pilihan Anda. Dengan kata lain, bila menggunakan `Motherboard` dan `CPU` yang sama, maka dapat menggunakan driver yang ada di sini.
 
 ## Langkah Instalasi
 1. [Persiapan hardware](#1-persiapan-hardware)

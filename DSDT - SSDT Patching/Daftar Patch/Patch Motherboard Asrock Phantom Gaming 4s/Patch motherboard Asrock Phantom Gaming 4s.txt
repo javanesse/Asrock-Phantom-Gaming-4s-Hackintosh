@@ -392,10 +392,6 @@ into method label _PRW parent_adr 0x00140003 remove_entry;
 into method label _PRW parent_adr 0x001F0006 remove_entry;
 
 
-
-
-
-
 # seems to work better if _PRW is present, but returns 0 (original was 3) for sleep state
 # Note: These are methods because some Skylake DSDT call _PRW as a method for no reason
 # XHC

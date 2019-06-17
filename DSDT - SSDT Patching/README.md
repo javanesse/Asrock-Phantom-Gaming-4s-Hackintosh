@@ -236,3 +236,12 @@ Proses re-compile ini sangatlah mudah, yaitu menyimpan file `dsl` yang telah kit
 
 - Di aplikasi MacIASL `File > Save as > Acpi Machine Language Binary`
 - Test dan jalankan file ACPI baru yang telah di lakukan patch, dengan cara menyimpannya di folder `EFI > CLOVER > ACPI > Patched` restart
+
+
+
+
+
+---
+
+Referensi lain:
+- https://olarila.com/forum/viewtopic.php?f=28&t=10477&fbclid=IwAR0FfcM0FbWroTwiQiDIGfCOFURazLA9US60sePtfCiJyc_LE7qxxsSe5zM

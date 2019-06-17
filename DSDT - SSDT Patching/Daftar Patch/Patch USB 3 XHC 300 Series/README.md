@@ -164,4 +164,8 @@ Namun kekurangannya adalah, kext ini tidak akan berjalan apaila kita melakukan p
 
 lanjutkan Reboot, dan test. apabila perangkat USB 2 ataupun USB 3 muncul di desktop setelah di colokkan, artinya patching sukses.
 
+
+Adapun tutorial lain mengenai usb 100/200/300 series tanpa menggunakan hackintool, yang artinya pure ACPI patching menggunakan tutorial [disini](https://olarila.com/forum/viewtopic.php?f=28&t=10171)
+
+
 Sekian.

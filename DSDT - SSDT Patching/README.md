@@ -243,5 +243,6 @@ Proses re-compile ini sangatlah mudah, yaitu menyimpan file `dsl` yang telah kit
 
 ---
 
-Referensi lain:
-- https://olarila.com/forum/viewtopic.php?f=28&t=10477&fbclid=IwAR0FfcM0FbWroTwiQiDIGfCOFURazLA9US60sePtfCiJyc_LE7qxxsSe5zM
+Referensi lainnya:
+- [Guide Patching Laptop DSDT - SSDT's](https://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/)
+- [Catalina Hackintosh on Mobos Serie 100/200/300 / Full DSDT Patched with minimum amount of third-party kexts](https://olarila.com/forum/viewtopic.php?f=28&t=10477)

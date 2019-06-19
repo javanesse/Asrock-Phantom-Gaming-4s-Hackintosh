@@ -44,6 +44,9 @@ Namun dengan segala **PERINGATAN** yang ada, saya tekankan bahwa patching PCI De
 
 Untuk itu, saya sarankan, gunakan `Clover config` patch untuk memunculkan PCI Devices ini, apabila ingin mengetahui bahwa `Kexts` dari PCI-PCI tersebut apakah sudah terload atau belum.
 
+### Patch CPU Power Management
+Lihat keterangan dalam folder tersebut
+
 # Cara menggunakan patch
 ### Untuk menggunakan patch ini, di perlukan aplikasi MacIASL.
 Cukup copy paste patch yang ingin di aplikasikan

@@ -1,5 +1,6 @@
 
 # Patch agar discrete GPU terdeteksi sebagai GFX0
+# Atau GPU kedua
 # Masukkan Patch ini setelah mengaplikasikan patch pertama
 # Agar tidak terjadi konflik pada patch pertama
 # saat mengubah GFX0 menjadi IGPU

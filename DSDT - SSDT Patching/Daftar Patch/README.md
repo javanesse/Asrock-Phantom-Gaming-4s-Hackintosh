@@ -12,14 +12,14 @@ Masing-masing patch ini sendiri telah di bekali dengan keterangan apa saja yang 
 
 Kesimpulannya adalah, lakukan patching motheroard sesuai urutan
 
+> WAJIB Lakukan extract ACPI file kembali dan lakukan patching dari awal apabila mengganti /merubah konfigurasi hardware
+
 ## Serta kemungkinan perubahan konfigurasi baik hardware maupun software, misalnya penggantian Prosesor.
 ### Prosesor Integrated GPU UHD 630
 Tidak semua prosesor memiliki GPU 630.
 Masing-masing prosesor berbasis Intel, saat ini telah di bekali dengan GPU di dalam prosesor itu sendiri dengan model dan jenis yang berbeda pula.Sebagai contoh, [prosesor Intel Core i7 8700 telah di bekali dengan GPU Intel UHD 630](https://ark.intel.com/content/www/us/en/ark/products/126686/intel-core-i7-8700-processor-12m-cache-up-to-4-60-ghz.html), yang notabene berbeda dengan prosesor-prosesor lain
 
 Oleh karenanya, patch ini di pisahkan dari patch motherboard, agar dapat di ubah sesuai keinginan.
-
-> Lakukan extract ACPI file kembali dan lakukan patching dari awal apabila mengganti /merubah konfigurasi hardware
 
 
 ### USB 3 XHC 300 Series

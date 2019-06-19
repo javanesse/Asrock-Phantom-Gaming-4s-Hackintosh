@@ -239,6 +239,7 @@ Daftar Patch:
 - [Patch GPU Intel UHD 630 Coffelake](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/tree/master/DSDT%20-%20SSDT%20Patching/Daftar%20Patch/Patch%20GPU%20UHD%20630%20Coffelake)
 - [Patch Audio Realtek ALC 1220](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/tree/master/DSDT%20-%20SSDT%20Patching/Daftar%20Patch/Patch%20Motherboard%20Asrock%20Phantom%20Gaming%204s)
 - [Patch PCI Device lists](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/tree/master/DSDT%20-%20SSDT%20Patching/Daftar%20Patch/Tambahan%20PCI%20devices%20dari%20Hackintool)
+- [CPU Power Management](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/tree/master/DSDT%20-%20SSDT%20Patching/Daftar%20Patch/CPU%20Power%20Management)
 
 ## 6. Kemas ulang ACPI (re-compile)
 Proses re-compile ini sangatlah mudah, yaitu menyimpan file `dsl` yang telah kita lakukan patching menjadi `aml` kembali.

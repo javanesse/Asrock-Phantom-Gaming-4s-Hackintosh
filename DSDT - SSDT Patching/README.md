@@ -114,8 +114,9 @@ contoh kasus, ketika ingin mengubah metode `_DSM` menjadi `XDSM` pada salah satu
 
 > untuk itu sebelum melakukan patching, ada sedikit trik untuk mencari metode/kata yang terdapat pada DSDT atau SSDT yang telah ada, yaitu dengan menggunakan terminal perintah `grep`. 
 
-Contoh lain: kita berniat mencari kata `HECI` pada file-file ACPI yang ada.
+Contoh lain: kita berniat mencari kata `HECI` pada file-file ACPI yang ada, untuk nanti di ubah menjadi `IMEI`.
 maka ketik di terminal:
+
 `
 grep -l HECI *.dsl
 `

@@ -8,6 +8,12 @@ Namun ada beberapa kendala yang terjadi apabila di satukan menjadi 1 file, salah
 *Contoh:*
 > Ketika melakukan 2 patch sekaligus, misal rename GFX0 menjadi IGPU, kemudian ingin juga merubah PEGP menjadi GFX0. Hal ini akan menjadi sumber konflik dimana ketika merubah GFX0 menjadi IGPU, kemudian tertimpa kembali setelah patching PEGP menjadi GFX0, yang akan menjadikan PEGP yang baru saja kita ubah menjadi GFX0, akan di ubah kembali menjadi IGPU pula.
 
+Masing-masing patch ini sendiri telah di bekali dengan keterangan apa saja yang di masukkan kedalam patch tersebut.
+
+## Serta kemungkinan perubahan konfigurasi baik hardware maupun software, misalnya penggantian Prosesor.
+Masing-masing prosesor berbasis Intel, saat ini telah di bekali dengan GPU di dalam prosesor itu sendiri dengan model dan jenis yang berbeda pula.Sebagai contoh, [prosesor Intel Core i7 8700 telah di bekali dengan GPU Intel UHD 630](https://ark.intel.com/content/www/us/en/ark/products/126686/intel-core-i7-8700-processor-12m-cache-up-to-4-60-ghz.html).
+
+Oleh karenanya, patch ini di pisahkan dari patch motherboard, agar dapat di ubah sesuai keinginan
 
 Patch di sini berisi dengan patch beberapa part komputer di antaranya:
 - Patch Motherboard Asrock Phantom Gaming 4s

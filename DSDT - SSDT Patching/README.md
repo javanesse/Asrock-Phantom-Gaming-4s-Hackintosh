@@ -131,6 +131,8 @@ maka terminal akan menunjukkan file mana saja yang terdapat kata `HECI`. Hal ini
 
 > Alangkah lebih baik pula jika setiap mengimplentasikan **SATU** buah patch, kemudian di lakukan pengetesan
 
+> **BACKUP, BACKUP BACKUP**. Lakukan backup setiap ada perubahan, sehingga dapat di kembalikan seperti semula melalui backup apabila terjadi kesalahan/kegagalan.
+
 ---
 
 ### 5a. Patch Umum

@@ -1,0 +1,1 @@
+Adapun fungsi spesifik yang di implementasikan dalam keterangan di dalam patch, dapat di lihat [disini](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/tree/master/DSDT%20-%20SSDT%20Patching#penjelasan-patch-umum)

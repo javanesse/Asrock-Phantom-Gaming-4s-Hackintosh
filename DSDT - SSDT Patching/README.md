@@ -112,12 +112,12 @@ contoh kasus, ketika ingin mengubah metode `_DSM` menjadi `XDSM` pada salah satu
 
 > untuk itu sebelum melakukan patching, ada sedikit trik untuk mencari metode/kata yang terdapat pada DSDT atau SSDT yang telah ada, yaitu dengan menggunakan terminal perintah `grep`. 
 
-Contoh:
+Contoh lain: kita berniat mencari kata `HECI`, maka ketik di terminal:
 `
-grep -l _DSM *.dsl
+grep -l HECI *.dsl
 `
 
-maka terminal akan menunjukkan file mana saja yang terdapat metode `_DSM`. hal ini di karenakan kita wajib mengubah seluruh file secara sinkronisasi. artinya, apabila dalam salah satu file terdapat metode `_DSM` sementara kita ingin mengubahnya menjadi `XDSM`, maka kita harus mengubah seluruh file yang ada kandungan metode `_DSM`.
+maka terminal akan menunjukkan file mana saja yang terdapat kata `HECI`. Hal ini di karenakan kita wajib mengubah seluruh file secara sinkronisasi. artinya, apabila dalam salah satu file terdapat metode `HECI` kemudian kita ingin mengubahnya menjadi `IMEI`, maka kita harus mengubah seluruh file yang ada kandungan kata `HECI`.
 
 ---
 

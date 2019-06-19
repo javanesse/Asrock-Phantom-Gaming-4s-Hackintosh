@@ -127,7 +127,7 @@ maka terminal akan menunjukkan file mana saja yang terdapat kata `HECI`. Hal ini
 
 > Alangkah lebih baik apabila kita membuat checklist apa saja yang ingin kita lakukan patching ke dalam file-file ACPI kita
 
-> Alangkah lebih baik apabila mendokumentasikan setiap melakukan patching agar tidak tercampur aduk.
+> Alangkah lebih baik apabila mendokumentasikan dalam bentuk catatan atau video atau screenshot setiap melakukan patching agar tidak tercampur aduk.
 
 > Alangkah lebih baik pula jika setiap mengimplentasikan **SATU** buah patch, kemudian di lakukan pengetesan
 

@@ -80,10 +80,11 @@
 			<string>SSDT-0-SataTabl.aml</string>
 			<string>SSDT-1-CpuSsdt.aml</string>
 			<string>SSDT-2-SaSsdt.aml</string>
-			<string>SSDT-3-xh_cfsd4.aml</string>
-			<string>SSDT-4-TbtTypeC.aml</string>
-			<string>SSDT-5-UsbCTabl.aml</string>
-			<string>SSDT-6-ADebTabl.aml</string>
+			<string>SSDT-3-PegSsdt.aml</string>
+			<string>SSDT-4-xh_cfsd4.aml</string>
+			<string>SSDT-5-TbtTypeC.aml</string>
+			<string>SSDT-6-UsbCTabl.aml</string>
+			<string>SSDT-7-ADebTabl.aml</string>
 			<string>SSDT-x1_0-Cpu0Ist.aml</string>
 			<string>SSDT-x1_1-ApIst.aml</string>
 			<string>SSDT-x1_2-Cpu0Cst.aml</string>

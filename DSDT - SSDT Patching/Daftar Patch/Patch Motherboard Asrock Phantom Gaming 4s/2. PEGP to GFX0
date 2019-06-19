@@ -1,0 +1,20 @@
+
+# Patch agar discrete GPU terdeteksi sebagai GFX0
+# Masukkan Patch ini setelah mengaplikasikan patch pertama
+# Agar tidak terjadi konflik pada patch pertama
+# saat mengubah GFX0 menjadi IGPU
+
+# Rename PEGP to GFX0
+# rename PEGP -> GFX0 for better power management
+into_all all code_regex PEGP\. replaceall_matched begin GFX0. end;
+into_all all code_regex \.PEGP replaceall_matched begin .GFX0 end;
+into_all all code_regex \sPEGP, replaceall_matched begin GFX0, end;
+into_all all code_regex \(PEGP replaceall_matched begin (GFX0 end;
+into_all all label PEGP set_label begin GFX0 end;
+into_all all label _SB.PCI0.PEGP set_label begin _SB.PCI0.GFX0 end;
+into_all all label \_SB.PCI0.PEGP set_label begin \_SB.PCI0.GFX0 end;
+into_all all label _SB.PCI0.PEGP.DD02 set_label begin _SB.PCI0.GFX0.DD02 end;
+into_all all label \_SB.PCI0.PEGP.DD02 set_label begin \_SB.PCI0.GFX0.DD02 end;
+into_all all label ^^^PEGP set_label begin ^^^GFX0 end;
+into_all all label ^^PEGP set_label begin ^^GFX0 end;
+into_all all label ^PEGP set_label begin ^GFX0 end;

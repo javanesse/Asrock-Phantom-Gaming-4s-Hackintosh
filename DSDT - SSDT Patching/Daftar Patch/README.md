@@ -47,5 +47,6 @@ Untuk itu, saya sarankan, gunakan `Clover config` patch untuk memunculkan PCI De
 # Cara menggunakan patch
 - Untuk menggunakan patch ini, di perlukan aplikasi MacIASL.
 Cukup copy paste patch yang ingin di aplikasikan
+
 - Singkronisasi antar File
 mengingat patch HARUS seragam antara DSDT dan SSDT-SSDT yang lain, maka lakukan juga patch yang sama terhadap SSDT-SSDT yang ada, namun dikarenakan patch DSDT membubuhkan device tambahan seperti `DTGP`, `MCHC`, maka syntax-syntax tersebut harap di hapus terlebih dahulu saat melakukan patcing SSDT, karena SSDT tidak memerlukan hal itu, serta menghindari konflik device ganda.

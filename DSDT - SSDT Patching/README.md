@@ -212,6 +212,9 @@ into definitionblock code_regex ,\sUnknownObj removeall_matched;
 - GPIO Patch
 >	* Patch ini dapat di gunakan untuk menghitung IO controller
 
+Patch-patch di atas bukan menjadi patokan, hanya saja sering terjadi secara umum. silahkan lakukan patching sesuai kebutuhan.
+Patching secara berlebihan justru sangat berpotensi membuat system tidak stabil.
+
 ---
 ### 5b. Patch Spesifik
 Pada Dasarnya perbaikan ini bertujuan untuk membuat perangkat/hardware kita bekerja dengan normal

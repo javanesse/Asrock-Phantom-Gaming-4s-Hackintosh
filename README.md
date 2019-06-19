@@ -54,7 +54,7 @@ Nama        | Keterangan
 OS          | Mac OS X
 Versi       | 10.14.5
 CodeName    | Mojave
-Smbios      | iMac 19,2
+Smbios      | iMacPro1,1
 
 
 Adapun yang perlu di perhatikan untuk driver(kext) disini **HANYA** untuk `Motherboard` dan `CPU` yang sama. selebihnya terserah pilihan Anda. Dengan kata lain, bila menggunakan `Motherboard` dan `CPU` yang sama, maka dapat menggunakan driver yang ada di sini.

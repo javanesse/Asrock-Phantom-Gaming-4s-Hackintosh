@@ -92,13 +92,15 @@ dari keterangan di atas menunjukkan bahwa mulai dari prosesor skylake, kita tida
 artinya Khusus untuk `ACPI/BIOS` dari `Motherboard/prosesor` keluaran terbaru biasanya `Skylake` ke atas, proses decompile hanya menggunakan perintah `iasl -dl DSDT.aml SSDT*.aml` 
 
 Adapun caranya adalah menggunakan aplikasi bawaan Mac OS X bernama terminal
-> - saya asumsikan file-file DSDT dan SSDT berada di folder `origin` di desktop
-> - Buka terminal, ketik `cd(spasi)` lalu drag n drop folder `origin` yang ada di dekstop
+> - saya asumsikan file-file `DSDT dan SSDT` yang berada di folder `origin` telah di pindahkan ke desktop
+> - Buka terminal, ketik `cd(spasi)` lalu drag n drop folder `origin` yang ada di desktop tersebut
 > - ketik `iasl -dl DSDT.aml SSDT*.aml`
 
 maka akan terbentuk file-file baru dalam folder tersebut dengan extensi baru yaitu `dsl`
 
-file-file dsl inilah yang nantinya akan kita lakukan patching
+hapus semua file `aml` dalam folder yang telah di lakukan proses `decompile` tersebut, sehingga hanya tertinggal file-file berekstensi `dsl`.
+karena file-file `dsl` inilah yang nantinya akan kita lakukan patching.
+
 ## 4. Bersihkan ACPI
 1. Buka file satu persatu menggunakan MacIASL
 2. Tekan tombol compile,

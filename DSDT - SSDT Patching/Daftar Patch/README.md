@@ -1,7 +1,7 @@
 # Daftar Patch
 
 ## Patch Motherboard
-Merujuk pada [Tutorial patching DSDT/SSDT](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/tree/master/DSDT%20-%20SSDT%20Patching), juga menelisik daftar jenis konfigurasi hardware apa saja yang di tanamkan pada motherboard dalam kasus ini [Asrock Phntom Gaming 42](https://www.asrock.com/MB/Intel/Z390%20Phantom%20Gaming%204S/index.asp#Specification), serta beberapa kali proses dumping menggunakan windows untuk mengetahui hardware secara pasti, dan beberapa kali melakukan proses experimental, maka seluruh patch untuk Asrock Phantom Gaming 4s yang sekali lagi merujuk pada tutorial tersebut, saya niatkan untuk di gabungkan menjadi satu.
+Merujuk pada [Tutorial patching DSDT/SSDT](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/tree/master/DSDT%20-%20SSDT%20Patching), juga menelisik daftar jenis konfigurasi hardware apa saja yang di tanamkan pada motherboard dalam kasus ini [Asrock Phntom Gaming 42](https://www.asrock.com/MB/Intel/Z390%20Phantom%20Gaming%204S/index.asp#Specification), serta beberapa kali proses dumping menggunakan windows menggunakan AIDA64, SIW-64 (System info), Speecy, dll, untuk mengetahui hardware secara pasti, dan beberapa kali melakukan proses experimental, maka seluruh patch untuk Asrock Phantom Gaming 4s yang sekali lagi merujuk pada tutorial tersebut, saya niatkan untuk di gabungkan menjadi satu.
 
 Namun ada beberapa kendala yang terjadi apabila di satukan menjadi 1 file, salah satunya adalah, terjadinya konflik saat melakukan rename
 

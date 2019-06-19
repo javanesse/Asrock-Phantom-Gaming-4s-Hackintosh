@@ -93,7 +93,7 @@ artinya Khusus untuk `ACPI/BIOS` dari `Motherboard/prosesor` keluaran terbaru bi
 
 Adapun caranya adalah menggunakan aplikasi bawaan Mac OS X bernama terminal
 > - saya asumsikan file-file DSDT dan SSDT berada di folder `origin` di desktop
-> - Buka terminal, ketik `cd` lalu drag n drop folder `origin` yang ada di dekstop
+> - Buka terminal, ketik `cd(spasi)` lalu drag n drop folder `origin` yang ada di dekstop
 > - ketik `iasl -dl DSDT.aml SSDT*.aml`
 
 maka akan terbentuk file-file baru dalam folder tersebut dengan extensi baru yaitu `dsl`

@@ -24,7 +24,9 @@ Misal SMBios kita 19,2 maka ubah Plist dari kext tersebut menjadi 19,2 begitupul
 Setelah melakukan Update `FCP X` dari versi `10.4.3` ke `10.4.6`, Aplikasi `FCP X` tidak mau terbuka, dengan result error
 
 ```
-Applications/Final Cut Pro.app/Contents/MacOS/../Frameworks/ProGraphics.framework/Versions/A/ProGraphics abort() called
+Application Specific Information:
+/Applications/Final Cut Pro.app/Contents/MacOS/../Frameworks/ProGraphics.framework/Versions/A/ProGraphics
+abort() called
 ```
 akhirnya kembali menggunakan [ALTERNATIF 1](#alternatif-1) dan semua berjalan dengan lancar.
 

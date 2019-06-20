@@ -25,7 +25,7 @@ Setelah melakukan Update `FCP X` dari versi `10.4.3` ke `10.4.6`, Aplikasi `FCP 
 `
 Applications/Final Cut Pro.app/Contents/MacOS/../Frameworks/ProGraphics.framework/Versions/A/ProGraphics abort() called
 `
-akhirnya kembali menggunakan [ALTERNATIF 1](a) dan semua berjalan dengan lancar.
+akhirnya kembali menggunakan [ALTERNATIF 1](#alternatif-1) dan semua berjalan dengan lancar.
 
 # Kesimpulan
-Kesimpulan untuk saat ini adalah, ketika mengalami `ERROR` saat menggunakan aplikasi `FCP X`, maka cobalah untuk mengatur konfigurasi chipset BIOS seperti yang di tuangkan pada [ALTERNATIF 1](.) di atas.
+Kesimpulan untuk saat ini adalah, ketika mengalami `ERROR` saat menggunakan aplikasi `FCP X`, maka cobalah untuk mengatur konfigurasi chipset BIOS seperti yang di tuangkan pada [ALTERNATIF 1](#alternatif-1) di atas.

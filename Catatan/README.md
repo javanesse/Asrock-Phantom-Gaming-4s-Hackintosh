@@ -73,4 +73,7 @@ From Terminal, I used the procedure to test for nvram ("sudo nvram TestVar=Hello
 
 ---
 
+# 7. Final Cut Pro X 10.14.6 Crash
+lihat [disini](FCP%20X%20Crash.md)
+
 [Kembali ke menu utama](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/blob/master/README.md#langkah-instalasi)

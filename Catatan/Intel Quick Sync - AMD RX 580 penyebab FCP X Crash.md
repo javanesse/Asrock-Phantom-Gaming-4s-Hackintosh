@@ -21,7 +21,8 @@ Misal SMBios kita 19,2 maka ubah Plist dari kext tersebut menjadi 19,2 begitupul
 
 
 # CRASH LAGI
-Setelah melakukan Update `FCP X` dari versi `10.4.3` ke `10.4.6`, Aplikasi `FCP X` tidak mau terbuka, dengan result error
+Setelah melakukan Update `FCP X` dari versi `10.4.3` ke `10.4.6`, Aplikasi `FCP X` tidak mau terbuka, 
+dengan result error:
 
 ```
 Application Specific Information:

@@ -179,41 +179,41 @@
 		<string>C02726902CDH69F1M</string>
 		<key>ROM</key>
 		<data>
-		SiICII3q
+		VDcf8Bkx
 		</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>12/08/2017</string>
+		<string>04/22/2019</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>IMP11.88Z.0064.B30.1712081714</string>
+		<string>IM191.88Z.F000.B00.1904222222</string>
 		<key>Board-ID</key>
-		<string>Mac-7BA5B2D9E42DDD94</string>
+		<string>Mac-63001698E7A34814</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02714306CDJG36CB</string>
+		<string>C02948403CDKGQG1H</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
 		<string>1.0</string>
 		<key>ChassisAssetTag</key>
-		<string>iMacPro-Aluminum</string>
+		<string>iMac-Aluminum</string>
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
 		<string>0x09</string>
 		<key>EfiVersion</key>
-		<string>220.250.330.0.0</string>
+		<string>220.260.170.0.0</string>
 		<key>Family</key>
-		<string>iMac Pro</string>
+		<string>iMac</string>
 		<key>FirmwareFeatures</key>
-		<string>0xFD8FF53F</string>
+		<string>0xFD8FF576</string>
 		<key>FirmwareFeaturesMask</key>
-		<string>0xFF9FFF3F</string>
+		<string>0xFF1FFF3F</string>
 		<key>LocationInChassis</key>
 		<string>Part Component</string>
 		<key>Manufacturer</key>
@@ -221,20 +221,20 @@
 		<key>Mobile</key>
 		<false/>
 		<key>PlatformFeature</key>
-		<string>0xFFFF</string>
+		<string>0x00</string>
 		<key>ProductName</key>
-		<string>iMacPro1,1</string>
+		<string>iMac19,2</string>
 		<key>SerialNumber</key>
-		<string>C02TJSZRHX87</string>
+		<string>C02ZR2ZZJWDW</string>
 		<key>SmUUID</key>
-		<string>7B12B21A-9898-46DE-8573-DDB61F208DEA</string>
+		<string>4F04A798-17CF-4792-8EDE-E4C57AF01931</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
 		<key>CustomUUID</key>
-		<string>3D1FD673-8984-479C-B591-2A01BB3CD3E0</string>
+		<string>AC8D7321-51BB-4682-9509-8B125CFC10D6</string>
 		<key>InjectKexts</key>
 		<string>Yes</string>
 		<key>InjectSystemID</key>

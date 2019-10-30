@@ -77,3 +77,21 @@ From Terminal, I used the procedure to test for nvram ("sudo nvram TestVar=Hello
 lihat cara memperbaikinya [disini](FCP%20X%20Crash.md)
 
 [Kembali ke menu utama](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/blob/master/README.md#langkah-instalasi)
+
+---
+
+# 8. verbose boot log
+In Terminal (all data):
+`log show --predicate "processID == 0" --debug`
+
+In Terminal (only todays data):
+`log show --predicate "processID == 0" --start $(date "+%Y-%m-%d") --debug`
+
+---
+
+# 9. Mojave Valid date to Install
+Avoid `This Copy of the install MacOS xxx Application is damaged...`
+Use Terminal
+date 111111112018
+
+---

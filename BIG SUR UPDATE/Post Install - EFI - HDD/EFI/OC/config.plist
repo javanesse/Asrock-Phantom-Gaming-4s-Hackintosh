@@ -84,7 +84,7 @@
 				<key>Path</key>
 				<string>SSDT-PluginType1.aml</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -389,6 +389,11 @@
 				<string>Network controller</string>
 				<key>model</key>
 				<string>AR9485 Wireless Network Adapter</string>
+				<key>compatible</key>
+				<string>"pci168c,2a"
+</string>
+				<key>device-id	</key>
+				<data>KgAAAA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x0)</key>
 			<dict>
@@ -599,26 +604,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
-				<key>Arch</key>
-				<string>x86_64</string>
-				<key>BundlePath</key>
-				<string>AirPortAtheros40.kext</string>
 				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/AirPortAtheros40</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string>20.0.0</string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string></string>
+				<string>JvOptimize PowerManagement to Performance</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>PlistPath</key>
@@ -626,13 +613,13 @@
 				<key>Enabled</key>
 				<true/>
 				<key>MinKernel</key>
-				<string>20.0.0</string>
+				<string></string>
 				<key>ExecutablePath</key>
 				<string></string>
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>AtherosWiFiInjector.kext</string>
+				<string>CPUFriendDataProvider.kext</string>
 			</dict>
 		</array>
 		<key>Block</key>

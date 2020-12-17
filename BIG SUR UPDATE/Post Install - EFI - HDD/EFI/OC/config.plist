@@ -8,185 +8,41 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>JvFixing Embedded Controller (SSDT-EC/USBX)</string>
-				<key>Path</key>
-				<string>SSDT-EC-USBX-DESKTOP.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-0-SataTabl.aml</string>
-				<key>Path</key>
-				<string>SSDT-0-SataTabl.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-1-CpuSsdt.aml</string>
-				<key>Path</key>
-				<string>SSDT-1-CpuSsdt.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-2-SaSsdt.aml</string>
-				<key>Path</key>
-				<string>SSDT-2-SaSsdt.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-3-PegSsdt.aml</string>
-				<key>Path</key>
-				<string>SSDT-3-PegSsdt.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-4-xh_cfsd4.aml</string>
-				<key>Path</key>
-				<string>SSDT-4-xh_cfsd4.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-5-TbtTypeC.aml</string>
-				<key>Path</key>
-				<string>SSDT-5-TbtTypeC.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-6-UsbCTabl.aml</string>
-				<key>Path</key>
-				<string>SSDT-6-UsbCTabl.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-7-ADebTabl.aml</string>
-				<key>Path</key>
-				<string>SSDT-7-ADebTabl.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-PluginType1.aml</string>
-				<key>Path</key>
-				<string>SSDT-PluginType1.aml</string>
-				<key>Enabled</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>JvFIX Asrock for boot hangs after BIOS update 1.4</string>
-				<key>Path</key>
-				<string>SSDT-SET-STAS-Darwin.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-x1_0-Cpu0Ist.aml</string>
-				<key>Path</key>
-				<string>SSDT-x1_0-Cpu0Ist.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-x1_1-ApIst.aml</string>
-				<key>Path</key>
-				<string>SSDT-x1_1-ApIst.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-x1_2-Cpu0Cst.aml</string>
-				<key>Path</key>
-				<string>SSDT-x1_2-Cpu0Cst.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-x1_3-ApCst.aml</string>
-				<key>Path</key>
-				<string>SSDT-x1_3-ApCst.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-x1_4-Cpu0Hwp.aml</string>
-				<key>Path</key>
-				<string>SSDT-x1_4-Cpu0Hwp.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-x1_5-ApHwp.aml</string>
-				<key>Path</key>
-				<string>SSDT-x1_5-ApHwp.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-x1_6-HwpLvt.aml</string>
-				<key>Path</key>
-				<string>SSDT-x1_6-HwpLvt.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-x1_7-Cpu0Psd.aml</string>
-				<key>Path</key>
-				<string>SSDT-x1_7-Cpu0Psd.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-x1_8-ApPsd.aml</string>
-				<key>Path</key>
-				<string>SSDT-x1_8-ApPsd.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>jvFixing NVRAM (SSDT-PMC)</string>
-				<key>Path</key>
-				<string>SSDT-PMC.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Jv Fixing Power Management</string>
-				<key>Path</key>
-				<string>SSDT-PLUG-DRTNIA.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>JvFixing System Clocks (SSDT-AWAC/RTC0)</string>
+				<string>Fixing System Clocks (SSDT-AWAC/RTC0)</string>
 				<key>Path</key>
 				<string>SSDT-AWAC.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Fixing Embedded Controllers</string>
+				<key>Path</key>
+				<string>SSDT-EC.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Fixing IRQ Conflicts (SSDT-HPET + OC_Patches.plist)</string>
+				<key>Path</key>
+				<string>SSDT-HPET.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Fixing Power Management (SSDT-PLUG)</string>
+				<key>Path</key>
+				<string>SSDT-PLUG.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Fixing NVRAM (SSDT-PMC)</string>
+				<key>Path</key>
+				<string>SSDT-PMC.aml</string>
 				<key>Enabled</key>
 				<true/>
 			</dict>
@@ -198,12 +54,116 @@
 				<key>Enabled</key>
 				<true/>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Fixing USB
+</string>
+				<key>Path</key>
+				<string>SSDT-USB-Reset.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Fixing IMEI (SSDT-IMEI)</string>
+				<key>Path</key>
+				<string>SSDT-IMEI.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Fixing SMBus support: Manual
+</string>
+				<key>Path</key>
+				<string>SSDT-SBUS-MCHC.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array>
 		</array>
 		<key>Patch</key>
 		<array>
+			<dict>
+				<key>Comment</key>
+				<string>HPET _CRS to XCRS Rename</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>JV9DUlM=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data>AAAAAA==</data>
+				<key>Replace</key>
+				<data>JVhDUlM=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>AAAAAA==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>RTC IRQ 8 Patch</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>IgABeQA=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data>AAAAAA==</data>
+				<key>Replace</key>
+				<data>IgAAeQA=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>AAAAAA==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>TIMR IRQ 0 Patch</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>IgEAeQA=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data>AAAAAA==</data>
+				<key>Replace</key>
+				<data>IgAAeQA=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>AAAAAA==</data>
+			</dict>
 		</array>
 		<key>Quirks</key>
 		<dict>
@@ -621,6 +581,24 @@
 				<key>BundlePath</key>
 				<string>CPUFriendDataProvider.kext</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>JvAgpm Injector Vega64</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>MinKernel</key>
+				<string></string>
+				<key>ExecutablePath</key>
+				<string>AGPMInjector.kext</string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string></string>
+			</dict>
 		</array>
 		<key>Block</key>
 		<array>
@@ -719,7 +697,7 @@
 			<key>TakeoffDelay</key>
 			<integer>0</integer>
 			<key>Timeout</key>
-			<integer>0</integer>
+			<integer>5</integer>
 		</dict>
 		<key>Debug</key>
 		<dict>
@@ -802,7 +780,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>keepsyms=1 swd_panic=1 alcid=1 -v</string>
+				<string>keepsyms=1 swd_panic=1 alcid=1 -v igfxonln=1</string>
 				<key>csr-active-config</key>
 				<data>/w8AAA==</data>
 				<key>prev-lang:kbd</key>
@@ -873,11 +851,11 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02952802GULNV91M</string>
+			<string>C02903500QXLNV9A8</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
-			<data>QFVArOAp</data>
+			<data>cIXCy2ls</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
@@ -885,9 +863,9 @@
 			<key>SystemProductName</key>
 			<string>iMac19,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02ZW0J9JV3Q</string>
+			<string>C02Y4KYEJV3Q</string>
 			<key>SystemUUID</key>
-			<string>89C1BC49-A5AE-4A08-B928-15B8F41BFE12</string>
+			<string>4E7648D6-34C7-4982-AD94-A8DEC0828BE1</string>
 		</dict>
 		<key>Memory</key>
 		<dict>

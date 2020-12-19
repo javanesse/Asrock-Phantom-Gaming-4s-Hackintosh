@@ -109,3 +109,10 @@ date 111111112018
 4. open your app
 
 ---
+
+# 11. Avoid Unable to expand "xxx.zip" it is in an unsupported format. on big sur.
+
+1. Open Terminal. do a command : `unzip xxx.zip`
+2. Open home folder
+
+---

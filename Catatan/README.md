@@ -98,8 +98,14 @@ date 111111112018
 
 
 # 10. Avoid You do not have permission to open the application “xxxxx.app” on big sur.
+Option 1:
+1. Open Terminal. do a command : `codesign --force --deep --sign - /Applications/AppName.app`
+2. Open your app
+
+Option 2:
 1. [Instal brew](https://brew.sh/) via terminal
 2. Install upx: `brew install upx` 
 3. run command `sudo upx -d /Applications/my_app.app/Contents/MacOS/my_app` to your app
+4. open your app
 
 ---

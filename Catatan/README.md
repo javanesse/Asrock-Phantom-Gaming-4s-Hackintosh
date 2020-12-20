@@ -132,6 +132,7 @@ Beruntung kita dapat melakukan backup file-file installer tersebut. Namun hal in
 6. Setelah tercopy, silahkan lakukan instalasi dengan memasukkan Password yang di minta oleh logic pro
 
 [Source 1](https://www.youtube.com/watch?v=4ZEjC1pDJ9Q)
+
 [Source 2](https://www.youtube.com/watch?v=6ncYUNLoTyM)
 
 ---

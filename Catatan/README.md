@@ -127,8 +127,8 @@ Beruntung kita dapat melakukan backup file-file installer tersebut. Namun hal in
 1. download Aditional Sound Library
 2. Ketika download selesai, maka installer minta password. `JANGAN MASUKKAN PASSWORD TERLEBIH DAHULU`
 3. Buka `Finder`, pilih menu `Go`, pilih menu `Go to Folder` ketik `/private/var/folders/`
-4. Buka folder `com.apple.MusicApps` cari dan buka folder `audiocontentdownload.apple.com`, cari dan buka folder `lp9_ms2_content_2011`. Hasil download akan tersimpan disini.
-5. Copy folder `lp9_ms2_content_2011` ke hardisk lain untuk instalasi selanjutnya di kemudian hari tanpa perlu download ulang.
+4. Cari dan buka folder `com.apple.MusicApps`, Hasil download akan tersimpan disini.
+5. Copy folder `com.apple.MusicApps` ke hardisk lain untuk instalasi selanjutnya di kemudian hari tanpa perlu download ulang.
 6. Setelah tercopy, silahkan lakukan instalasi dengan memasukkan Password yang di minta oleh logic pro
 
 

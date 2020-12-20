@@ -124,26 +124,14 @@ Sayangnya, setelah instalasi, file-file tersebut akan otomatis terhapus, sehingg
 
 Beruntung kita dapat melakukan backup file-file installer tersebut. Namun hal ini harus sebelum file yang telah kita download tersebut terinstall.
 
-1. download Aditional Sound Library dan ### Jangan Install
+1. download Aditional Sound Library
+2. Ketika download selesai, maka installer minta password. `JANGAN MASUKKAN PASSWORD TERLEBIH DAHULU`
+3. Buka `Finder`, pilih menu `Go`, pilih menu `Go to Folder` ketik `/private/var/folders/`
+4. Buka folder `com.apple.MusicApps` cari dan buka folder `audiocontentdownload.apple.com`, cari dan buka folder `lp9_ms2_content_2011`. Hasil download akan tersimpan disini.
+5. Copy folder `lp9_ms2_content_2011` ke hardisk lain untuk instalasi selanjutnya di kemudian hari tanpa perlu download ulang.
+6. Setelah tercopy, silahkan lakukan instalasi dengan memasukkan Password yang di minta oleh logic pro
 
 
-the downloads are automatically stored in a hidden folder until completed, and then the installers automatically run, placing the files in the appropriate Library folders. Once the installation is complete, the downloaded files are automatically deleted.
- 
-Provided that your OS requires an Admin password to run the installers, it is possible to interrupt the installer process so that you can copy/backup the downloaded package files.
- 
- 
-Start the download
- 
-Using the Finder Go to Folder menu, enter "/private/var/folders/" (without the quotes)
- 
-A poke around in the various folders that are inside here will reveal folder called "com.apple.MusicApps" and inside there, a folder called "audiocontentdownload.apple.com".
-Finally, inside here is a folder called "lp9_ms2_content_2011
- 
-The downloaded packages are temporarily stored here.
- 
-Once downloading is complete, Logic or Mainstage will prompt for an Admin password before completing the install process.
- 
-Before entering the password, copy the installer packages to another location. The installation can then be carried out (and the original packages automatically deleted by the installer process).
 [Source](https://www.youtube.com/watch?v=6ncYUNLoTyM)
 
 ---

@@ -116,3 +116,26 @@ date 111111112018
 2. Open home folder
 
 ---
+
+# 12. Logic Pro Additional Content Installer (Copy and Save)
+
+the downloads are automatically stored in a hidden folder until completed, and then the installers automatically run, placing the files in the appropriate Library folders. Once the installation is complete, the downloaded files are automatically deleted.
+ 
+Provided that your OS requires an Admin password to run the installers, it is possible to interrupt the installer process so that you can copy/backup the downloaded package files.
+ 
+ 
+Start the download
+ 
+Using the Finder Go to Folder menu, enter "/private/var/folders/" (without the quotes)
+ 
+A poke around in the various folders that are inside here will reveal folder called "com.apple.MusicApps" and inside there, a folder called "audiocontentdownload.apple.com".
+Finally, inside here is a folder called "lp9_ms2_content_2011
+ 
+The downloaded packages are temporarily stored here.
+ 
+Once downloading is complete, Logic or Mainstage will prompt for an Admin password before completing the install process.
+ 
+Before entering the password, copy the installer packages to another location. The installation can then be carried out (and the original packages automatically deleted by the installer process).
+[Source](https://www.youtube.com/watch?v=6ncYUNLoTyM)
+
+---

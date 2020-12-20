@@ -117,7 +117,7 @@ date 111111112018
 
 ---
 
-# 12. Logic Pro Additional Sound Library ontent Installer (Copy and Save)
+# 12. Backup Logic Pro Additional Sound Library Content Installer
 
 Seperti kita tahu bahwa file Additional Content Installer memiliki ukuran yang besar. namun hasil download logic pro tersimpan secara tersembunyi. Ketika kita melakukan download, dan setelah download selesai, maka akan otomatis melakukan instalasi.
 Sayangnya, setelah instalasi, file-file tersebut akan otomatis terhapus, sehingga ketika kita melakukan instal ulang, kita di paksa untuk melakukan download ulang fil-file tersebut kembali.

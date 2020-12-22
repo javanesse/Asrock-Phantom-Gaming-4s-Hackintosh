@@ -103,6 +103,11 @@ date 111111112018
 2. Open your app
 
 ### Option 2:
+1. Open Terminal. do a command : `sudo chmod -R 755 /Applications/AppName.app`
+2. Open your app
+
+
+### Option 3:
 1. [Instal brew](https://brew.sh/) via terminal
 2. Install upx: `brew install upx` 
 3. run command `sudo upx -d /Applications/my_app.app/Contents/MacOS/my_app` to your app

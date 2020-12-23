@@ -141,3 +141,9 @@ Beruntung kita dapat melakukan backup file-file installer tersebut. Namun hal in
 [Source 2](https://www.youtube.com/watch?v=6ncYUNLoTyM)
 
 ---
+
+# Mengatasi could not be executed because you do not have appropriate access privileges
+
+1. buka terminal, Ketik : `chmod u+x "path-to-file"`
+- Contoh:`chmod u+x /Users/Javanesse/Desktop/script.command`
+

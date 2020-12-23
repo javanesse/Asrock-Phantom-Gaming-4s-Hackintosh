@@ -147,3 +147,4 @@ Beruntung kita dapat melakukan backup file-file installer tersebut. Namun hal in
 1. buka terminal, Ketik : `chmod u+x "path-to-file"`
 - Contoh:`chmod u+x /Users/Javanesse/Desktop/script.command`
 
+---

@@ -9,81 +9,78 @@
 			<dict>
 				<key>Comment</key>
 				<string>Fixing System Clocks (SSDT-AWAC/RTC0)</string>
-				<key>Path</key>
-				<string>SSDT-AWAC.aml</string>
 				<key>Enabled</key>
 				<true/>
+				<key>Path</key>
+				<string>SSDT-AWAC.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>Fixing Embedded Controllers</string>
-				<key>Path</key>
-				<string>SSDT-EC.aml</string>
 				<key>Enabled</key>
 				<true/>
+				<key>Path</key>
+				<string>SSDT-EC.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>Fixing IRQ Conflicts (SSDT-HPET + OC_Patches.plist)</string>
-				<key>Path</key>
-				<string>SSDT-HPET.aml</string>
 				<key>Enabled</key>
 				<true/>
+				<key>Path</key>
+				<string>SSDT-HPET.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>Fixing Power Management (SSDT-PLUG)</string>
-				<key>Path</key>
-				<string>SSDT-PLUG.aml</string>
 				<key>Enabled</key>
 				<true/>
+				<key>Path</key>
+				<string>SSDT-PLUG.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>Fixing NVRAM (SSDT-PMC)</string>
-				<key>Path</key>
-				<string>SSDT-PMC.aml</string>
 				<key>Enabled</key>
 				<true/>
+				<key>Path</key>
+				<string>SSDT-PMC.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>JvFixing IMEI (SSDT-IMEI)</string>
-				<key>Path</key>
-				<string>SSDT-IMEI.aml</string>
 				<key>Enabled</key>
 				<true/>
+				<key>Path</key>
+				<string>SSDT-IMEI.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Fixing USB
-</string>
-				<key>Path</key>
-				<string>SSDT-USB-Reset.aml</string>
+				<string>Fixing USB</string>
 				<key>Enabled</key>
 				<true/>
+				<key>Path</key>
+				<string>SSDT-USB-Reset.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>Fixing IMEI (SSDT-IMEI)</string>
-				<key>Path</key>
-				<string>SSDT-IMEI.aml</string>
 				<key>Enabled</key>
 				<true/>
+				<key>Path</key>
+				<string>SSDT-IMEI.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Fixing SMBus support: Manual
-</string>
-				<key>Path</key>
-				<string>SSDT-SBUS-MCHC.aml</string>
+				<string>Fixing SMBus support: Manual</string>
 				<key>Enabled</key>
 				<true/>
+				<key>Path</key>
+				<string>SSDT-SBUS-MCHC.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
-		<array>
-		</array>
+		<array/>
 		<key>Patch</key>
 		<array>
 			<dict>
@@ -110,7 +107,7 @@
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>AAAAAA==</data>
+				<data>AAA=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -136,7 +133,7 @@
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>AAAAAA==</data>
+				<data>AAA=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -162,7 +159,7 @@
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>AAAAAA==</data>
+				<data>AAA=</data>
 			</dict>
 		</array>
 		<key>Quirks</key>
@@ -182,11 +179,9 @@
 	<key>Booter</key>
 	<dict>
 		<key>MmioWhitelist</key>
-		<array>
-		</array>
+		<array/>
 		<key>Patch</key>
-		<array>
-		</array>
+		<array/>
 		<key>Quirks</key>
 		<dict>
 			<key>AllowRelocationBlock</key>
@@ -269,12 +264,30 @@
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
 			<dict>
-				<key>shikigva</key>
-				<integer>80</integer>
 				<key>AAPL,slot-name</key>
-				<string>Internal@0,1,0/0,0/0,0/0,0</string>
+				<string>Internal</string>
+				<key>PP_DisableClockStretcher</key>
+				<integer>1</integer>
+				<key>PP_DisablePowerContainment</key>
+				<integer>1</integer>
+				<key>PP_DisableULV</key>
+				<integer>1</integer>
+				<key>PP_EnableUploadFirmware</key>
+				<integer>0</integer>
+				<key>PP_Falcon_QuickTransition_Enable</key>
+				<integer>1</integer>
+				<key>PP_GfxOffControl</key>
+				<integer>0</integer>
+				<key>PP_PhmSoftPowerPlayTable</key>
+				<data>tgIIAQBcAOEGAADuKwAAGwBIAAAAgKkDAPBJAgAyAAgAAAAAAAAAAAAAAAAAAAIBXABPAkYClACeAb4AKAF6AIwAvAEAAAAAcgIAAJAAqAJtAUMBlwHwSQIAcQICAgAAAAAAAAgAAAAAAAAABQAHAAMABQAAAAAAAAABCCADhAO2A+gDGgRMBH4EsAQBAUYFAQGEAwAIYOoAAABAGQEAAYA4AQAC3EoBAAOQXwEABAB3AQAFkJEBAAZssAEABwEI0EwBAAAAgAAAAAAAAByDAQABAAAAAAAAAABwpwEAAgAAAAAAAAAAiLwBAAMAAAAAAAAAAMDUAQAEAAAAAAAAAABEIwIABQAAAAABAAAAAFgCAAYAAAAAAQAAALh8AgAHAAAAAAEAAAAABWDqAAAAQBkBAACAOAEAANxKAQAAkF8BAAAACChuAAAALMkAAAH4CwEAAoA4AQADkF8BAAT0kQEABdCwAQAGwNQBAAcACGw5AAAAJF4AAAH8hQAAAqy8AAADNNAAAARobgEABQiXAQAG7KMBAAcAAWg8AQAAAQQ8QQAAAAAAUMMAAAAAAIA4AQACAAAkcQEABAAAAQgAmIUAAEC1AABg6gAAUMMAAAGAuwAAYOoAAJQLAQBQwwAAAgDhAACUCwEAQBkBAFDDAAADeP8AAEAZAQCIJgEAUMMAAARAGQEAgDgBAIA4AQBQwwAABYA4AQDcSgEA3EoBAFDDAAAGAHcBAAB3AQCQXwEAUMMAAAeQkQEAkJEBAAB3AQBQwwAAARgAAAAAAAAAC+QShANgCUEACgBUA5ABkAGQAZABkAGQAZABAAAAAAACBDEH3ADcANwALAEAAFkAaQBKAEoAXwBzAHMAZABAAJCSl2CWAJBVAAAAAAAAAAAAAAAAAAAAAAACAtQwAAACEGDqAAACEA==</data>
+				<key>PP_PhmUseDummyBackEnd</key>
+				<integer>0</integer>
+				<key>PP_ToolsLogSpaceSize</key>
+				<integer>524288</integer>
 				<key>device_type</key>
 				<string>VGA compatible controller</string>
+				<key>hda-gfx</key>
+				<string>onboard-2</string>
 				<key>model</key>
 				<string>Vega 10 XL/XT [Radeon RX Vega 56/64]</string>
 			</dict>
@@ -348,12 +361,7 @@
 				<key>device_type</key>
 				<string>Network controller</string>
 				<key>model</key>
-				<string>AR9485 Wireless Network Adapter</string>
-				<key>compatible</key>
-				<string>"pci168c,2a"
-</string>
-				<key>device-id	</key>
-				<data>KgAAAA==</data>
+				<string>AR928X Wireless Network Adapter (PCI-Express)</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x0)</key>
 			<dict>
@@ -370,6 +378,10 @@
 				<string>Internal@0,31,3</string>
 				<key>device_type</key>
 				<string>Audio device</string>
+				<key>hda-gfx</key>
+				<string>onboard-2</string>
+				<key>layout-id</key>
+				<data>AQAAAA==</data>
 				<key>model</key>
 				<string>Cannon Lake PCH cAVS</string>
 			</dict>
@@ -387,7 +399,7 @@
 				<key>AAPL,slot-name</key>
 				<string>Internal@0,31,5</string>
 				<key>device_type</key>
-				<string>Cannon Lake PCH SPI Controller</string>
+				<string>Serial bus controller</string>
 				<key>model</key>
 				<string>Cannon Lake PCH SPI Controller</string>
 			</dict>
@@ -402,14 +414,36 @@
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,2,0</string>
-				<key>device_type</key>
-				<string>VGA compatible controller</string>
-				<key>model</key>
-				<string>Intel UHD Graphics 630</string>
+				<key>AAPL,GfxYTile</key>
+				<string>01000000</string>
 				<key>AAPL,ig-platform-id</key>
 				<data>BwCbPg==</data>
+				<key>AAPL,slot-name</key>
+				<string>Internal</string>
+				<key>device-id</key>
+				<data>mz4AAA==</data>
+				<key>device_type</key>
+				<string>VGA compatible controller</string>
+				<key>enable-hdmi20</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con0-alldata</key>
+				<data>AgIKAAAIAADHAwAAAwQIAAAIAADHAwAA/wEJAAAEAADHAwAA</data>
+				<key>framebuffer-con0-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-fbmem</key>
+				<data>AACQAA==</data>
+				<key>framebuffer-patch-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-portcount</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-stolenmem</key>
+				<data>AAAwAQ==</data>
+				<key>framebuffer-unifiedmem</key>
+				<data>AAAAgA==</data>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+				<key>model</key>
+				<string>Intel UHD Graphics 630</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -564,45 +598,44 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
-				<key>Comment</key>
-				<string>JvOptimize PowerManagement to Performance</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-				<key>Enabled</key>
-				<true/>
-				<key>MinKernel</key>
-				<string></string>
-				<key>ExecutablePath</key>
-				<string></string>
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
 				<string>CPUFriendDataProvider.kext</string>
-			</dict>
-			<dict>
 				<key>Comment</key>
-				<string>JvAgpm Injector Vega64</string>
+				<string>JvOptimize PowerManagement to Performance</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
 				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
 				<string></string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
-				<key>Enabled</key>
-				<true/>
-				<key>MinKernel</key>
-				<string></string>
-				<key>ExecutablePath</key>
-				<string>AGPMInjector.kext</string>
+			</dict>
+			<dict>
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
+				<string>AGPMInjector.kext</string>
+				<key>Comment</key>
+				<string>JvAgpm Injector Vega64</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
 				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
 			</dict>
 		</array>
 		<key>Block</key>
-		<array>
-		</array>
+		<array/>
 		<key>Emulate</key>
 		<dict>
 			<key>Cpuid1Data</key>
@@ -617,11 +650,9 @@
 			<string></string>
 		</dict>
 		<key>Force</key>
-		<array>
-		</array>
+		<array/>
 		<key>Patch</key>
-		<array>
-		</array>
+		<array/>
 		<key>Quirks</key>
 		<dict>
 			<key>AppleCpuPmCfgLock</key>
@@ -674,8 +705,7 @@
 	<key>Misc</key>
 	<dict>
 		<key>BlessOverride</key>
-		<array>
-		</array>
+		<array/>
 		<key>Boot</key>
 		<dict>
 			<key>ConsoleAttributes</key>
@@ -702,9 +732,9 @@
 		<key>Debug</key>
 		<dict>
 			<key>AppleDebug</key>
-			<true/>
+			<false/>
 			<key>ApplePanic</key>
-			<true/>
+			<false/>
 			<key>DisableWatchDog</key>
 			<true/>
 			<key>DisplayDelay</key>
@@ -719,8 +749,7 @@
 			<integer>0</integer>
 		</dict>
 		<key>Entries</key>
-		<array>
-		</array>
+		<array/>
 		<key>Security</key>
 		<dict>
 			<key>AllowNvramReset</key>
@@ -755,9 +784,7 @@
 			<string>Optional</string>
 		</dict>
 		<key>Tools</key>
-		<array>
-			<string>OpenShell.efi</string>
-		</array>
+		<array/>
 	</dict>
 	<key>NVRAM</key>
 	<dict>
@@ -780,7 +807,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>keepsyms=1 swd_panic=1 alcid=1 -v igfxonln=1</string>
+				<string>keepsyms=1 swd_panic=1 alcid=1 -v</string>
 				<key>csr-active-config</key>
 				<data>/w8AAA==</data>
 				<key>prev-lang:kbd</key>
@@ -851,9 +878,9 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02903500QXLNV9A8</string>
+			<string>C029206094NLNV98C</string>
 			<key>ProcessorType</key>
-			<integer>0</integer>
+			<integer>4105</integer>
 			<key>ROM</key>
 			<data>cIXCy2ls</data>
 			<key>SpoofVendor</key>
@@ -863,30 +890,9 @@
 			<key>SystemProductName</key>
 			<string>iMac19,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02Y4KYEJV3Q</string>
+			<string>C02YQ0TDJV3Q</string>
 			<key>SystemUUID</key>
-			<string>4E7648D6-34C7-4982-AD94-A8DEC0828BE1</string>
-		</dict>
-		<key>Memory</key>
-		<dict>
-			<key>DataWidth</key>
-			<integer>64</integer>
-			<key>Devices</key>
-			<array>
-				<dict/>
-			</array>
-			<key>ErrorCorrection</key>
-			<integer>3</integer>
-			<key>FormFactor</key>
-			<integer>9</integer>
-			<key>MaxCapacity</key>
-			<integer>68719476736</integer>
-			<key>TotalWidth</key>
-			<integer>64</integer>
-			<key>Type</key>
-			<integer>26</integer>
-			<key>TypeDetail</key>
-			<integer>128</integer>
+			<string>A7142546-E2FD-45A2-9B70-47D0255E7883</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1044,8 +1050,7 @@
 			<false/>
 		</dict>
 		<key>ReservedMemory</key>
-		<array>
-		</array>
+		<array/>
 	</dict>
 </dict>
 </plist>

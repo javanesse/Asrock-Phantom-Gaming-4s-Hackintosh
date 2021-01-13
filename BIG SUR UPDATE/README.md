@@ -18,9 +18,9 @@ Post Install:
 
 
 TroubleShoot:
-1. Bila Mojave Gagal Boot, Hal Ini di sebabkan Karena Update BIOS. Ada 2 metode untuk mengatasi hal ini
-  a. Downgrade kembali Bios Ke 1.20
-  b. Tambahkan SSDT-SET-STAS-Darwin.aml yang ada pada folder ACPI di atas.
+1. Bila terjadi Gagal Boot, Hal Ini di sebabkan Karena Update BIOS. Ada 2 metode untuk mengatasi hal ini
+  - Downgrade kembali Bios Ke 1.20
+  - Tambahkan SSDT-SET-STAS-Darwin.aml yang ada pada folder ACPI di atas.
 
 Known Issue
 - No Sleep

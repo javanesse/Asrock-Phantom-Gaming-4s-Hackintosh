@@ -30,8 +30,7 @@ ChangeLogs:
 ---
 
 ## Known Issue
-- No Sleep
-
+-
 ---
 
 Good Luck

@@ -30,7 +30,7 @@ ChangeLogs:
 ---
 
 ## Known Issue
--
+- Kosong
 ---
 
 Good Luck

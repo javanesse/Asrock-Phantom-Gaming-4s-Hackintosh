@@ -157,13 +157,16 @@ log show --last 5m | grep TSC
 if you see messages like:
 Unsynchronized TSC for CPU ...
 
-the problem is TSC SYnc
+the problem is TSC Sync
 
-Then you need this kext:
-
+theres a bunch of option to fix this. for example:
+1. you need this kext:
 https://bitbucket.org/RehabMan/VoodooTSCSync/downloads/
 
-or search for another solution
+2. or you can read this:
+https://dortania.github.io/OpenCore-Post-Install/universal/sleep.html#tsc
+
+3. or search for another solution
 
 ---
 

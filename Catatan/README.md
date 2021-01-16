@@ -148,3 +148,25 @@ Beruntung kita dapat melakukan backup file-file installer tersebut. Namun hal in
 - Contoh:`chmod u+x /Users/Javanesse/Desktop/script.command`
 
 ---
+# Slow After Wake from sleep
+Put your computer to sleep, wake it up, open Terminal.app and run:
+
+Code:
+log show --last 5m | grep TSC
+
+if you see messages like:
+Unsynchronized TSC for CPU ...
+
+the problem is TSC Sync
+
+theres a bunch of option to fix this. for example:
+1. you need this kext:
+https://bitbucket.org/RehabMan/VoodooTSCSync/downloads/
+
+2. or you can read this:
+https://dortania.github.io/OpenCore-Post-Install/universal/sleep.html#tsc
+
+3. or search for another solution
+
+---
+

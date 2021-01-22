@@ -1,6 +1,10 @@
 # Asrock-Phantom-Gaming-4s-Hackintosh
 This Repo for Asrock Phantom Gaming 4s Hackintosh with intel core i7 8700 running Mojave 10.14.5
 
+Note!!! Tutorial ini hanya untuk digunakan apabila ingin Bootloader Clover
+
+Untuk menggunakan OpenCore bahkan akan lebih mudah, langsung masuk ke folder [BIGSUR UPDATE](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/tree/master/BIG%20SUR%20UPDATE)
+
 ![Mojave 10.4.5](/Images/System%20ScreenShoot/About%20This%20Mac%20Intel%20UHD%20630.png)
 
 # MUKADIMAH

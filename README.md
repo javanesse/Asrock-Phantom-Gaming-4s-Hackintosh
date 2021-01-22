@@ -1,31 +1,31 @@
 # Asrock-Phantom-Gaming-4s-Hackintosh
 This Repo for Asrock Phantom Gaming 4s Hackintosh with intel core i7 8700 running Mojave 10.14.5
 
-Note!!! Tutorial ini hanya untuk digunakan apabila ingin Bootloader Clover
-
-Untuk menggunakan OpenCore bahkan akan lebih mudah, langsung masuk ke folder [BIGSUR UPDATE](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/tree/master/BIG%20SUR%20UPDATE)
 
 ![Mojave 10.4.5](/Images/System%20ScreenShoot/About%20This%20Mac%20Intel%20UHD%20630.png)
 
 # MUKADIMAH
 > SATU HAL UTAMA YANG PERLU DI PERHATIKAN DALAM TUTORIAL DISINI ADALAH, PROSES YANG KELIHATAN RUMIT PADAHAL MUDAH SEKALI APABILA DI PRAKTEKKAN. JANGAN TAKUT UNTUK MENCOBA.
 
+# Note!!! Tutorial ini hanya untuk digunakan apabila ingin Bootloader Clover
 
+> Untuk menggunakan OpenCore bahkan akan lebih mudah, langsung masuk ke folder [BIGSUR UPDATE](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/tree/master/BIG%20SUR%20UPDATE)
+> Namun untuk mempelajari bagaimana sistem kerja sebuah Hackintosh lebih mendalam, baiknya menggunakan tutorial ini terlebih dahulu.
 
 Ini Langkah membuat hackintosh Terkhusus pada komputer yang menggunakan Asrock Phantom Gaming 4s Hackintosh dengan prosesor intel core i7 8700
 
 ## Untuk hardware lain pun dapat mengikuti tutorial ini.
 
-Hal yang di perlukan dalam instalasi Hackintosh pada dasarnya sama dengan instalasi microsoft windows pada umumnya, hanya saja di tambah dengan 1 *"software"*  bootloader.
+Hal yang di perlukan dalam instalasi Hackintosh pada dasarnya sama dengan instalasi microsoft windows pada umumnya, hanya saja di tambah dengan 1 *"software"*  bernama bootloader.
 
 Analogi proses booting Windows:
 - Komputer meyala
-- BIOS muncul
+- Logo BIOS muncul
 - Masuk Windows
 
 Analogi booting Hackintosh:
 - Komputer menyala
-- Bios muncul
+- Logo Bios muncul
 - Bootloader(Emulasi Bios Mac)
 - Masuk Mac OS X
 

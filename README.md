@@ -59,10 +59,10 @@ Nama        | Keterangan
 OS          | Mac OS X
 Versi       | 10.14.5
 CodeName    | Mojave
-Smbios      | iMacPro1,1
+Smbios      | iMac 19,1
 
 
-Adapun yang perlu di perhatikan untuk driver(kext) disini **HANYA** untuk `Motherboard` dan `CPU` yang sama. selebihnya terserah pilihan Anda. Dengan kata lain, bila menggunakan `Motherboard` dan `CPU` yang sama, maka dapat menggunakan driver yang ada di sini.
+Adapun yang perlu di perhatikan untuk driver(kext) yang ada disini **HANYA** untuk `Motherboard` dan `CPU` yang sama. selebihnya terserah pilihan Anda. Dengan kata lain, bila menggunakan `Motherboard` dan `CPU` yang sama, maka dapat menggunakan driver yang ada di sini, namun apabila spesifikasi hardware berbeda, silahkan cari referensi menggunakan google untuk cari tahu tentang hardware Anda. Contoh, Motherboard `Gygabyte`, konfigurasinya akan sedikit berbeda, mengingat berbeda pabrikan. Contoh lain, Driver(Kext) WIFI TPLink akan berbeda dengan Tenda.
 
 ## Langkah Instalasi
 1. [Persiapan hardware](#1-persiapan-hardware)

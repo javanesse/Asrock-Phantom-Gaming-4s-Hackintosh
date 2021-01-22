@@ -9,7 +9,8 @@ This Repo for Asrock Phantom Gaming 4s Hackintosh with intel core i7 8700 runnin
 
 # Note!!! Tutorial ini hanya untuk digunakan apabila ingin Bootloader Clover
 
-> Untuk menggunakan OpenCore bahkan akan lebih mudah, langsung masuk ke folder [BIGSUR UPDATE](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/tree/master/BIG%20SUR%20UPDATE)
+> Untuk menggunakan OpenCore bahkan akan lebih mudah, langsung masuk ke folder [BIGSUR UPDATE](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/tree/master/BIG%20SUR%20UPDATE).
+
 > Namun untuk mempelajari bagaimana sistem kerja sebuah Hackintosh lebih mendalam, baiknya menggunakan tutorial ini terlebih dahulu.
 
 Ini Langkah membuat hackintosh Terkhusus pada komputer yang menggunakan Asrock Phantom Gaming 4s Hackintosh dengan prosesor intel core i7 8700

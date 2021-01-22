@@ -13,11 +13,11 @@ This Repo for Asrock Phantom Gaming 4s Hackintosh with intel core i7 8700 runnin
 
 > Namun untuk mempelajari bagaimana sistem kerja sebuah Hackintosh lebih mendalam, baiknya menggunakan tutorial ini terlebih dahulu.
 
-Ini Langkah membuat hackintosh Terkhusus pada komputer yang menggunakan Asrock Phantom Gaming 4s Hackintosh dengan prosesor intel core i7 8700
+Ini adalah Langkah membuat hackintosh. Pada contoh ini, saya menggunakan motherboard Asrock Phantom Gaming 4s Hackintosh dengan prosesor intel core i7 8700
 
 ## Untuk hardware lain pun dapat mengikuti tutorial ini.
 
-Hal yang di perlukan dalam instalasi Hackintosh pada dasarnya sama dengan instalasi microsoft windows pada umumnya, hanya saja di tambah dengan 1 *"software"*  bernama bootloader.
+Hal umum yang di perlukan dalam instalasi Hackintosh pada dasarnya *sama* dengan instalasi microsoft windows pada umumnya, hanya saja di tambah dengan 1 *"software"*  bernama bootloader.
 
 Analogi proses booting Windows:
 - Komputer meyala

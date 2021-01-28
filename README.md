@@ -49,10 +49,10 @@ Ram                 | Team               | [T-force Delta 16GB](https://www.team
 Storage             | Sandisk            | [SSD Plus 250GB](https://www.sandisk.id/home/ssd/ssd-plus)
 Wireless            | TPLINK             | [TL WN781nd v.2](https://www.tp-link.com/id/home-networking/adapter/tl-wn781nd/)
 Heatsink            | Deepcool           | [Gammax 300](http://www.deepcool.com/product/cpucooler/2013-12/7_481.shtml)
-Power Supply        | Power Up           | [Vector 600 Watt](http://power-up.co.id/?view=detail_produk&id=142)
+Power Supply        | Power Up           | [Corsair VS650 — 650 Watt 80 PLUS](https://www.corsair.com/eu/en/Categories/Products/Power-Supply-Units/vs-series-config-2018/p/CP-9020172-EU)
 Casing              | Power Up           | [Raptor 1707](https://www.bukalapak.com/p/komputer/aksesoris-226/aksesoris-lainnya-241/mt3i5k-jual-power-up-silver-strike-1707-black-no-psu)
-Monitor             | Coocaa             | [43 Inch Android TV 1920x1080](https://www.tokopedia.com/kencana222/coocaa-43e6-led-smart-android-8-0-tv-wifi-digital-tv-dv-43inch)
-Perkiraan Biaya     | --                 | 13 Juta tanpa monitor
+Monitor             | Samsung            | [Curved Monitor 24" C24F390FHE](https://www.samsung.com/id/monitors/curved/curved-24-inch-lc24f390fhexxd/)
+GPU                 | Gigabyte           | [RX Vega 64 8GB](https://www.gigabyte.com/id/Graphics-Card/GV-RXVEGA64-8GD-B)
 
 Nama        | Keterangan
 ------------|------------

@@ -16,9 +16,16 @@ Berikut contoh sebelum dan sesudah memiliki GPU Power Management
 
 Look for AGPM under GFX0 node. The Heuristic-ID must be "ff ff ff ff" for AMD GPU.
 
+![AMD](/Catatan/Resources/AMD-Heuristic-ID.png)
+
 #### For NVIDIA:
 
 Look for AGPM under GFX0 node. The Heuristic-ID must be "04 00 00 00" for NVIDIA GPU.
 
+![NVidia](/Catatan/Resources/NVidia-Heuristic-ID.png)
+
+
 [Source](https://www.elitemacx86.com/threads/how-to-enable-discrete-gpu-power-management-nvidia-amd.657/)
+
+---
 

@@ -53,6 +53,7 @@ Repo ini sendiri boleh di katakan ini adalah repo driver (kext) untuk mac osx kh
 
 Namun disini ada beberapa referensi tutorial untuk melakukan patching hardware-hardware lain.
 
+---
 
 ## Hardware yang saya gunakan
 
@@ -75,6 +76,8 @@ OS          | Mac OS X
 Versi       | 10.14.5
 CodeName    | Mojave
 Smbios      | iMac 19,1
+
+---
 
 
 Adapun yang perlu di perhatikan untuk driver(kext) yang ada disini **HANYA** untuk `Motherboard` dan `CPU` yang sama. selebihnya terserah pilihan Anda. Dengan kata lain, bila menggunakan `Motherboard` dan `CPU` yang sama, maka dapat menggunakan driver yang ada di sini, namun apabila spesifikasi hardware berbeda, silahkan cari referensi menggunakan google untuk cari tahu tentang hardware Anda. Contoh, Motherboard `Gygabyte`, konfigurasinya akan sedikit berbeda, mengingat berbeda pabrikan. Contoh lain, Driver(Kext) WIFI TPLink akan berbeda dengan Tenda.
@@ -173,7 +176,9 @@ Berhubung video ini menggunakan Asus ROG GL552JX dengan konfigurasi BIOS yang be
 
 [![Instalasi](https://img.youtube.com/vi/FAQUNGnBUTc/0.jpg)](https://youtu.be/FAQUNGnBUTc?t=68)
 
-### 6. Konfigurasi Pasca Install/Post Install
+---
+
+### 6. Konfigurasi Pengaturan Setelah Install/Post Install
 ### 7. Target Operasi dan Checklist
 Hackintosh boleh di katakan berhasil apabila sistem operasi Mac OSX yang kita install stabil, tanpa kendala software maupun hardware. untuk itu tidak ada salahnya kita membuat sebuah checklist untuk menentukan apa saja yang perlu di lakukan agar dapat menghasilkan sistem operasi yang stabil.
 

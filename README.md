@@ -209,6 +209,6 @@ Daftar Checklist:
 - [Tutorial Patching DSDT/SSDT](/DSDT%20-%20SSDT%20Patching/README.md)
 - [CPU Power Management](/DSDT%20-%20SSDT%20Patching/Daftar%20Patch/CPU%20Power%20Management)
 - [Intel QuickSync dan iGPU Headless mode](/Catatan/Intel-igpu-headless-mode.md)
-- [Cara Cek GPU Power Management](/Catatan/GPU-PowerManagement)
+- [Cara Cek GPU Power Management](/Catatan/GPU-PowerManagement.md)
 - [Patch Lainnya](/Catatan)
 

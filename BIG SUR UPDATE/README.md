@@ -6,17 +6,17 @@ ChangeLogs:
 ---
 
 ## Metode Install:
-1. Buat USB Installer Big Sur Melalui terminal
-2. Mount Partisi EFI
-3. Copy Folder EFI EFI
-4. Boot ke Windows
-5. Update BIOS Motheboard melalui Windows
+> Upayakan Install di hardisk lain, Untuk jaga-jaga apabila terjadi kegagalan.
+1. Boot ke Windows
+2. Update BIOS Motheboard melalui Windows
+3. Restart
+1. Buat USB Installer Mac OS X Big Sur Melalui terminal menggunakan Sistem operasi Mac [Atau menggunakan Windows](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/winblows-install.html)
+3. Copy Folder EFI ke partisi EFI yang baru di buat
 6. Jalankan Instalasi Mac OS X
 
 ---
 
 ## Post Install:
-1. Upayakan Install di hardisk lain, Untuk jaga-jaga apabila terjadi kegagalan.
 1. Setelah terinstall, Buka Partisi EFI pada Hardisk menggunakan aplikasi Opencore Configurator (Atau yang lain)
 2. Copy Folder EFI ke partisi EFI di Hardisk
 

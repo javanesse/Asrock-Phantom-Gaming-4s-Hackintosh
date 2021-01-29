@@ -6,10 +6,10 @@ Berikut contoh sebelum dan sesudah memiliki GPU Power Management
 
 # Olarila
 
-## Sebelum
+#### Sebelum
 ![Before](/Catatan/Resources/GPUPM-before.jpg)
 
-## Sesudah
+#### Sesudah
 ![After](/Catatan/Resources/GPUPM-after.jpg)
 
 [Source](https://www.olarila.com/topic/5974-agpminjector/)

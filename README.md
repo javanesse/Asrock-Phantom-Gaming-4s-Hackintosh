@@ -208,7 +208,7 @@ Daftar Checklist:
 ### 8. Troubleshoot dan Patching
 - [Tutorial Patching DSDT/SSDT](/DSDT%20-%20SSDT%20Patching/README.md)
 - [CPU Power Management](/DSDT%20-%20SSDT%20Patching/Daftar%20Patch/CPU%20Power%20Management)
-- [Intel QuickSync AMD RX 580](/Catatan/Intel%20Quick%20Sync%20-%20AMD%20RX%20580%20penyebab%20FCP%20X%20Crash.md)
+- [Intel QuickSync dan iGPU Headless mode](/Catatan/Intel-igpu-headless-mode.md)
 - [Cara Cek GPU Power Management](/Catatan/GPU-PowerManagement)
 - [Patch Lainnya](/Catatan)
 

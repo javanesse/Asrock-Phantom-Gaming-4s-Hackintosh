@@ -144,7 +144,7 @@ Beruntung kita dapat melakukan backup file-file installer tersebut. Namun hal in
 - Contoh:`chmod u+x /Users/Javanesse/Desktop/script.command`
 
 ---
-# Slow After Wake from sleep
+# Mac Slow After Wake from sleep
 Put your computer to sleep, wake it up, open Terminal.app and run:
 
 Code:
@@ -165,7 +165,7 @@ https://dortania.github.io/OpenCore-Post-Install/universal/sleep.html#tsc
 3. or search for another solution
 
 ---
-
+# Embeded Controller
 To boot 10.15 two things needs to be taken care of:
 If you have an EC device with ID PNP0C09 in your DSDT then macOS might get stuck while booting at the initial stage. To fix that you need to make sure your EC device is disabled by making it return status Zero. You can use a custom [SSDT-EC](https://dortania.github.io/Getting-Started-With-ACPI/Universal/ec-fix.html)
 

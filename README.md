@@ -176,9 +176,7 @@ Berhubung video ini menggunakan Asus ROG GL552JX dengan konfigurasi BIOS yang be
 
 [![Instalasi](https://img.youtube.com/vi/FAQUNGnBUTc/0.jpg)](https://youtu.be/FAQUNGnBUTc?t=68)
 
----
-
-### 6. Konfigurasi Pengaturan Setelah Install/Post Install
+### 6. Konfigurasi Pengaturan Setelah Selesai Install/Post Install
 ### 7. Target Operasi dan Checklist
 Hackintosh boleh di katakan berhasil apabila sistem operasi Mac OSX yang kita install stabil, tanpa kendala software maupun hardware. untuk itu tidak ada salahnya kita membuat sebuah checklist untuk menentukan apa saja yang perlu di lakukan agar dapat menghasilkan sistem operasi yang stabil.
 

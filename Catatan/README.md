@@ -1,4 +1,4 @@
-# 1. Run Apps from Anywhere 
+# Run Apps from Anywhere 
 
 Run Apps from Anywhere is now missing from SysPrefs -> Security & Privacy -> General:
 
@@ -6,7 +6,7 @@ Run Apps from Anywhere is now missing from SysPrefs -> Security & Privacy -> Gen
 
 ---
 
-# 2. Modifier keys keyboard
+# Modifier keys keyboard
 
 ```
 control = command
@@ -16,7 +16,7 @@ command = control
 
 ---
 
-# 3. Disable Hibernation
+# Disable Hibernation
 
 Be aware that hibernation (suspend to disk or S4 sleep) is not supported on hackintosh.
 
@@ -40,16 +40,17 @@ sudo pmset -a autopoweroff 0
 [Sumber](https://www.tonymacx86.com/threads/guide-native-power-management-for-laptops.175801/)
 
 ---
+# Rebuild KextCache BigSur
 
-# 4. Rebuild kernel cache
 
-you must boot without cache using -f -F bootarg
-
-`sudo kextcache -i /`
+`sudo chown -R root:wheel /System/Library/Extensions/
+sudo chmod -R 755 /System/Library/Extensions/
+sudo kmutil install --update-all
+sudo kcditto`
 
 ---
 
-# 5. Reset NVRAM
+# Reset NVRAM
 
 To clear the values:
 
@@ -65,7 +66,7 @@ To display the values, including the SmUUID and other IDs stored there:
 
 ---
 
-# 6. Test NVRAM
+# Test NVRAM
 
 From Terminal, I used the procedure to test for nvram ("sudo nvram TestVar=Hello", then reboot, then open Terminal again, "sudo nvram -p | grep TestVar") and found that nvram does not exist on this motherboard. This probably explains the inability to Reboot and Shutdown.
 
@@ -73,14 +74,14 @@ From Terminal, I used the procedure to test for nvram ("sudo nvram TestVar=Hello
 
 ---
 
-# 7. Final Cut Pro X 10.14.6 Crash
+# Final Cut Pro X 10.14.6 Crash
 lihat cara memperbaikinya [disini](FCP%20X%20Crash.md)
 
 [Kembali ke menu utama](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/blob/master/README.md#langkah-instalasi)
 
 ---
 
-# 8. verbose boot log
+# verbose boot log
 In Terminal (all data):
 `log show --predicate "processID == 0" --debug`
 
@@ -89,7 +90,7 @@ In Terminal (only todays data):
 
 ---
 
-# 9. Mojave Valid date to Install
+# Mojave Valid date to Install
 Avoid `This Copy of the install MacOS xxx Application is damaged...`
 Use Terminal
 date 111111112018
@@ -97,7 +98,7 @@ date 111111112018
 ---
 
 
-# 10. Avoid You do not have permission to open the application “xxxxx.app” on big sur.
+# Avoid You do not have permission to open the application “xxxxx.app” on big sur.
 ### Option 1:
 1. Open Terminal. do a command : `codesign --force --deep --sign - /Applications/AppName.app`
 2. Open your app
@@ -115,14 +116,14 @@ date 111111112018
 
 ---
 
-# 11. Avoid Unable to expand "xxx.zip" it is in an unsupported format. on big sur.
+# Avoid Unable to expand "xxx.zip" it is in an unsupported format. on big sur.
 
 1. Open Terminal. do a command : `unzip xxx.zip`
 2. Open home folder
 
 ---
 
-# 12. Backup Logic Pro Additional Sound Library Content Installer
+# Backup Logic Pro Additional Sound Library Content Installer
 
 Seperti kita tahu bahwa file Additional Content Installer memiliki ukuran yang besar. namun hasil download logic pro tersimpan secara tersembunyi. Ketika kita melakukan download, dan setelah download selesai, maka akan otomatis melakukan instalasi.
 Sayangnya, setelah instalasi, file-file tersebut akan otomatis terhapus, sehingga ketika kita melakukan instal ulang, kita di paksa untuk melakukan download ulang fil-file tersebut kembali.

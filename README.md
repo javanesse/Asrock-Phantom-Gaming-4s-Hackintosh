@@ -11,7 +11,7 @@ Ini adalah Langkah membuat hackintosh. Pada contoh ini, saya menggunakan motherb
 
 ## Untuk hardware lain pun dapat mengikuti tutorial ini.
 
-Hal umum yang di perlukan dalam instalasi Hackintosh pada dasarnya *sama* dengan instalasi microsoft windows pada umumnya, hanya saja di tambah dengan 1 *"software"*  bernama bootloader.
+Hal umum yang di perlukan dalam instalasi Hackintosh pada dasarnya *sama* dengan instalasi microsoft windows pada umumnya, hanya saja di tambah dengan 1 *`software`*  bernama bootloader.
 
 Bootloader untuk saat ini ada 2 jenis yang paling populer dan yang paling sering di gunakan yaitu:
 ```

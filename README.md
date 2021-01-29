@@ -19,6 +19,7 @@ Bootloader untuk saat ini ada 2 jenis yang paling populer dan yang paling sering
 2. Opencore
 ```
 Fungsi dari kedua bootloader inipun sama. Sama-sama di gunakan untuk memalsukan bios agar dianggap sebagai mesin Mac OS X. dengan kata lain, terserah mau pakai yang mana karena masing-masing punya kelebihan dan kekurangan.
+
 ---
 
 # Note!!! Tutorial dibawah ini hanya untuk digunakan apabila ingin Bootloader Clover

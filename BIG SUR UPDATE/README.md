@@ -1,7 +1,7 @@
 ChangeLogs:
-1. Bios Asrock Phantom Gaming 4s - z390 Menggunakan Bios Terbaru Versi 1.40 yang bisa di unduh di website resmi asrock : https://asrock.com/MB/Intel/Z390%20Phantom%20Gaming%204S/index.asp#Overview
-2. Perubahan VGA Card Menggunakan Gigabyte RX Vega 64
-3. Perubahan Bootloader yang tadinya menggunakan Clover Bootloader, Sekarang menggunakan OpenCore 0.6.5
+1. Bios Asrock Phantom Gaming 4s - z390 Menggunakan Bios Terbaru Versi 1.40 yang bisa di unduh di [website resmi asrock](https://asrock.com/MB/Intel/Z390%20Phantom%20Gaming%204S/index.asp#Overview) 
+2. Perubahan VGA Card Menggunakan [Gigabyte RX Vega 64](https://www.gigabyte.com/id/Graphics-Card/GV-RXVEGA64-8GD-B)
+3. Perubahan Bootloader yang tadinya menggunakan Clover Bootloader, dan Sekarang menggunakan OpenCore
 
 ---
 

@@ -2,6 +2,10 @@ Cara Mengecek GPU Power Management pada Hackintosh yaitu dengan mengetikkan AGPM
 
 Berikut contoh sebelum dan sesudah memiliki GPU Power Management
 
+---
+
+# Olarila
+
 ## Sebelum
 ![Before](/Catatan/Resources/GPUPM-before.jpg)
 
@@ -11,6 +15,8 @@ Berikut contoh sebelum dan sesudah memiliki GPU Power Management
 [Source](https://www.olarila.com/topic/5974-agpminjector/)
 
 ---
+
+# EliteMacX86
 
 #### For AMD:
 

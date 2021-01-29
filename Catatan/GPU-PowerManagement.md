@@ -11,5 +11,3 @@ Berikut contoh sebelum dan sesudah memiliki GPU Power Management
 ![Source](https://www.olarila.com/topic/5974-agpminjector/)
 
 
-#### Compability Support Module (CSM)
-![CSM](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/raw/master/Images/System%20ScreenShoot/About%20This%20Mac%20Intel%20UHD%20630.png)

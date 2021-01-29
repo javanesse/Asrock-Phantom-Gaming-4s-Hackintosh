@@ -2,10 +2,14 @@ Cara Mengecek GPU Power Management pada Hackintosh yaitu dengan mengetikkan AGPM
 
 Berikut contoh sebelum dan sesudah memiliki GPU Power Management
 
-Sebelum
+#### Sebelum
 ![Before](/Resources/GPUPM-before.jpg)
 
-Sesudah
+#### Sesudah
 ![After](/Resources/GPUPM-after.jpg)
 
 ![Source](https://www.olarila.com/topic/5974-agpminjector/)
+
+
+#### Compability Support Module (CSM)
+![CSM](/Images/Asrock%20Phantom%20Gaming%204s/Bios%20Settings/7.jpg)

@@ -193,7 +193,7 @@ Daftar Checklist:
                         jika ada, CPU PM sukses, jika tidak ada CPU PM gagal
                   - GPU: Buka IOReg, cari AGP, atau AGPM
                         jika ada, GPU PM sukses, jika tidak ada GPU PM gagal
-        Untuk Lebih Detailnya : [Cara Cek GPU Power Management](/Catatan/GPU-PowerManagement.md)
+                  - Untuk Lebih Detailnya, silahkan klik link Cara Cek GPU Power Management di bawah.
       - Sleep/Wake/Shutdown/Restart works.
 #### 3. VGA Grafis ####
       - QE/CI graphic.

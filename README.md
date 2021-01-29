@@ -186,13 +186,14 @@ Daftar Checklist:
       - Install clover EFI boot loader.
       - Install UEFI Drivers (seperti AptioFix).
       - Install kexts (FakeSMC, LILU).
-#### 2. CPU & Power management ####
+#### 2. CPU & GPU Power management ####
       - Cek apakah baik CPU atau GPU Power management berjalan dengan baik.
             Cara Cek:
                   - CPU: Buka IOReg, cari X86PluginPlatform
                         jika ada, CPU PM sukses, jika tidak ada CPU PM gagal
                   - GPU: Buka IOReg, cari AGP, atau AGPM
                         jika ada, GPU PM sukses, jika tidak ada GPU PM gagal
+        Untuk Lebih Detailnya : [Cara Cek GPU Power Management](/Catatan/GPU-PowerManagement.md)
       - Sleep/Wake/Shutdown/Restart works.
 #### 3. VGA Grafis ####
       - QE/CI graphic.

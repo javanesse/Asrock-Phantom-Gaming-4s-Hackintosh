@@ -7,27 +7,31 @@ This Repo for Asrock Phantom Gaming 4s Hackintosh with intel core i7 8700 runnin
 # MUKADIMAH
 > SATU HAL UTAMA YANG PERLU DI PERHATIKAN DALAM TUTORIAL DISINI ADALAH, PROSES YANG KELIHATAN RUMIT PADAHAL MUDAH SEKALI APABILA DI PRAKTEKKAN. JANGAN TAKUT UNTUK MENCOBA.
 
-# Note!!! Tutorial ini hanya untuk digunakan apabila ingin Bootloader Clover
-
-> Untuk menggunakan OpenCore bahkan akan lebih mudah, langsung masuk ke folder [BIGSUR UPDATE](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/tree/master/BIG%20SUR%20UPDATE).
-
-> Namun untuk mempelajari bagaimana sistem kerja sebuah Hackintosh lebih mendalam, baiknya menggunakan tutorial ini terlebih dahulu.
-
 Ini adalah Langkah membuat hackintosh. Pada contoh ini, saya menggunakan motherboard Asrock Phantom Gaming 4s Hackintosh dengan prosesor intel core i7 8700
 
 ## Untuk hardware lain pun dapat mengikuti tutorial ini.
 
 Hal umum yang di perlukan dalam instalasi Hackintosh pada dasarnya *sama* dengan instalasi microsoft windows pada umumnya, hanya saja di tambah dengan 1 *"software"*  bernama bootloader.
 
-Analogi proses booting Windows:
+Bootloader untuk saat ini ada 2 jenis yang paling populer dan yang paling sering di gunakan.
+1. Clover
+2. Opencore
+
+# Note!!! Tutorial ini hanya untuk digunakan apabila ingin Bootloader Clover
+
+> Untuk menggunakan OpenCore bahkan akan lebih mudah, langsung masuk ke folder [BIGSUR UPDATE](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/tree/master/BIG%20SUR%20UPDATE).
+
+> Namun untuk mempelajari bagaimana sistem kerja sebuah Hackintosh lebih mendalam, baiknya menggunakan tutorial ini terlebih dahulu.
+
+## Analogi proses booting Windows:
 - Komputer meyala
 - Logo BIOS muncul
 - Masuk Windows
 
-Analogi booting Hackintosh:
+## Analogi booting Hackintosh:
 - Komputer menyala
 - Logo Bios muncul
-- Bootloader(Emulasi Bios Mac)
+- Bootloader
 - Masuk Mac OS X
 
 Produsen hardware tidak meyediakan driver (kexts) untuk sistem operasi Mac OSX, maka dari itu kita perlu melakukan patching agar driver mac dapat mengenali jenis hardware kita.

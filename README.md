@@ -41,7 +41,11 @@ Fungsi dari kedua bootloader inipun sama. Yaitu sama-sama di gunakan untuk memal
 - `Muncul Bootloader` (Anggaplah bios kedua)
 - Masuk Mac OS X
 
-Produsen hardware tidak meyediakan driver (kexts) untuk sistem operasi Mac OSX, maka dari itu kita perlu melakukan patching agar driver mac dapat mengenali jenis hardware kita.
+---
+
+Hackintosh, pada dasarnya sama halnya seperti Windows, karena Hardware seperti VGA, Audio, Wifi, LAN, Cardreader dan Chipset-chipset lainnya, tidak akan berfungsi secara optimal, sebelum kita melakukan instalasi driver.
+
+Namun produsen hardware pada umumnya contohlah VGA, seperti Intel, ATI, atau Nvidia, tidak menyediakan `driver` atau yang dalam Mac OS X di sebut `kexts`. maka dari itu kita perlu melakukan `mengakali/patching` agar driver mac dapat mengenali jenis hardware kita, sehingga dapat beroperasi dengan optimal.
 
 > Apa akibatnya apabila hackintosh tidak di lakukan patching? Fungsi harware kurang maksimal. sama halnya ketika WINDOWS apabila tidak di install driver, seperti VGA, Audio, USB 3, Cardreader, Lan, Wifi.
 

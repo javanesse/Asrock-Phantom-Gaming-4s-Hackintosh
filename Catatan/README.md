@@ -43,10 +43,12 @@ sudo pmset -a autopoweroff 0
 # Rebuild KextCache BigSur
 
 
-`sudo chown -R root:wheel /System/Library/Extensions/
+```
+sudo chown -R root:wheel /System/Library/Extensions/
 sudo chmod -R 755 /System/Library/Extensions/
 sudo kmutil install --update-all
-sudo kcditto`
+sudo kcditto
+```
 
 ---
 

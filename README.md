@@ -13,11 +13,15 @@ Ini adalah Langkah membuat hackintosh. Pada contoh ini, saya menggunakan motherb
 
 Hal umum yang di perlukan dalam instalasi Hackintosh pada dasarnya *sama* dengan instalasi microsoft windows pada umumnya, hanya saja di tambah dengan 1 *"software"*  bernama bootloader.
 
-Bootloader untuk saat ini ada 2 jenis yang paling populer dan yang paling sering di gunakan.
+Bootloader untuk saat ini ada 2 jenis yang paling populer dan yang paling sering di gunakan yaitu:
+```
 1. Clover
 2. Opencore
+```
+Fungsi dari kedua bootloader inipun sama. Sama-sama di gunakan untuk memalsukan bios agar dianggap sebagai mesin Mac OS X. dengan kata lain, terserah mau pakai yang mana karena masing-masing punya kelebihan dan kekurangan.
+---
 
-# Note!!! Tutorial ini hanya untuk digunakan apabila ingin Bootloader Clover
+# Note!!! Tutorial dibawah ini hanya untuk digunakan apabila ingin Bootloader Clover
 
 > Untuk menggunakan OpenCore bahkan akan lebih mudah, langsung masuk ke folder [BIGSUR UPDATE](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/tree/master/BIG%20SUR%20UPDATE).
 

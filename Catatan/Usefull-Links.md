@@ -3,7 +3,7 @@
 
 ### Hackintosh World
 - OpenCore Desktop Guide - https://dortania.github.io/OpenCore-Install-Guide/
-- DO NOT BUY This - https://dortania.github.io/Anti-Hackintosh-Buyers-Guide/
+- DO NOT BUY THESE - https://dortania.github.io/Anti-Hackintosh-Buyers-Guide/
 - GPU Buyers Guide - https://dortania.github.io/GPU-Buyers-Guide/
 - Wireless Buyer Guide - https://dortania.github.io/Wireless-Buyers-Guide/
 - USB Map Guide - https://dortania.github.io/OpenCore-Post-Install/usb/manual/manual.html

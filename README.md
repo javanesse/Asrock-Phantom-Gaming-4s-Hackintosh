@@ -32,13 +32,13 @@ Fungsi dari kedua bootloader inipun sama. Yaitu sama-sama di gunakan untuk memal
 
 ## Proses booting Windows pada umumnya:
 - Komputer dinyalakan
-- Muncul logo BIOS
+- Muncul Logo BIOS
 - Masuk Windows
 
 ## Proses booting pada Hackintosh:
 - Komputer dinyalakan
-- Muncul logo Bios
-- `Muncul Bootloader` (bios kedua)
+- Muncul Logo BIOS
+- `Muncul Bootloader` (Anggaplah bios kedua)
 - Masuk Mac OS X
 
 Produsen hardware tidak meyediakan driver (kexts) untuk sistem operasi Mac OSX, maka dari itu kita perlu melakukan patching agar driver mac dapat mengenali jenis hardware kita.

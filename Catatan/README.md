@@ -166,3 +166,7 @@ https://dortania.github.io/OpenCore-Post-Install/universal/sleep.html#tsc
 
 ---
 
+To boot 10.15 two things needs to be taken care of:
+If you have an EC device with ID PNP0C09 in your DSDT then macOS might get stuck while booting at the initial stage. To fix that you need to make sure your EC device is disabled by making it return status Zero. You can use a custom [SSDT-EC](https://dortania.github.io/Getting-Started-With-ACPI/Universal/ec-fix.html)
+
+---

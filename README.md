@@ -24,9 +24,9 @@ Fungsi dari kedua bootloader inipun sama. Yaitu sama-sama di gunakan untuk memal
 
 # Note!!! Tutorial dibawah ini hanya untuk digunakan apabila ingin Bootloader Clover
 
-> Untuk menggunakan OpenCore, langsung masuk ke folder [BIGSUR UPDATE](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/tree/master/BIG%20SUR%20UPDATE).
+> Untuk menggunakan BootLoader OpenCore, Bisa langsung masuk ke folder [BIGSUR UPDATE](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/tree/master/BIG%20SUR%20UPDATE). Dengan Catatan Paham cara kerja BootLoader OpenCore
 
-> Untuk mempelajari bagaimana sistem kerja sebuah Hackintosh lebih mendalam, baiknya menggunakan tutorial menggunakan BootLoader Clover ini terlebih dahulu.
+> Saran Untuk Pemula: *Untuk mempelajari bagaimana sistem kerja sebuah Hackintosh lebih mendalam, baiknya menggunakan tutorial menggunakan BootLoader Clover ini terlebih dahulu.*
 
 ---
 

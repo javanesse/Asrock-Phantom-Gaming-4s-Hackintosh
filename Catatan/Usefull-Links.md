@@ -6,6 +6,7 @@
 - GPU Buyers Guide - https://dortania.github.io/GPU-Buyers-Guide/
 - USB Map Guide - https://dortania.github.io/OpenCore-Post-Install/usb/manual/manual.html
 - Wireless Buyers Guide - https://dortania.github.io/Wireless-Buyers-Guide/
+- TonyMacX86 Buyer Guide - https://www.tonymacx86.com/buyersguide/building-a-customac-hackintosh-the-ultimate-buyers-guide/
 
 ---
 

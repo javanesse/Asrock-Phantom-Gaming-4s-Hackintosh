@@ -35,3 +35,10 @@ Look for AGPM under GFX0 node. The Heuristic-ID must be "04 00 00 00" for NVIDIA
 
 ---
 
+# This Config
+
+Sementara untuk komputer ini sendiri, yang notabene menggunakan 2 buah GPU yaitu iGPU `Intel HD 630` dan dGPU `AMD RX Vega64` dengan sistem operasi BigSur memperlihatkan bahwa keduanya telah memiliki GPU Power Management yang baik.
+
+![jvGPUPM](/Catatan/Resources/jvGPUPM.png)
+
+

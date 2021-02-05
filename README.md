@@ -18,11 +18,13 @@ Bootloader untuk saat ini ada 2 jenis yang paling populer dan yang paling sering
 1. Clover
 2. Opencore
 ```
-Fungsi dari kedua bootloader inipun sama. Yaitu sama-sama di gunakan untuk memalsukan bios agar dianggap sebagai mesin Mac OS X. Dengan kata lain, terserah mau pakai yang mana karena antara OpenCore maupun Clover, masing-masing punya kelebihan dan kekurangan. Namun sekali lagi, mempunyai fungsi yang sama.
+Fungsi dari kedua bootloader inipun sama. Yaitu sama-sama di gunakan untuk memalsukan bios agar dianggap sebagai mesin Mac OS X. Hal ini di perlukan, karena, Mac OS X sendiri tidak akan mau menyala apabila perangkat hardware bukan milik Apple itu sendiri. Untuk itu, di perlukan `Bios Palsu` berupa `Bootloader` agar hardware selain milik Apple, tetap di anggap sebagai Apple.
+
+Sementara OpenCore maupun Clover, masing-masing punya kelebihan dan kekurangan. Namun sekali lagi, mempunyai fungsi yang sama, Kita bebas memilih menggunakan yang mana.
 
 ---
 
-# Note!!! Tutorial dibawah ini hanya untuk digunakan apabila ingin Bootloader Clover
+# Note!!! Tutorial dibawah ini menggunakan metode Bootloader Clover
 
 > Untuk menggunakan BootLoader OpenCore, Bisa langsung masuk ke folder [BIGSUR UPDATE](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/tree/master/BIG%20SUR%20UPDATE). Dengan Catatan Paham cara kerja BootLoader OpenCore.
 

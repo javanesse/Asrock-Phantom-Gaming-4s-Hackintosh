@@ -102,9 +102,9 @@ Namun produsen hardware pada umumnya contohlah VGA, seperti Intel, ATI, atau Nvi
 
 Tidak semua Hardware dapat di akali/Patching. Bahkan banyak pula yang sama sekali tidak bisa di akali. seperti contoh, Laptop yang menggunakan 2 VGA/Optimus, maka kita mau tidak mau harus menonaktifkan salah satu VGA yang ada.
 
-Contoh lain, VGA NVidia terbaru, seperti GTX 2080 keatas tidak support Mac OS X.
+Contoh lain, VGA NVidia terbaru, seperti GTX 2080 keatas, tidak support di Mac OS X.
 
-> Harga mahal belum tentu bisa menjamin kelayakan menjalankan Mac OS X.
+> Harga mahal tidak bisa menjamin kelayakan dijalankan di Mac OS X.
 
 Untuk itu, ada baiknya jika kita menggunakan referensi hardware yang telah berhasil di uji coba oleh hakintosher lainnya.
 Sedikit contoh referensi : [Buyer Guide](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/blob/master/Catatan/Usefull-Links.md)

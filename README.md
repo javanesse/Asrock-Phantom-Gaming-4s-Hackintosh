@@ -93,7 +93,7 @@ Berikut perbedaan proses booting antara Sistem Operasi Windows, Mac OS X dan Hac
 
 Hackintosh, pada dasarnya sama halnya seperti Windows, karena Hardware seperti VGA, Audio, Wifi, LAN, Cardreader dan Chipset-chipset lainnya, tidak akan berfungsi secara optimal, sebelum kita melakukan instalasi driver.
 
-Namun produsen hardware pada umumnya contohlah VGA, seperti Intel, ATI, atau Nvidia, tidak menyediakan `driver` atau yang dalam Mac OS X di sebut `kexts` kepanjangan dari `Kernel Extension`. maka dari itu kita perlu melakukan `mengakali/patching` agar driver mac dapat mengenali jenis hardware kita, sehingga dapat beroperasi dengan optimal.
+Namun produsen hardware pada umumnya contohlah VGA, seperti Intel, ATI, atau Nvidia, tidak menyediakan `driver` atau yang dalam Mac OS X di sebut `kexts` kepanjangan dari `Kernel Extension/s`. maka dari itu kita perlu melakukan `mengakali/patching` atau sekedar menginstall `kexts` agar driver mac dapat mengenali jenis hardware kita, sehingga dapat beroperasi dengan optimal.
 
 > Apa akibatnya apabila hackintosh tidak di lakukan patching? Fungsi harware kurang maksimal. sama halnya ketika WINDOWS apabila tidak di install driver, seperti VGA, Audio, USB 3, Cardreader, Lan, Wifi.
 

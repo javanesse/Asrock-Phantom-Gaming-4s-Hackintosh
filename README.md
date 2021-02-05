@@ -50,7 +50,7 @@ Bootloader untuk saat ini ada 2 jenis yang paling populer dan yang paling sering
 1. Clover
 2. Opencore
 ```
-Fungsi dari kedua bootloader inipun sama. Yaitu sama-sama di gunakan untuk memalsukan bios agar dianggap sebagai mesin Mac OS X. Hal ini di perlukan, karena, Mac OS X sendiri tidak akan mau menyala apabila perangkat hardware bukan milik Apple itu sendiri. Untuk itu, di perlukan `Bios Palsu` berupa `Bootloader` agar hardware selain milik Apple, tetap di anggap sebagai Apple.
+Fungsi dari kedua bootloader inipun sama. Yaitu sama-sama di gunakan untuk memalsukan bios agar dianggap sebagai mesin Mac OS X. Hal ini di perlukan, karena, Mac OS X sendiri tidak akan mau menyala apabila perangkat hardware ternyata bukan hardware milik Apple itu sendiri. Untuk itu, di perlukan `Bios Palsu` berupa `Bootloader` agar hardware selain milik Apple, tetap di anggap sebagai Apple.
 
 Sementara OpenCore maupun Clover, masing-masing punya kelebihan dan kekurangan. Namun sekali lagi, mempunyai fungsi yang sama, Kita bebas memilih menggunakan yang mana.
 

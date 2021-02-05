@@ -31,17 +31,27 @@ Sementara OpenCore maupun Clover, masing-masing punya kelebihan dan kekurangan. 
 > Saran Untuk Pemula: *Untuk mempelajari bagaimana sistem kerja sebuah Hackintosh lebih mendalam, baiknya menggunakan tutorial menggunakan BootLoader Clover ini terlebih dahulu.*
 
 ---
+Kita kembali ke konsep awal, tentang bagaimana proses booting sebuah komputer pada umumnya.
+
+Berikut perbedaan proses booting antara Sistem Operasi Windows, Mac OS X dan Hackintosh
 
 ## Proses booting Windows pada umumnya:
-- Komputer dinyalakan
-- Muncul Logo BIOS
-- Masuk Windows
+1. Komputer dinyalakan
+2. Muncul Logo BIOS
+3. Masuk Windows
+
+## Proses booting Mac OS X pada umumnya:
+1. Komputer dinyalakan
+2. Muncul Logo BIOS
+3. Masuk Mac OS X
 
 ## Proses booting pada Hackintosh:
-- Komputer dinyalakan
-- Muncul Logo BIOS
-- `Muncul Bootloader` (Anggaplah bios kedua)
-- Masuk Mac OS X
+1. Komputer dinyalakan
+2. Muncul Logo BIOS
+3. `Muncul Bootloader` (Bios Palsu)
+4. Masuk Mac OS X
+
+> Kesimpulan: Hackintosh memiliki 4(empat) alur. perbedaan yaitu munculnya `Bootloader` untuk menipu Mac OS X, agar Hardware kita di anggap sebagai produk Apple.
 
 ---
 

@@ -15,9 +15,11 @@ Ini adalah Langkah membuat hackintosh. Pada contoh ini, saya menggunakan motherb
 ## Skill yang di butuhkan dalam Hackintosh
 
 1. Bahasa
+
 Walapun sudah banyak tutorial dalam bahasa Indonesia, namun kita tetap perlu membaca artikel, tutorial dan tips, triks lainnya sehingga Hackintosh kita lebih optimal. Untungnya, kita sedikit tertolong dengan adanya [Google Translate](https://translate.google.co.id/)
 
 2. Identifikasi Hardware
+
 Apabila sedikit banyak tahu tentang software dan hardware, maka akan sangat bagus.
 Karena untuk membangun mesin Hackintosh, di perlukan sedikit keahlian dalam pengenalan software dan hardware komputer kita. 
 

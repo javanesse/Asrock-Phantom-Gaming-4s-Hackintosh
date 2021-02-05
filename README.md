@@ -5,9 +5,29 @@ This Repo for Asrock Phantom Gaming 4s Hackintosh with intel core i7 8700 runnin
 ![Mojave 10.4.5](/Images/System%20ScreenShoot/About%20This%20Mac%20Intel%20UHD%20630.png)
 
 # MUKADIMAH
+
 ## SATU HAL UTAMA YANG PERLU DI PERHATIKAN DALAM TUTORIAL DISINI ADALAH, PROSES YANG KELIHATAN RUMIT PADAHAL MUDAH SEKALI APABILA DI PRAKTEKKAN. JANGAN TAKUT UNTUK MENCOBA.
 
-Ini adalah Langkah membuat hackintosh. Pada contoh ini, saya menggunakan motherboard Asrock Phantom Gaming 4s Hackintosh dengan prosesor intel core i7 8700
+### Hackintosh.
+
+Hackintosh adalah Sistem Operasi Mac OS X yang di jalankan menggunakan hardware non-Apple.
+Sedikit pengingat bahwasannya, Mac OS X hanya bisa di jalankan di dalam produk komputer Apple.
+Hackintosh adalah upaya mengakali Sistem Operasi Mac OS X agar bisa di jalankan pada harware Non-Apple.
+Seperti halnya mencoba menginstall iOS ke dalam HP Android, yang sampai saat ini belum dapat di lakukan.
+
+### Hackintosh VS Mac OS X
+
+Pertanyaan: Sistem Operasi Mac OS X asli yang di install pada Komputer Apple seperti Macbook, iMac, MacPro, Mac Mini, Apakah berbeda dengan Sistem Operasi Mac OS X yang di install di mesin Hackintosh?
+Jawaban: Tidak ada bedanya.
+
+Pertanyaan: Apakah saya bisa menjalankan aplikasi Mac OS X seperti di Macbook, contohlah Logic Pro X, Final Cut Pro, iMessage, Facetime dll seperti biasa?
+Jawaban: Bisa.
+
+Pertanyaan: Fitur apa yang ada di komputer Apple namun tidak ada di Hackintosh?
+Jawaban: Fitur Hibernasi.
+
+
+Berikut adalah Langkah membuat hackintosh. Pada contoh ini, saya menggunakan motherboard Asrock Phantom Gaming 4s Hackintosh dengan prosesor intel core i7 8700
 
 > Untuk hardware lain pun dapat mengikuti tutorial ini.
 

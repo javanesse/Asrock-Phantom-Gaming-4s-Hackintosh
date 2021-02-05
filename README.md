@@ -180,7 +180,7 @@ Seperti yang saya utarakan di atas, bahwasannya persiapan hardware sebelum melak
 
 Dan tentu saja **sebuah USB Flashdisk** minimal berukuran `16GB` untuk membuat file instalasi.
 
-> Untuk Membuat Bootable USB Macintosh/Hackintosh, baik dari Windows maupun Mac OS X, Silahkan lakukan pencarian di google atau di [youtube](https://www.youtube.com/results?search_query=bootable+hackintosh+usb+windows+), atau [di sini](https://olarila.com/forum/viewtopic.php?f=50&t=8685). 
+> Untuk Membuat Bootable USB Macintosh/Hackintosh, baik dari Windows maupun Mac OS X, Silahkan lakukan pencarian di [google](https://www.google.com/search?q=membuat+bootable+usb+hackintosh+di+windows) atau di [youtube](https://www.youtube.com/results?search_query=bootable+hackintosh+usb+windows+), atau [di sini](https://www.olarila.com/topic/5794-hackintosh-guide-install-macos-with-vanilla-olarila-image-step-by-step-install-and-post-install-windows-linux-or-mac/). pilih mana saja yang Anda anggap paling mudah.
 tutorial dalam bahasa inggris, gunakan google translate apabila kurang mengerti.
 
 > **KHUSUS** dalam tutorial ini, pembuatan `Bootable USB` saya lakukan melalui MAC OS X. Untuk itu, bila kalian belum mempunyai komputer Apple, kalian bisa membuat bootable USB dengan komputer Apple kepunyaan teman, saudara atau siapa saja, atau menggunakan metode seperti di atas.

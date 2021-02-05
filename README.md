@@ -183,7 +183,7 @@ Dan tentu saja **sebuah USB Flashdisk** minimal berukuran `16GB` untuk membuat f
 > Untuk Membuat Bootable USB Macintosh/Hackintosh, baik dari Windows maupun Mac OS X, Silahkan lakukan pencarian di google atau di [youtube](https://www.youtube.com/results?search_query=bootable+hackintosh+usb+windows+), atau [di sini](https://olarila.com/forum/viewtopic.php?f=50&t=8685). 
 tutorial dalam bahasa inggris, gunakan google translate apabila kurang mengerti.
 
-> > **KHUSUS** dalam tutorial ini, pembuatan `Bootable USB` saya lakukan melalui MAC OS X. Untuk itu, bila kalian belum mempunyai komputer Apple, kalian bisa membuat bootable USB dengan komputer Apple kepunyaan teman, saudara atau siapa saja, atau menggunakan metode seperti di atas.
+> **KHUSUS** dalam tutorial ini, pembuatan `Bootable USB` saya lakukan melalui MAC OS X. Untuk itu, bila kalian belum mempunyai komputer Apple, kalian bisa membuat bootable USB dengan komputer Apple kepunyaan teman, saudara atau siapa saja, atau menggunakan metode seperti di atas.
 
 
 Lanjut ke topik,

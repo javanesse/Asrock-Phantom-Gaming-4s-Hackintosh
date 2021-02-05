@@ -21,7 +21,7 @@ Walapun sudah banyak tutorial dalam bahasa Indonesia, namun kita tetap perlu mem
 Apabila sedikit banyak tahu tentang software dan hardware, maka akan sangat bagus.
 Karena untuk membangun mesin Hackintosh, di perlukan sedikit keahlian dalam pengenalan software dan hardware komputer kita. 
 
-Seperti contoh: 
+### Seperti contoh: 
 - prosesor i7 4750 menggunakan chipset haswell, di dalamnya sudah ada GPU Intel HD 5200
 - WIFI TPLink seri XXX menggunakan chipset atheros AR94XX
 - Audio bawaan motherboard menggunakan Realtek seri XXXXX
@@ -33,6 +33,7 @@ banyak cara untuk mengidentifikasi Hardware perangkat kita, Antara lain Mengguna
 Kegagalan adalah suatu keberhasilan yang mutlak. Jika Anda gagal, itu bagus. Kerena secara `otomatis Anda jadi tahu` bahwa hal yang Anda lakukan mengakibatkan kegagalan. dan untuk mengalami kegagalan, itupun Anda butuh waktu.
 
 > Cobalah perbaiki 1 kegagalan itu 1 Juta kali. Anda hanya butuh 1x berhasil.
+
 > Sekali lagi, Semua ini hanya kelihatannya saja yang rumit, padahal sebenarnya sangat mudah apabila di lakukan.
 
 ---

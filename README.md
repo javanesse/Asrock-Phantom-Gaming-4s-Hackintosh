@@ -38,7 +38,7 @@ Sebenarnya terbilang mudah, karena biasanya minimal bisa Install komputer atau l
 
 1. Bahasa
 
-Walapun sudah banyak tutorial dalam bahasa Indonesia, namun kita tetap perlu membaca artikel, tutorial dan tips, triks lainnya dari luar, sehingga Hackintosh kita lebih optimal. Untungnya, kita sedikit tertolong dengan adanya [Google Translate](https://translate.google.co.id/).
+Walapun sudah banyak tutorial dalam bahasa Indonesia, namun kita tetap perlu membaca artikel, tutorial dan tips, triks lainnya dari luar selain bahasa Indonesia, sehingga Hackintosh kita lebih optimal. Untungnya, kita sedikit tertolong dengan adanya [Google Translate](https://translate.google.co.id/).
 
 2. Identifikasi Hardware
 

@@ -5,11 +5,38 @@ This Repo for Asrock Phantom Gaming 4s Hackintosh with intel core i7 8700 runnin
 ![Mojave 10.4.5](/Images/System%20ScreenShoot/About%20This%20Mac%20Intel%20UHD%20630.png)
 
 # MUKADIMAH
-> SATU HAL UTAMA YANG PERLU DI PERHATIKAN DALAM TUTORIAL DISINI ADALAH, PROSES YANG KELIHATAN RUMIT PADAHAL MUDAH SEKALI APABILA DI PRAKTEKKAN. JANGAN TAKUT UNTUK MENCOBA.
+## SATU HAL UTAMA YANG PERLU DI PERHATIKAN DALAM TUTORIAL DISINI ADALAH, PROSES YANG KELIHATAN RUMIT PADAHAL MUDAH SEKALI APABILA DI PRAKTEKKAN. JANGAN TAKUT UNTUK MENCOBA.
 
 Ini adalah Langkah membuat hackintosh. Pada contoh ini, saya menggunakan motherboard Asrock Phantom Gaming 4s Hackintosh dengan prosesor intel core i7 8700
 
-## Untuk hardware lain pun dapat mengikuti tutorial ini.
+> Untuk hardware lain pun dapat mengikuti tutorial ini.
+
+---
+## Skill yang di butuhkan dalam Hackintosh
+
+1. Bahasa
+Walapun sudah banyak tutorial dalam bahasa Indonesia, namun kita tetap perlu membaca artikel, tutorial dan tips, triks lainnya sehingga Hackintosh kita lebih optimal. Untungnya, kita sedikit tertolong dengan adanya [Google Translate](https://translate.google.co.id/)
+
+2. Identifikasi Hardware
+Apabila sedikit banyak tahu tentang software dan hardware, maka akan sangat bagus.
+Karena untuk membangun mesin Hackintosh, di perlukan sedikit keahlian dalam pengenalan software dan hardware komputer kita. 
+
+Seperti contoh: 
+- prosesor i7 4750 menggunakan chipset haswell, di dalamnya sudah ada GPU Intel HD 5200
+- WIFI TPLink seri XXX menggunakan chipset atheros AR94XX
+- Audio bawaan motherboard menggunakan Realtek seri XXXXX
+- dll
+
+banyak cara untuk mengidentifikasi Hardware perangkat kita, Antara lain Menggunakan software diagnosis windows seperti AIDA, CPU-Z, GPU-z, Speccy, HWInfo, website produsen hardware itu sendiri, atau bahkan menggunakan google.
+
+3. Waktu
+Kegagalan adalah suatu keberhasilan yang mutlak. Jika Anda gagal, itu bagus. Kerena secara `otomatis Anda jadi tahu` bahwa hal yang Anda lakukan mengakibatkan kegagalan. dan untuk mengalami kegagalan, itupun Anda butuh waktu.
+
+> Cobalah perbaiki 1 kegagalan itu 1 Juta kali. Anda hanya butuh 1x berhasil.
+> Sekali lagi, Semua ini hanya kelihatannya saja yang rumit, padahal sebenarnya sangat mudah apabila di lakukan.
+
+---
+## Logika Dasar
 
 Hal umum yang di perlukan dalam instalasi Hackintosh pada dasarnya *sama* dengan instalasi microsoft windows pada umumnya, hanya saja di tambah dengan 1 *`software`*  bernama bootloader.
 
@@ -24,30 +51,30 @@ Sementara OpenCore maupun Clover, masing-masing punya kelebihan dan kekurangan. 
 
 ---
 
-# Note!!! Tutorial dibawah ini menggunakan metode Bootloader Clover
+## Note!!! Tutorial dibawah ini menggunakan metode Bootloader Clover
 
 > Untuk menggunakan BootLoader OpenCore, Bisa langsung masuk ke folder [BIGSUR UPDATE](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/tree/master/BIG%20SUR%20UPDATE). Dengan Catatan Paham cara kerja BootLoader OpenCore.
 
 > Saran Untuk Pemula: *Untuk mempelajari bagaimana sistem kerja sebuah Hackintosh lebih mendalam, baiknya menggunakan tutorial menggunakan BootLoader Clover ini terlebih dahulu.*
 
 ---
-# Konsep Booting
+## Konsep Booting
 
 Kita kembali ke konsep awal, tentang bagaimana proses booting sebuah komputer pada umumnya.
 
 Berikut perbedaan proses booting antara Sistem Operasi Windows, Mac OS X dan Hackintosh
 
-## Proses booting Windows pada umumnya:
+### Proses booting Windows pada umumnya:
 1. Komputer dinyalakan
 2. Muncul Logo BIOS
 3. Masuk Windows
 
-## Proses booting Mac OS X pada umumnya:
+### Proses booting Mac OS X pada umumnya:
 1. Komputer dinyalakan
 2. Muncul Logo BIOS
 3. Masuk Mac OS X
 
-## Proses booting pada Hackintosh:
+### Proses booting pada Hackintosh:
 1. Komputer dinyalakan
 2. Muncul Logo BIOS
 3. `Muncul Bootloader` (Bios Palsu)
@@ -57,7 +84,7 @@ Berikut perbedaan proses booting antara Sistem Operasi Windows, Mac OS X dan Hac
 
 ---
 
-# Driver / Kexts dan Patching
+## Driver / Kexts dan Patching
 
 Hackintosh, pada dasarnya sama halnya seperti Windows, karena Hardware seperti VGA, Audio, Wifi, LAN, Cardreader dan Chipset-chipset lainnya, tidak akan berfungsi secara optimal, sebelum kita melakukan instalasi driver.
 
@@ -65,6 +92,19 @@ Namun produsen hardware pada umumnya contohlah VGA, seperti Intel, ATI, atau Nvi
 
 > Apa akibatnya apabila hackintosh tidak di lakukan patching? Fungsi harware kurang maksimal. sama halnya ketika WINDOWS apabila tidak di install driver, seperti VGA, Audio, USB 3, Cardreader, Lan, Wifi.
 
+---
+## Hardware Limitation
+
+Tidak semua Hardware dapat di akali/Patching. Bahkan banyak pula yang sama sekali tidak bisa di akali. seperti contoh, Laptop yang menggunakan 2 VGA/Optimus, maka kita mau tidak mau harus menonaktifkan salah satu VGA yang ada.
+
+Contoh lain, VGA NVidia terbaru, seperti GTX 2080 keatas tidak support Mac OS X.
+
+Untuk itu, ada baiknya jika kita menggunakan referensi hardware yang telah berhasil di uji coba oleh hakintosher lainnya.
+Sedikit contoh referensi : [Buyer Guide](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/blob/master/Catatan/Usefull-Links.md)
+
+---
+
+## Referansi Hardware
 Repo ini sendiri boleh di katakan ini adalah repo driver (kext) untuk mac osx khusus hardware-hardware yang ada pada spesifikasi. dengan kata lain, jika spesifikasi komputer Anda kebetulan sama dengan komputer ini, maka langkah instalasi hackintosh Anda akan semakin mudah karena sudah tersedia driver (kext) untuk hardware jenis ini.
 
 Namun disini ada beberapa referensi tutorial untuk melakukan patching hardware-hardware lain.

@@ -17,14 +17,17 @@ Seperti halnya mencoba menginstall iOS ke dalam HP Android, yang sampai saat ini
 
 ### Hackintosh VS Mac OS X
 
-Pertanyaan: Sistem Operasi Mac OS X asli yang di install pada Komputer Apple seperti Macbook, iMac, MacPro, Mac Mini, Apakah berbeda dengan Sistem Operasi Mac OS X yang di install di mesin Hackintosh?
-Jawaban: Tidak ada bedanya.
+`Pertanyaan`: Sistem Operasi Mac OS X asli yang di install pada Komputer Apple seperti Macbook, iMac, MacPro, Mac Mini, Apakah berbeda dengan Sistem Operasi Mac OS X yang di install di mesin Hackintosh?
 
-Pertanyaan: Apakah saya bisa menjalankan aplikasi Mac OS X seperti di Macbook, contohlah Logic Pro X, Final Cut Pro, iMessage, Facetime dll seperti biasa?
-Jawaban: Bisa.
+`Jawaban`: Tidak ada bedanya.
 
-Pertanyaan: Fitur apa yang ada di komputer Apple namun tidak ada di Hackintosh?
-Jawaban: Fitur Hibernasi.
+`Pertanyaan`: Apakah saya bisa menjalankan aplikasi Mac OS X seperti di Macbook, contohlah Logic Pro X, Final Cut Pro, iMessage, Facetime dll seperti biasa?
+
+`Jawaban`: Bisa.
+
+`Pertanyaan`: Fitur apa yang ada di komputer Apple namun tidak ada di Hackintosh?
+
+`Jawaban`: Fitur Hibernasi.
 
 
 Berikut adalah Langkah membuat hackintosh. Pada contoh ini, saya menggunakan motherboard Asrock Phantom Gaming 4s Hackintosh dengan prosesor intel core i7 8700

@@ -95,7 +95,7 @@ Hackintosh, pada dasarnya sama halnya seperti Windows, karena Hardware seperti V
 
 Namun produsen hardware pada umumnya contohlah VGA, seperti Intel, ATI, atau Nvidia, tidak menyediakan `driver` atau yang dalam Mac OS X di sebut `kexts` kepanjangan dari `Kernel Extension/s`. maka dari itu kita perlu melakukan `mengakali/patching` atau sekedar menginstall `kexts` agar driver mac dapat mengenali jenis hardware kita, sehingga dapat beroperasi dengan optimal.
 
-> Apa akibatnya apabila hackintosh tidak di lakukan patching? Fungsi harware kurang maksimal. sama halnya ketika WINDOWS apabila tidak di install driver, seperti VGA, Audio, USB 3, Cardreader, Lan, Wifi.
+> Apa akibatnya apabila hackintosh tidak di lakukan patching? Fungsi harware kurang maksimal. sama halnya ketika WINDOWS apabila tidak di install driver, seperti VGA, Audio, USB 3, Cardreader, Lan, Wifi dan lainnya, maka Hardware tersebut tidak akan bekerja sebagaimana mestinya.
 
 ---
 ## Hardware Limitation
@@ -104,12 +104,14 @@ Tidak semua Hardware dapat di akali/Patching. Bahkan banyak pula yang sama sekal
 
 Contoh lain, VGA NVidia terbaru, seperti GTX 2080 keatas tidak support Mac OS X.
 
+> Harga mahal belum tentu bisa menjamin kelayakan menjalankan Mac OS X.
+
 Untuk itu, ada baiknya jika kita menggunakan referensi hardware yang telah berhasil di uji coba oleh hakintosher lainnya.
 Sedikit contoh referensi : [Buyer Guide](https://github.com/javanesse/Asrock-Phantom-Gaming-4s-Hackintosh/blob/master/Catatan/Usefull-Links.md)
 
 ---
 
-## Referansi Hardware
+## Referansi Hardware yang saya gunakan saat ini
 Repo ini sendiri boleh di katakan ini adalah repo driver (kext) untuk mac osx khusus hardware-hardware yang ada pada spesifikasi. dengan kata lain, jika spesifikasi komputer Anda kebetulan sama dengan komputer ini, maka langkah instalasi hackintosh Anda akan semakin mudah karena sudah tersedia driver (kext) untuk hardware jenis ini.
 
 Namun disini ada beberapa referensi tutorial untuk melakukan patching hardware-hardware lain.

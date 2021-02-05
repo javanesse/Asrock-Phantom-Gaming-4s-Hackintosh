@@ -16,7 +16,7 @@ Ini adalah Langkah membuat hackintosh. Pada contoh ini, saya menggunakan motherb
 
 1. Bahasa
 
-Walapun sudah banyak tutorial dalam bahasa Indonesia, namun kita tetap perlu membaca artikel, tutorial dan tips, triks lainnya sehingga Hackintosh kita lebih optimal. Untungnya, kita sedikit tertolong dengan adanya [Google Translate](https://translate.google.co.id/)
+Walapun sudah banyak tutorial dalam bahasa Indonesia, namun kita tetap perlu membaca artikel, tutorial dan tips, triks lainnya sehingga Hackintosh kita lebih optimal. Untungnya, kita sedikit tertolong dengan adanya [Google Translate](https://translate.google.co.id/).
 
 2. Identifikasi Hardware
 

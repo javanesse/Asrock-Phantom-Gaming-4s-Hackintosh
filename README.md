@@ -31,6 +31,8 @@ Sementara OpenCore maupun Clover, masing-masing punya kelebihan dan kekurangan. 
 > Saran Untuk Pemula: *Untuk mempelajari bagaimana sistem kerja sebuah Hackintosh lebih mendalam, baiknya menggunakan tutorial menggunakan BootLoader Clover ini terlebih dahulu.*
 
 ---
+# Konsep Booting
+
 Kita kembali ke konsep awal, tentang bagaimana proses booting sebuah komputer pada umumnya.
 
 Berikut perbedaan proses booting antara Sistem Operasi Windows, Mac OS X dan Hackintosh
@@ -55,9 +57,11 @@ Berikut perbedaan proses booting antara Sistem Operasi Windows, Mac OS X dan Hac
 
 ---
 
+# Driver / Kexts dan Patching
+
 Hackintosh, pada dasarnya sama halnya seperti Windows, karena Hardware seperti VGA, Audio, Wifi, LAN, Cardreader dan Chipset-chipset lainnya, tidak akan berfungsi secara optimal, sebelum kita melakukan instalasi driver.
 
-Namun produsen hardware pada umumnya contohlah VGA, seperti Intel, ATI, atau Nvidia, tidak menyediakan `driver` atau yang dalam Mac OS X di sebut `kexts`. maka dari itu kita perlu melakukan `mengakali/patching` agar driver mac dapat mengenali jenis hardware kita, sehingga dapat beroperasi dengan optimal.
+Namun produsen hardware pada umumnya contohlah VGA, seperti Intel, ATI, atau Nvidia, tidak menyediakan `driver` atau yang dalam Mac OS X di sebut `kexts` kepanjangan dari `Kernel Extension`. maka dari itu kita perlu melakukan `mengakali/patching` agar driver mac dapat mengenali jenis hardware kita, sehingga dapat beroperasi dengan optimal.
 
 > Apa akibatnya apabila hackintosh tidak di lakukan patching? Fungsi harware kurang maksimal. sama halnya ketika WINDOWS apabila tidak di install driver, seperti VGA, Audio, USB 3, Cardreader, Lan, Wifi.
 
